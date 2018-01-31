@@ -1,0 +1,21 @@
+// Container
+  /* ============================================= Container ============================================= */
+
+.container,
+.container-full {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+  /* ===================================== Container - Media queries ===================================== */
+  @each $key, $value in $responsive {
+      @media screen and (min-width: $value) {
+          .container {
+              $val: $value / 1px;
+              $val-percent: ((94% * $val) / 100%) * 1px;
+              max-width: $val-percent ; 
+          }
+      }
+  }

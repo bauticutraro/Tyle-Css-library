@@ -348,6 +348,36 @@
   .start-xl-12 {
     grid-column-start: 12; } }
 
+/* ============================================= Container ============================================= */
+.container,
+.container-full {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+/* ===================================== Container - Media queries ===================================== */
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 451.2px; } }
+
+@media screen and (min-width: 640px) {
+  .container {
+    max-width: 601.6px; } }
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 721.92px; } }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 962.56px; } }
+
+@media screen and (min-width: 1366px) {
+  .container {
+    max-width: 1284.04px; } }
+
 /* Grid gap property */
 .grid-gap-0 {
   grid-gap: 0; }
