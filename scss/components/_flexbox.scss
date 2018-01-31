@@ -1,0 +1,20 @@
+// ======================================================================================== //
+//                                     FLEXBOX PROPERTIES                                   //
+// ======================================================================================== //
+$properties: flex-direction, flex-wrap, justify-content, align-content, align-items, align-self, justify-self, flex-grow, flex-shrink;
+$class:      flex-direction, flex, justify-content, align-content, align-items, align-self, justify-self, flex-grow, flex-shrink;
+$maps:       $flex-direction, $flex, $justify-content, $align-content, $align-items, $align-self, $justify-self, $flex-grow, $flex-shrink;
+
+ /* =================================  FLEXBOX PROPERTIES ============================================ */     
+@for $i from 1 through length($properties) {
+    $property: nth($properties,$i);
+    $components: nth($maps,$i);
+    $class-name: nth($class,$i);            
+    @each $key, $value in $components {
+        .f-#{$class-name}-#{$key} {
+            #{$property}: $value
+        }
+    }
+}
+
+ 

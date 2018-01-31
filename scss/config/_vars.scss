@@ -62,3 +62,18 @@ $order: (
     5: 5,
     6: 6
 );
+
+// ======================================================================================== //
+//                                     FLEXBOX PROPERTIES                                   //
+// ======================================================================================== //
+
+// Flexbox properties
+$flex-direction: ( row: row, col: column, row-reverse: row-reverse, col-reverse: column-reverse );        
+$flex: (wrap: wrap, wrap-reverse: wrap-reverse, no-wrap: nowrap); 
+$justify-content: (start: flex-start, end: flex-end, center: center, between: space-between, around: space-around, evenly: space-evenly);    
+$align-content: (start: flex-start, end: flex-end, center: center, between: space-between, around: space-around, stretch: stretch);       
+$align-items: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);   
+$align-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);   
+$justify-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);
+$flex-grow: (1: 20%, 2: 40%, 3: 60%, 4: 80%, 5: 100%);       
+$flex-shrink: (1: 20%, 2: 40%, 3: 60%, 4: 80%, 5: 100%);  
