@@ -77,3 +77,26 @@ $align-self: (start: flex-start, end: flex-end, center: center, baseline: baseli
 $justify-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);
 $flex-grow: (1: 20%, 2: 40%, 3: 60%, 4: 80%, 5: 100%);       
 $flex-shrink: (1: 20%, 2: 40%, 3: 60%, 4: 80%, 5: 100%);  
+
+// ======================================================================================== //
+//                                    MARGINS AND PADDINGS                                  //
+// ======================================================================================== //
+
+$margin-paddings: (
+    1:     0.25rem,
+    2:     0.50rem,
+    3:     1.00rem,
+    4:     1.50rem,
+    5:     3.00rem,
+    auto:  auto,
+);
+
+$sides: (
+    top:    t,
+    right:  r,
+    bottom: b,
+    left:   l,
+    x:      x,
+    y:      y
+);
+
