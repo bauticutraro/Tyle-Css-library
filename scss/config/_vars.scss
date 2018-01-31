@@ -8,3 +8,57 @@ $responsive: (
     lg: 1024px, // From 1024px to 1365px
     xl: 1366px  // From 1366px to +1366px
 );
+
+// ======================================================================================== //
+//                                     GRID PROPERTIES                                      //
+// ======================================================================================== //
+
+// Grid gap vars
+$grid-gap: (
+    0: 0,
+    1: 1px,
+    2: 3px,
+    3: 5px,
+    4: 10px,
+    5: 15px,
+    6: 20px,
+    7: 25px,
+    8: 30px,
+    9: 40px,
+    10: 50px
+);
+
+// grid properties justify and align 
+$items: (
+    start: start,
+    end: end,
+    center: center,
+    stretch: stretch,
+);
+    
+$content: (
+    start: start,
+    end: end,
+    center: center,
+    stretch: stretch,
+    between: space-between,
+    around: space-around,
+    evenly: space-evenly 
+);
+    
+// Order property
+$order: (
+    -6: -6,
+    -5: -5,
+    -4: -4,
+    -3: -3,
+    -2: -2,
+    -1: -1,
+    0: 0,
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6
+);

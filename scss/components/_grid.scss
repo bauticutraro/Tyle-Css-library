@@ -1,0 +1,33 @@
+// ======================================================================================== //
+//                                     GRID PROPERTIES                                      //
+// ======================================================================================== //
+
+// Grid gap property
+/* Grid gap property */
+@each $key, $value in $grid-gap {
+    .grid-gap-#{$key} { grid-gap: $value; }
+}
+
+// Order property
+/* Order property */
+@each $key, $value in $order {
+    .order-#{$key} { order: $value; }
+}
+
+// Justify-items and align-items properties
+/* Justify-items and align-items properties */
+// Justify-self and align-self properties
+/* Justify-self and align-self properties */
+@each $key, $value in $items {
+    .g-justify-items-#{$key} { justify-items: $value; }
+    .g-align-items-#{$key} { align-items: $value; }
+    .g-justify-self-#{$key} { justify-self: $value; }
+    .g-align-self-#{$key} { align-self: $value; }
+}
+
+// Justify-content and align-content properties
+/* Justify-content and align-content properties */
+@each $key, $value in $content {
+    .g-justify-content-#{$key} { justify-content: $value; }
+    .g-align-content-#{$key} { align-content: $value; }
+}
