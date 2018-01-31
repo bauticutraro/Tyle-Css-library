@@ -5,7 +5,10 @@
 // Mixins
 @import 'mixins/mixins';
 
+
 // Components
 @import 'components/grid-system';
-@import 'components/grid';
-@import 'components/flexbox';
+
+// Utilities
+@import 'utilities/grid';
+@import 'utilities/flexbox';
