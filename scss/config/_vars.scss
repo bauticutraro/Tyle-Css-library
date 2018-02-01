@@ -100,3 +100,18 @@ $sides: (
     y:      y
 );
 
+
+// ======================================================================================== //
+//                                   DISPLAY PROPERTIES                                     //
+// ======================================================================================== //
+
+$display: (
+    inline:        inline,
+    inline-block:  inline-block,
+    inline-flex:   inline-flex,
+    inline-grid:   inline-grid,
+    block:         block,
+    flex:          flex,
+    grid:          grid,
+    none:          none
+);

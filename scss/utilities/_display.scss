@@ -1,0 +1,17 @@
+ /* =================================  DISPLAY PROPERTIES ============================================ */     
+
+ @each $class, $value in $display {
+    .d-#{$class} {
+        display: $value;
+    }
+ }
+
+ @each $key, $px in $responsive {
+     @media screen and (min-width: $px) {
+        @each $class, $value in $display {
+            .d-#{$key}-#{$class} {
+                display: $value;
+            }
+        }
+    }
+ }
