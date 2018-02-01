@@ -936,3 +936,80 @@
     display: grid; }
   .d-xl-none {
     display: none; } }
+
+/* ============================== Tipography ============================= */
+/* =============================== Headers =============================== */
+.display-1 {
+  font-size: 6rem; }
+
+.display-2 {
+  font-size: 5.5rem; }
+
+.display-3 {
+  font-size: 4.5rem; }
+
+.display-4 {
+  font-size: 3.5rem; }
+
+.h1 {
+  font-size: 2.5rem; }
+
+.h2 {
+  font-size: 2rem; }
+
+.h3 {
+  font-size: 1.75rem; }
+
+.h4 {
+  font-size: 1.5rem; }
+
+.h5 {
+  font-size: 1.25rem; }
+
+.h6 {
+  font-size: 1rem; }
+
+/* ============================= Font Weight ============================= */
+.fw-1 {
+  font-weight: 300; }
+
+.fw-2 {
+  font-weight: 400; }
+
+.fw-3 {
+  font-weight: 600; }
+
+.fw-4 {
+  font-weight: 700; }
+
+.fw-5 {
+  font-weight: 800; }
+
+.fw-6 {
+  font-weight: 900; }
+
+/* ============================= Text Align ============================= */
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+/* ============================= Text Decoration ============================= */
+.td-none {
+  text-decoration: none; }
+
+.td-underline {
+  text-decoration: underline; }
+
+.td-overline {
+  text-decoration: overline; }
+
+.td-del {
+  text-decoration: line-through; }

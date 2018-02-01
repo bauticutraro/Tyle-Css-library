@@ -1,0 +1,29 @@
+/* ============================== Tipography ============================= */
+/* =============================== Headers =============================== */
+
+@each $class-name, $value in $headers {
+    .#{$class-name} {
+        font-size: $value;
+    }
+}
+
+/* ============================= Font Weight ============================= */
+@each $class-name, $value in $weight {
+    .fw-#{$class-name} {
+        font-weight: $value;
+    }
+}
+
+/* ============================= Text Align ============================= */
+@each $class-name, $value in $align {
+    .text-#{$class-name} {
+        text-align: $value;
+    }
+}
+
+/* ============================= Text Decoration ============================= */
+@each $class-name, $value in $decoration {
+    .td-#{$class-name} {
+        text-decoration: $value;
+    }
+}

@@ -115,3 +115,43 @@ $display: (
     grid:          grid,
     none:          none
 );
+
+// ======================================================================================== //
+//                                   TIPOGRAPHY PROPERTIES                                  //
+// ======================================================================================== //
+
+$headers: (
+    display-1: 6.0rem,
+    display-2: 5.5rem,
+    display-3: 4.5rem,
+    display-4: 3.5rem,    
+    h1: 2.50rem,
+    h2: 2.00rem,
+    h3: 1.75rem,
+    h4: 1.50rem,
+    h5: 1.25rem,
+    h6: 1.00rem
+);
+
+$weight: (
+    1: 300,
+    2: 400,
+    3: 600,
+    4: 700,
+    5: 800,
+    6: 900 
+);
+
+$align: (
+    left: left,
+    right: right,
+    center: center,
+    justify: justify
+);
+
+$decoration: (
+    none: none,
+    underline: underline,
+    overline: overline,
+    del: line-through
+);
