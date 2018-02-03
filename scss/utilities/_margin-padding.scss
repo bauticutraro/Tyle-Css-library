@@ -5,7 +5,7 @@
     .m-#{$mp-key} {
         margin: $mp-value;
     }
-    @each $side, $side-val in $sides {
+    @each $side, $side-val in $mp-sides {
         .m#{$side-val}-#{$mp-key} {
             @if $side != x and $side != y{
                 margin-#{$side}: $mp-value;
@@ -27,7 +27,7 @@
     .p-#{$mp-key} {
         padding: $mp-value;
     }
-    @each $side, $side-val in $sides {
+    @each $side, $side-val in $mp-sides {
         .p#{$side-val}-#{$mp-key} {
             @if $side != x and $side != y{
                 padding-#{$side}: $mp-value;
@@ -43,54 +43,54 @@
 }
 
 
-// Margins Responsive
-/* =========================================== MARGINS RESPONSIVE =========================================== */
+// // Margins Responsive
+// /* =========================================== MARGINS RESPONSIVE =========================================== */
 
-@each $key, $values in $responsive {
-    @media screen and (min-width: $values) {
-        @each $mp-key, $mp-value in $margin-paddings {
-            .m-#{$key}-#{$mp-key} {
-                margin: $mp-value;
-            }
-            @each $side, $side-val in $sides {
-                .m#{$side-val}-#{$key}-#{$mp-key} {
-                    @if $side != x and $side != y{
-                        margin-#{$side}: $mp-value;
-                    } @else if $side == x {
-                        margin-right: $mp-value;
-                        margin-left: $mp-value;
-                    } @else if $side == y {
-                       margin-top: $mp-value;
-                       margin-bottom: $mp-value;
-                    }
-                }
-            }
-        } 
-    }
-}
+// @each $key, $values in $responsive {
+//     @media screen and (min-width: $values) {
+//         @each $mp-key, $mp-value in $margin-paddings {
+//             .m-#{$key}-#{$mp-key} {
+//                 margin: $mp-value;
+//             }
+//             @each $side, $side-val in $mp-sides {
+//                 .m#{$side-val}-#{$key}-#{$mp-key} {
+//                     @if $side != x and $side != y{
+//                         margin-#{$side}: $mp-value;
+//                     } @else if $side == x {
+//                         margin-right: $mp-value;
+//                         margin-left: $mp-value;
+//                     } @else if $side == y {
+//                        margin-top: $mp-value;
+//                        margin-bottom: $mp-value;
+//                     }
+//                 }
+//             }
+//         } 
+//     }
+// }
 
-// Paddings
-/* =========================================== PADDINGS RESPONSIVE =========================================== */
+// // Paddings
+// /* =========================================== PADDINGS RESPONSIVE =========================================== */
 
-@each $key, $values in $responsive {
-    @media screen and (min-width: $values) {
-        @each $mp-key, $mp-value in $margin-paddings {
-            .p-#{$key}-#{$mp-key} {
-                padding: $mp-value;
-            }
-            @each $side, $side-val in $sides {
-                .p#{$side-val}-#{$key}-#{$mp-key} {
-                    @if $side != x and $side != y{
-                        padding-#{$side}: $mp-value;
-                    } @else if $side == x {
-                        padding-right: $mp-value;
-                        padding-left: $mp-value;
-                    } @else if $side == y {
-                       padding-top: $mp-value;
-                       padding-bottom: $mp-value;
-                    }
-                }
-            }
-        }     
-    }
-}
+// @each $key, $values in $responsive {
+//     @media screen and (min-width: $values) {
+//         @each $mp-key, $mp-value in $margin-paddings {
+//             .p-#{$key}-#{$mp-key} {
+//                 padding: $mp-value;
+//             }
+//             @each $side, $side-val in $mp-sides {
+//                 .p#{$side-val}-#{$key}-#{$mp-key} {
+//                     @if $side != x and $side != y{
+//                         padding-#{$side}: $mp-value;
+//                     } @else if $side == x {
+//                         padding-right: $mp-value;
+//                         padding-left: $mp-value;
+//                     } @else if $side == y {
+//                        padding-top: $mp-value;
+//                        padding-bottom: $mp-value;
+//                     }
+//                 }
+//             }
+//         }     
+//     }
+// }
