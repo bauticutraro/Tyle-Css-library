@@ -5,13 +5,8 @@
 // Mixins
 @import 'mixins/mixins';
 
-
-// Components
-@import 'components/grid-system';
-@import 'components/container';
-@import 'components/scrollbar';
-
 // Utilities
+@import 'components/grid-system';
 @import 'utilities/grid';
 @import 'utilities/flexbox';
 @import 'utilities/display';
@@ -20,5 +15,10 @@
 @import 'utilities/tipography';
 @import 'utilities/img';
 @import 'utilities/border';
+
+// Components
+@import 'components/container';
+@import 'components/scrollbar';
+
 
 

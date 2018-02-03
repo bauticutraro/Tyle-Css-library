@@ -1,23 +1,55 @@
 /* =========================== CUSTOM SCROLLBAR ========================== */
 
+/* Main scrollbar class */
+.scrollbar { overflow-y: scroll; }
+
+$default-color: #f2f2f2;
+/* Default values of the scrollbar */
 .scrollbar::-webkit-scrollbar {
-    width: .5em;
-        &:hover { background-color: darken(red, 10); }
+    width: .5rem;
+    
     &-thumb { 
         border-radius: 5px;
-        background-color : darken(#f2f2f2, 40);
-        &:hover { background-color:  darken(#f2f2f2, 50); }
-     }
+        background-color : darken($default-color, 30);
+
+        &:hover { background-color:  darken($default-color, 40); }
+    }
+    
     &-track { background: lighten(#b8c0c8, 8); }
 }
-  
-@each $color, $value in $colors {
-    .scrollbar-#{$color}::-webkit-scrollbar-thumb {
-        background-color: $value;
-        &:hover { background-color: darken($value, 10); }
+
+/* Default values of the scrollbar-3d */
+.scrollbar.scrollbar-3d {
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        box-shadow: -3px -3px 6px  darken($default-color, 40) inset,3px 3px 3px  darken($default-color, 20) inset;
+
+        &:hover { box-shadow: -3px -3px 6px  darken($default-color, 60) inset,3px 3px 3px  darken($default-color, 30) inset; }
     }
 }
 
+  
+/* Different colors of the scrollbar */
+@each $color, $value in $colors {
+    .scrollbar-#{$color}::-webkit-scrollbar-thumb {
+        background-color: $value;
+
+        
+        &:hover { background-color: darken($value, 10); }
+    }
+
+    /* Different colors of the scrollbar-3d */    
+    .scrollbar-#{$color}.scrollbar-3d {
+        &::-webkit-scrollbar-thumb {
+            background-color: transparent;
+            box-shadow: -3px -3px 6px $value inset,3px 3px 3px lighten($value, 10) inset;
+
+            &:hover { box-shadow: -3px -3px 6px darken($value, 10) inset,3px 3px 3px $value inset; }
+        }
+    }
+}
+
+/* Different background colors of the scrollbar */
 @each $color, $value in $colors {
     .scrollbar-bg-#{$color}::-webkit-scrollbar-track {background: lighten($value, 30)}
 }
