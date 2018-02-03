@@ -1,0 +1,236 @@
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.progress,
+.progress-text,
+.progress-percent::after,
+.progress-percent::before {
+  width: 12rem;
+  height: 12rem; }
+
+.progress {
+  -webkit-clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 0%);
+  clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 0%);
+  overflow: hidden;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-family: sans-serif;
+  margin: .5rem; }
+  .progress-text {
+    border-radius: 100%;
+    position: relative;
+    background: -webkit-radial-gradient(transparent 58%, rgba(134, 197, 218, 0.2) 59%);
+    background: -o-radial-gradient(transparent 58%, rgba(134, 197, 218, 0.2) 59%);
+    background: radial-gradient(transparent 58%, rgba(134, 197, 218, 0.2) 59%);
+    text-align: center;
+    line-height: 10.99999rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #86c5da;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .progress-percent {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .progress-percent::after {
+      content: '';
+      position: absolute;
+      background: -webkit-radial-gradient(transparent 58%, #86c5da 59%);
+      background: -o-radial-gradient(transparent 58%, #86c5da 59%);
+      background: radial-gradient(transparent 58%, #86c5da 59%);
+      border-radius: 100%;
+      -webkit-clip-path: polygon(100% 100%, 100% 50%, 0% 50%, 0% 100%);
+      clip-path: polygon(100% 100%, 100% 50%, 0% 50%, 0% 100%); }
+    .progress-percent::before {
+      position: absolute;
+      font-size: 1.0rem;
+      color: #86c5da;
+      line-height: 8.0rem;
+      text-align: center;
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg); }
+
+.progress-percent-0::before {
+  content: "0%"; }
+
+.progress-percent-0::after {
+  -webkit-transform: rotate(-0deg);
+  -ms-transform: rotate(-0deg);
+  transform: rotate(-0deg); }
+
+.progress-percent-5::before {
+  content: "5%"; }
+
+.progress-percent-5::after {
+  -webkit-transform: rotate(-9deg);
+  -ms-transform: rotate(-9deg);
+  transform: rotate(-9deg); }
+
+.progress-percent-10::before {
+  content: "10%"; }
+
+.progress-percent-10::after {
+  -webkit-transform: rotate(-18deg);
+  -ms-transform: rotate(-18deg);
+  transform: rotate(-18deg); }
+
+.progress-percent-15::before {
+  content: "15%"; }
+
+.progress-percent-15::after {
+  -webkit-transform: rotate(-27deg);
+  -ms-transform: rotate(-27deg);
+  transform: rotate(-27deg); }
+
+.progress-percent-20::before {
+  content: "20%"; }
+
+.progress-percent-20::after {
+  -webkit-transform: rotate(-36deg);
+  -ms-transform: rotate(-36deg);
+  transform: rotate(-36deg); }
+
+.progress-percent-25::before {
+  content: "25%"; }
+
+.progress-percent-25::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+.progress-percent-30::before {
+  content: "30%"; }
+
+.progress-percent-30::after {
+  -webkit-transform: rotate(-54deg);
+  -ms-transform: rotate(-54deg);
+  transform: rotate(-54deg); }
+
+.progress-percent-35::before {
+  content: "35%"; }
+
+.progress-percent-35::after {
+  -webkit-transform: rotate(-63deg);
+  -ms-transform: rotate(-63deg);
+  transform: rotate(-63deg); }
+
+.progress-percent-40::before {
+  content: "40%"; }
+
+.progress-percent-40::after {
+  -webkit-transform: rotate(-72deg);
+  -ms-transform: rotate(-72deg);
+  transform: rotate(-72deg); }
+
+.progress-percent-45::before {
+  content: "45%"; }
+
+.progress-percent-45::after {
+  -webkit-transform: rotate(-81deg);
+  -ms-transform: rotate(-81deg);
+  transform: rotate(-81deg); }
+
+.progress-percent-50::before {
+  content: "50%"; }
+
+.progress-percent-50::after {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.progress-percent-55::before {
+  content: "55%"; }
+
+.progress-percent-55::after {
+  -webkit-transform: rotate(-99deg);
+  -ms-transform: rotate(-99deg);
+  transform: rotate(-99deg); }
+
+.progress-percent-60::before {
+  content: "60%"; }
+
+.progress-percent-60::after {
+  -webkit-transform: rotate(-108deg);
+  -ms-transform: rotate(-108deg);
+  transform: rotate(-108deg); }
+
+.progress-percent-65::before {
+  content: "65%"; }
+
+.progress-percent-65::after {
+  -webkit-transform: rotate(-117deg);
+  -ms-transform: rotate(-117deg);
+  transform: rotate(-117deg); }
+
+.progress-percent-70::before {
+  content: "70%"; }
+
+.progress-percent-70::after {
+  -webkit-transform: rotate(-126deg);
+  -ms-transform: rotate(-126deg);
+  transform: rotate(-126deg); }
+
+.progress-percent-75::before {
+  content: "75%"; }
+
+.progress-percent-75::after {
+  -webkit-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  transform: rotate(-135deg); }
+
+.progress-percent-80::before {
+  content: "80%"; }
+
+.progress-percent-80::after {
+  -webkit-transform: rotate(-144deg);
+  -ms-transform: rotate(-144deg);
+  transform: rotate(-144deg); }
+
+.progress-percent-85::before {
+  content: "85%"; }
+
+.progress-percent-85::after {
+  -webkit-transform: rotate(-153deg);
+  -ms-transform: rotate(-153deg);
+  transform: rotate(-153deg); }
+
+.progress-percent-90::before {
+  content: "90%"; }
+
+.progress-percent-90::after {
+  -webkit-transform: rotate(-162deg);
+  -ms-transform: rotate(-162deg);
+  transform: rotate(-162deg); }
+
+.progress-percent-95::before {
+  content: "95%"; }
+
+.progress-percent-95::after {
+  -webkit-transform: rotate(-171deg);
+  -ms-transform: rotate(-171deg);
+  transform: rotate(-171deg); }
+
+.progress-percent-100::before {
+  content: "100%"; }
+
+.progress-percent-100::after {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg); }

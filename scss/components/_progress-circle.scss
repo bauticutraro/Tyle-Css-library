@@ -1,0 +1,89 @@
+$progress-circle-size: 12rem;
+$progress-circle-ratio: 58%;
+/* ========================== Progress Circle ========================= */
+:root {
+  --color: darken(lightblue, 100);
+  --color2: rgba(darken(lightblue, 100), .2);
+}
+
+/* ====================== Progress Circle  Colors ===================== */
+@each $color, $value in $colors {
+  .progress-bg-#{$color} {
+    --color: $value;
+    --color2: rgba($value, .3);
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.progress,
+.progress-text,
+.progress-percent::after,
+.progress-percent::before {
+   width: $progress-circle-size;
+   height: $progress-circle-size;
+}
+
+.progress {
+   clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 0%); 
+   overflow: hidden;
+   display: inline-flex;
+   justify-content: center;
+   font-family: sans-serif;
+   margin: .5rem;
+
+  
+   &-text {
+    border-radius: 100%;
+    position: relative;
+    background: radial-gradient(transparent $progress-circle-ratio, var(--color2) $progress-circle-ratio + 1%);
+    text-align: center;
+    line-height: $progress-circle-size * 0.916666;
+    font-size: $progress-circle-size * 0.125;
+    text-transform: uppercase;
+    color: var(--color);
+    user-select: none;
+  }
+  
+  &-percent {
+    transform: rotateY(-180deg);
+    display: flex;
+    position: relative;
+  
+    &::after {
+      content: '';
+      position: absolute;
+      background: radial-gradient(transparent $progress-circle-ratio, var(--color) $progress-circle-ratio + 1%);
+      border-radius: 100%;
+      clip-path: polygon(100% 100%,100% 50%,0% 50%,0% 100%); 
+    }
+    
+    &::before {
+      position: absolute;
+      font-size: $progress-circle-size * 0.083333333;
+      color: var(--color);
+      line-height: $progress-circle-size * 0.6666666;
+      text-align: center;
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+@function progress($percent){
+  $deg: $percent / 100 * 180deg;
+  @return $deg;
+}
+
+@for $i from 0 through 20{
+  $rotate: progress($i*5);
+  $content: $i * 5;
+  .progress-percent-#{$i*5} {
+    &::before {content: '#{$content}%';}
+    &::after {transform: rotate(-#{$rotate});}  
+  }
+}
+
