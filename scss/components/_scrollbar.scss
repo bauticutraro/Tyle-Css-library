@@ -1,0 +1,23 @@
+/* =========================== CUSTOM SCROLLBAR ========================== */
+
+.scrollbar::-webkit-scrollbar {
+    width: .5em;
+        &:hover { background-color: darken(red, 10); }
+    &-thumb { 
+        border-radius: 5px;
+        background-color : darken(#f2f2f2, 40);
+        &:hover { background-color:  darken(#f2f2f2, 50); }
+     }
+    &-track { background: lighten(#b8c0c8, 8); }
+}
+  
+@each $color, $value in $colors {
+    .scrollbar-#{$color}::-webkit-scrollbar-thumb {
+        background-color: $value;
+        &:hover { background-color: darken($value, 10); }
+    }
+}
+
+@each $color, $value in $colors {
+    .scrollbar-bg-#{$color}::-webkit-scrollbar-track {background: lighten($value, 30)}
+}

@@ -378,6 +378,99 @@
   .container {
     max-width: 1284.04px; } }
 
+/* =========================== CUSTOM SCROLLBAR ========================== */
+.scrollbar::-webkit-scrollbar {
+  width: .5em; }
+  .scrollbar::-webkit-scrollbar:hover {
+    background-color: #cc0000; }
+  .scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #8c8c8c; }
+    .scrollbar::-webkit-scrollbar-thumb:hover {
+      background-color: #737373; }
+  .scrollbar::-webkit-scrollbar-track {
+    background: #cfd4da; }
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+  background-color: #0576FA; }
+  .scrollbar-primary::-webkit-scrollbar-thumb:hover {
+    background-color: #045ec8; }
+
+.scrollbar-secondary::-webkit-scrollbar-thumb {
+  background-color: #6E787D; }
+  .scrollbar-secondary::-webkit-scrollbar-thumb:hover {
+    background-color: #565e62; }
+
+.scrollbar-info::-webkit-scrollbar-thumb {
+  background-color: #1EAAC8; }
+  .scrollbar-info::-webkit-scrollbar-thumb:hover {
+    background-color: #17849c; }
+
+.scrollbar-success::-webkit-scrollbar-thumb {
+  background-color: #23C040; }
+  .scrollbar-success::-webkit-scrollbar-thumb:hover {
+    background-color: #1b9532; }
+
+.scrollbar-warning::-webkit-scrollbar-thumb {
+  background-color: #FABE0A; }
+  .scrollbar-warning::-webkit-scrollbar-thumb:hover {
+    background-color: #cd9b04; }
+
+.scrollbar-danger::-webkit-scrollbar-thumb {
+  background-color: #F53040; }
+  .scrollbar-danger::-webkit-scrollbar-thumb:hover {
+    background-color: #e70b1d; }
+
+.scrollbar-light::-webkit-scrollbar-thumb {
+  background-color: #F0F0F0; }
+  .scrollbar-light::-webkit-scrollbar-thumb:hover {
+    background-color: #d7d7d7; }
+
+.scrollbar-white::-webkit-scrollbar-thumb {
+  background-color: #FFFFFF; }
+  .scrollbar-white::-webkit-scrollbar-thumb:hover {
+    background-color: #e6e6e6; }
+
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: #1E1E1E; }
+  .scrollbar-dark::-webkit-scrollbar-thumb:hover {
+    background-color: #050505; }
+
+.scrollbar-black::-webkit-scrollbar-thumb {
+  background-color: #000000; }
+  .scrollbar-black::-webkit-scrollbar-thumb:hover {
+    background-color: black; }
+
+.scrollbar-bg-primary::-webkit-scrollbar-track {
+  background: #9bc8fd; }
+
+.scrollbar-bg-secondary::-webkit-scrollbar-track {
+  background: #bec3c6; }
+
+.scrollbar-bg-info::-webkit-scrollbar-track {
+  background: #91deee; }
+
+.scrollbar-bg-success::-webkit-scrollbar-track {
+  background: #91eba2; }
+
+.scrollbar-bg-warning::-webkit-scrollbar-track {
+  background: #fde6a0; }
+
+.scrollbar-bg-danger::-webkit-scrollbar-track {
+  background: #fcc2c7; }
+
+.scrollbar-bg-light::-webkit-scrollbar-track {
+  background: white; }
+
+.scrollbar-bg-white::-webkit-scrollbar-track {
+  background: white; }
+
+.scrollbar-bg-dark::-webkit-scrollbar-track {
+  background: #6b6b6b; }
+
+.scrollbar-bg-black::-webkit-scrollbar-track {
+  background: #4d4d4d; }
+
 /* Grid gap property */
 .grid-gap-0 {
   grid-gap: 0; }
