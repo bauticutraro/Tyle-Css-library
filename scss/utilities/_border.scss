@@ -1,31 +1,25 @@
 /* ============================= Border ============================= */
 
 /* ========================== Border Radius ========================= */
-// [class*="b-"],
-// [class*="bt-"],
-// [class*="bb-"],{
-//     border: 2px solid transparent;
-// }
-
-@each $side, $property in $border-sides {
-    @each $class-name, $value in $border-radius {
-        .b#{$side}-radius-#{$class-name} {
-            border#{$property}-radius: $value;
-        }
+@each $class-name, $value in $border-radius {
+    .b-radius-#{$class-name} {
+        border-radius: $value;
     }
 }
 
 /* ========================== Border Color ========================= */
 @each $color, $value in $colors {
-    @each $side, $property in $border-sides-2 {
-        .b#{$side}-color-#{$color} {
-            border-color: $value;
+    @each $side, $property in $border-sides {
+        .b#{$side}-#{$color} {
+            border#{$property}-color: $value;
         }
     }
 }
 
+
+
 .cuadro {
-    width: 200px;
+    width: 90%;
     height: 200px;
     font-size: 20px;
     font-family: sans-serif;
