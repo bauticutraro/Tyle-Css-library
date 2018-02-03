@@ -1,0 +1,6 @@
+/* ========================== Progress Bar ========================= */
+.progress-bar {
+  width: 100%;
+  margin: .3em;
+  border: 1px solid #f2f2f2;
+  background: blue; }

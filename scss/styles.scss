@@ -1,3 +1,6 @@
+// Base
+@import 'base/base';
+
 // configuration
 @import 'config/vars';
 @import 'config/functions';
@@ -21,6 +24,7 @@
 @import 'components/scrollbar';
 @import 'components/buttons';
 @import 'components/progress-circle';
+@import 'components/progress-bar';
 
 
 

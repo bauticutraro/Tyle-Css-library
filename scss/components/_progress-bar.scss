@@ -1,0 +1,25 @@
+/* ========================== Progress Bar ========================= */
+.progress-bar {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    // border-color: map-get($colors, light);
+    margin-top: 1rem;
+    padding: .3rem;
+    position: relative;
+    height: 2rem;
+
+    &-percent {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 50%;
+        font-size: 1rem;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

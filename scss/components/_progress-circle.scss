@@ -14,21 +14,16 @@ $progress-circle-ratio: 58%;
   }
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.progress,
-.progress-text,
-.progress-percent::after,
-.progress-percent::before {
+/* ====================== Progress Circle Components ===================== */
+.progress-circle,
+.progress-circle-text,
+.progress-circle-percent::after,
+.progress-circle-percent::before {
    width: $progress-circle-size;
    height: $progress-circle-size;
 }
 
-.progress {
+.progress-circle {
    clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 0%); 
    overflow: hidden;
    display: inline-flex;
@@ -81,7 +76,7 @@ $progress-circle-ratio: 58%;
 @for $i from 0 through 20{
   $rotate: progress($i*5);
   $content: $i * 5;
-  .progress-percent-#{$i*5} {
+  .progress-circle-percent-#{$i*5} {
     &::before {content: '#{$content}%';}
     &::after {transform: rotate(-#{$rotate});}  
   }
