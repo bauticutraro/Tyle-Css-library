@@ -1,0 +1,7 @@
+.poster {
+  position: relative; }
+  .poster::after {
+    position: absolute;
+    background: blue;
+    height: 200px;
+    width: 200px; }

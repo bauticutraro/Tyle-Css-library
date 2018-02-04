@@ -2244,3 +2244,53 @@
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+
+/* ====================== Poster ===================== */
+.poster {
+  position: relative; }
+  .poster::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .4; }
+  .poster * {
+    position: relative; }
+
+.poster-primary::before {
+  background-color: #0576FA; }
+
+.poster-secondary::before {
+  background-color: #6E787D; }
+
+.poster-info::before {
+  background-color: #1EAAC8; }
+
+.poster-success::before {
+  background-color: #23C040; }
+
+.poster-warning::before {
+  background-color: #FABE0A; }
+
+.poster-danger::before {
+  background-color: #F53040; }
+
+.poster-light::before {
+  background-color: #F0F0F0; }
+
+.poster-white::before {
+  background-color: #FFFFFF; }
+
+.poster-dark::before {
+  background-color: #1E1E1E; }
+
+.poster-black::before {
+  background-color: #000000; }
+
+.cuadro {
+  background-image: url("../logos/logo1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
