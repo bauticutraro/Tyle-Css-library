@@ -1,0 +1,5 @@
+@mixin media-query($breakpoint) {
+    @media screen and (min-width: map-get($responsive, $breakpoint)) {
+        @content;
+    }
+}

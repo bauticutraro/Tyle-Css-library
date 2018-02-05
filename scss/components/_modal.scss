@@ -1,0 +1,159 @@
+/* ====================== Modal Component ===================== */
+
+.modal {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background-color: rgba(0, 0, 0, .6);
+
+    
+
+    &-container {
+        position: relative;
+        background-color: #f2f2f2;
+        padding: 1rem;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-radius: 3px;
+        min-width: 30%;
+        max-width: 90%;     
+        max-height: 90vh;   
+        transition: all .3s ease;
+        animation: animation .2s linear forwards;
+
+        &.modal-xs { 
+            width: 30%;
+            min-width: 250px;
+            
+            @include media-query(xs) { min-width: 400px; }
+        }
+
+        &.modal-sm {
+            width: 50%;
+            min-width: 270px;
+
+            @include media-query(xs) { min-width: 440px; }
+            @include media-query(sm) { min-width: 500px; }
+        }
+
+        &.modal-md {
+            width: 70%;
+            min-width: 280px;
+
+            @include media-query(xs) { min-width: 440px; }
+            @include media-query(sm) { min-width: 600px; }
+        }
+
+        &.modal-lg { width: 90%; }
+    }
+
+    &.show { display: flex; }
+
+    &.animation { .modal-container { animation: animation-reverse .2s linear forwards reverse; } }    
+      
+
+    &-cross {
+        position: absolute;
+        cursor: pointer;
+        font-family: sans-serif;
+        font-weight: bold;
+
+        &-1 {
+            top: 5px;
+            right: 10px;
+            font-size: 1.6rem;
+            color: darken(#f2f2f2, 20);  
+            &:hover { color: darken(#f2f2f2, 40); }
+        }
+
+        &-2 {
+            top: 0;
+            right: 0;
+            padding-top: 2px;
+            margin: -14px;
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: -1px 1px 3px #000;    
+            border: 2px solid;
+            border-color: rgba(255,255,255,1);
+            color: rgba(255,255,255,1);
+            background-color: #000;
+            transition: .3s ease;
+            opacity: .8;
+            &:hover { 
+                box-shadow: -1px 1px 10px #000;
+                opacity: 1; }
+        }
+    }
+
+    &-start {
+         align-items: flex-start;
+         .modal-container { margin-top: 2rem; }
+    }
+    &-end {
+         align-items: flex-end;
+
+         .modal-container { 
+            margin-bottom: 2rem; 
+            animation: animation-end .2s linear forwards;  
+        }
+
+        &.animation { .modal-container { animation: animation-reverse-end .2s linear forwards reverse; } }    
+         
+    }    
+}
+
+// Modal Animation
+@keyframes animation{
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-reverse{
+    from {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-end{
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes animation-reverse-end{
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

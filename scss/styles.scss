@@ -8,8 +8,17 @@
 // Mixins
 @import 'mixins/mixins';
 
-// Utilities
+// Components
 @import 'components/grid-system';
+@import 'components/container';
+@import 'components/scrollbar';
+@import 'components/buttons';
+@import 'components/progress-circle';
+@import 'components/progress-bar';
+@import 'components/poster';
+@import 'components/modal';
+
+// Utilities
 @import 'utilities/grid';
 @import 'utilities/flexbox';
 @import 'utilities/display';
@@ -19,13 +28,6 @@
 @import 'utilities/img';
 @import 'utilities/border';
 
-// Components
-@import 'components/container';
-@import 'components/scrollbar';
-@import 'components/buttons';
-@import 'components/progress-circle';
-@import 'components/progress-bar';
-@import 'components/poster';
 
 
 
