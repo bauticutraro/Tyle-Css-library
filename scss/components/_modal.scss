@@ -23,6 +23,7 @@
         min-width: 30%;
         max-width: 90%;     
         max-height: 90vh;   
+        height: auto;
         transition: all .3s ease;
         animation: animation .2s linear forwards;
 
@@ -58,24 +59,20 @@
       
 
     &-cross {
-        position: absolute;
+        position: fixed;
         cursor: pointer;
         font-family: sans-serif;
         font-weight: bold;
-
-        &-1 {
-            top: 5px;
-            right: 10px;
-            font-size: 1.6rem;
-            color: darken(#f2f2f2, 20);  
-            &:hover { color: darken(#f2f2f2, 40); }
-        }
+        top: 5px;
+        right: 10px;
+        font-size: 1.6rem;
+        color: darken(#f2f2f2, 20);  
+        &:hover { color: darken(#f2f2f2, 40); }
+    
 
         &-2 {
-            top: 0;
-            right: 0;
+            right: 5px;
             padding-top: 2px;
-            margin: -14px;
             height: 30px;
             width: 30px;
             border-radius: 100%;
@@ -157,3 +154,10 @@
         opacity: 1;
     }
 }
+
+body.scroll-none {
+    padding-right: 17px;
+    overflow-y: hidden;
+}
+
+body.scrollbar.scroll-none { padding-right: .5rem; }
