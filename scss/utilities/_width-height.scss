@@ -1,0 +1,8 @@
+/* ============================= Width and Height ============================= */
+
+@for $i from 0 through 20 {
+    $class-name: $i * 5;
+    $value: $i * 5%;
+    .w-#{$class-name} { width: $value; }   
+    .h-#{$class-name} { height: $value; }
+}
