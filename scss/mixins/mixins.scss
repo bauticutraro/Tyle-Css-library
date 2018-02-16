@@ -3,3 +3,9 @@
         @content;
     }
 }
+
+@mixin media-query-max($breakpoint) {
+    @media screen and (max-width: map-get($responsive, $breakpoint)) {
+        @content;
+    }
+}
