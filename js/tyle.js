@@ -25,43 +25,46 @@ document.addEventListener('click', e => {
     }
 });
 
-// Nav
-let navList = document.querySelectorAll('.nav-list-container');
 
-document.addEventListener('click', e => {
-    // data-open-nav
-    if (e.target.getAttribute('data-open-nav')) {
-        let targetValue2 = e.target.getAttribute('data-open-nav');
-        let navElement = Array.from(navList).find(el => el.id === targetValue2);
-        if (navElement) {
-            navElement.classList.add('show-nav');
-            document.body.classList.add('scroll-none');                                                
-            
-        }
-    }
+/*
+    getElementById -> Selecciona el primer id encontrado (UNO)
+    getElementsByClassName -> Selecciona TODOS los elementos con la clase buscada
+    querySelector() -> Multi-Seleccionador (Puede buscar cualquier cosa), Pero retorna SOLO UNO
+    querySelectorAll -> ''                                                             TODOS
+*/
 
-    // data-open-nav
-    if (e.target.getAttribute('data-close-nav')) {
-        let targetValue2 = e.target.getAttribute('data-close-nav');
-        let navElement = Array.from(navList).find(el => el.id === targetValue2);
-        if (navElement) {
-            navElement.classList.remove('show-nav');
-            document.body.classList.remove('scroll-none');                                                
-            
-        }
-    }
-});
+let closeInput = document.querySelector('.close-input');
 
-let icon = document.getElementById('icon-search');
-let closeInput = document.getElementById('close-input');
-let input = document.getElementById('nav-input');
+function toggle(className, attribute, toggleClass, secondElement, secondToggleClass) { 
+    let target = document.querySelectorAll(`.${className}`);
 
-icon.addEventListener('click', () => {
-    input.classList.add('show-input'); 
-    closeInput.classList.add('translate-0');   
-});
+    document.addEventListener('click', e => { 
+        // data-open
+        if(e.target.getAttribute(`data-open-${attribute}`)) {
+            let targetValue = e.target.getAttribute(`data-open-${attribute}`);                   
+            let targetElement = Array.from(target).find(el => el.id === targetValue);               
+            if (targetElement) {
+                targetElement.classList.add(toggleClass);
+                secondElement.classList.add(secondToggleClass);
+                                                                                                                         
+            }
+        } // end data-open
 
-closeInput.addEventListener('click', () => {
-    input.classList.remove('show-input');    
-    closeInput.classList.remove('translate-0');
-});
+        // data-close
+        if (e.target.getAttribute(`data-close-${attribute}`)) {
+            let targetValue = e.target.getAttribute(`data-close-${attribute}`);        
+            let targetElement = Array.from(target).find(el => el.id === targetValue);
+            if (targetElement) {
+                targetElement.classList.remove(toggleClass); 
+                secondElement.classList.remove(secondToggleClass);                                                                                                                                                                                                                         
+            }
+        } // end data-close
+
+    });
+}
+
+// Navbar toggleable
+toggle('nav-list-container', 'nav', 'show-nav', document.body, 'scroll-none');
+
+// Nav search bar
+toggle('nav-input', 'search', 'show-input', closeInput, 'translate-0');
