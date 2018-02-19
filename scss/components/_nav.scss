@@ -144,6 +144,9 @@
         width: 100%;
         left: 0;
         right: 0;
+        color: $dark;
+        letter-spacing: .1rem;
+        padding-right: 2rem;
     }
 
     &-grow {
@@ -155,6 +158,11 @@
 
         .nav-link { text-align: center; }
     }
+}
+
+.icon-cross {
+    display: flex;
+    align-items: center;
 }
 
 .nav-effect-left { transform: translateX(-100%); }

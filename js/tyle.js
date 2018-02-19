@@ -25,14 +25,6 @@ document.addEventListener('click', e => {
     }
 });
 
-
-/*
-    getElementById -> Selecciona el primer id encontrado (UNO)
-    getElementsByClassName -> Selecciona TODOS los elementos con la clase buscada
-    querySelector() -> Multi-Seleccionador (Puede buscar cualquier cosa), Pero retorna SOLO UNO
-    querySelectorAll -> ''                                                             TODOS
-*/
-
 let closeInput = document.querySelector('.close-input');
 
 function toggle(className, attribute, toggleClass, secondElement, secondToggleClass) { 
