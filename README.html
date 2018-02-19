@@ -8,14 +8,21 @@
 Tyle es una libreía de css de código abierto con un sistema de grid de 12 columnas (utilizando css grid). Además de contar con el sistema de grid, cuenta tambien con propiedades utilitarias, como lo son por ejemplo las propiedades de flexbox, de grid, propiedades para los márgenes, entre otros.</p>
 <p>Tyle también cuenta con componentes adicionales como por ejemplo botones, barras de progreso, navs, modals, cards, entre otros.</p>
 <hr>
-<p>###¿Cómo utilizarlo?
+<p>##¿Cómo utilizarlo?
 Para empezar, una vez descargado podes vincular, a tu página .html, diferentes archivos de Tyle:</p>
 <pre><code>tyle/ 
  ├── css/
  |   ├── tyle.css
  |   ├── tyle.min.css
+ |   |
  |   ├── tyle-grid-sistem.css
- |   └── tyle-grid-sistem.min.css
+ |   ├── tyle-grid-sistem.min.css
+ |   |
+ |   ├── tyle-utilities.css
+ |   ├── tyle-utilities.min.css
+ |   |
+ |   ├── tyle-components.css
+ |   └── tyle-components.min.css
  |
  └── js/
      ├── tyle.js
@@ -24,7 +31,7 @@ Para empezar, una vez descargado podes vincular, a tu página .html, diferentes 
 <table>
 <thead>
 <tr>
-<th>Archivos css</th>
+<th>Archivos</th>
 <th style="text-align:center">Sistema de grid</th>
 <th style="text-align:center">Componentes</th>
 <th style="text-align:center">Clases utilitarias</th>
@@ -32,31 +39,53 @@ Para empezar, una vez descargado podes vincular, a tu página .html, diferentes 
 </thead>
 <tbody>
 <tr>
-<td><strong>tyle.css</strong></td>
+<td><strong>tyle.css</strong><br><strong>tyle.min.css</strong></td>
 <td style="text-align:center">Incluido</td>
 <td style="text-align:center">Incluido</td>
 <td style="text-align:center">Incluido</td>
 </tr>
 <tr>
-<td><strong>tyle.min.css</strong></td>
-<td style="text-align:center">Incluido</td>
-<td style="text-align:center">Incluido</td>
-<td style="text-align:center">Incluido</td>
-</tr>
-<tr>
-<td><strong>tyle-grid-sistem.css</strong></td>
+<td><strong>tyle-grid-sistem.css</strong><br><strong>tyle-grid-sistem.min.css</strong></td>
 <td style="text-align:center">Incluido</td>
 <td style="text-align:center">No Incluido</td>
-<td style="text-align:center">Solor algunas</td>
+<td style="text-align:center">Solo las de grid y flexbox</td>
 </tr>
 <tr>
-<td><strong>tyle-grid-sistem.min.css</strong></td>
+<td><strong>tyle-utilities.css</strong><br><strong>tyle-utilities.min.css</strong></td>
+<td style="text-align:center">No Incluido</td>
+<td style="text-align:center">No Incluido</td>
+<td style="text-align:center">Incluido</td>
+</tr>
+<tr>
+<td><strong>tyle-components.css</strong><br><strong>tyle-components.min.css</strong></td>
+<td style="text-align:center">No Incluido</td>
 <td style="text-align:center">Incluido</td>
 <td style="text-align:center">No Incluido</td>
-<td style="text-align:center">Solor algunas</td>
 </tr>
 </tbody>
 </table>
+<p>Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si querés utilizar todo lo que es Tyle, o solo su sistema de grid o sus componentes o sus clases utilitarias.</p>
+<h3 id="estructura-b-sica-para-comenzar-a-utilizar-tyle-">Estructura básica para comenzar a utilizar Tyle:</h3>
+<pre><code class="lang-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+    &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;ie=edge&quot;&gt;
+    &lt;title&gt;Comenzando a utilizar Tyle&lt;/title&gt;
+    &lt;link href=&quot;https://file.myfontastic.com/VKjMJTbzfBSFneVYf4x7VT/icons.css&quot; rel=&quot;stylesheet&quot;&gt;    
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;tyle/css/tyle.min.css&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;!-- 
+        Contenido de tu página
+    --&gt;
+    &lt;script src=&quot;tyle/js/tyle.min.js&quot;&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p>Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.
+Además, otra cosa que podrás observar en el anterior código es que se está linkeando un archivo exterior, este archivo es de fontastic (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle.</p>
 
       </body>
     </html>
