@@ -161,6 +161,24 @@ Ejemplo:</p>
 </code></pre>
 <p>En este ejemplo, el div va a ocupar 12 columnas hasta 768px, debido a que a partir de 768px ocupará 4 columnas, y a partir de 1024px ocupará 3 columnas.</p>
 <p>Y así podes seguir y formar todas las combinaciones que quieras segun lo necesite tu página.</p>
+<h4 id="start-column">Start column</h4>
+<p>Tyle también cuenta con clases para que puedas elegir a partir de que columna empieza el div.
+Dicha clase se llama de la siguientes maneras:
+<strong><em>start-(A partir de que columna empieza)</em></strong>
+O también podes elegir a partir de que medida empezará en la columna que elijas, poniendo la clase de la siguiente forma:
+<strong><em>start-(A partir de que medida)-(A partir de que columna empieza)</em></strong></p>
+<p>Las medidas son las mismas que las mencionadas anteriormente (xs, sm, md, lg, xl).</p>
+<p>En el siguiente ejemplo podrás observar mejor lo mencionado anteriormente:</p>
+<p>Html</p>
+<pre><code class="lang-html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-5 start-5&quot;&gt;Comienza en la columna 5&lt;/div&gt;
+    &lt;div class=&quot;col-8 start-2&quot;&gt;Comienza en la columna 2&lt;/div&gt;
+    &lt;div class=&quot;col-9 start-3&quot;&gt;Comienza en la columna 3&lt;/div&gt;    
+&lt;/div&gt;
+</code></pre>
+<p>Resultado:</p>
+<p><img src="/images/start-col.png" alt="Start Column" title="Start Column"></p>
+<p>Como podrás observar, cada div comienza donde se lo indiques.</p>
 
       </body>
     </html>
