@@ -84,8 +84,83 @@ Para empezar, una vez descargado podes vincular, a tu página .html, diferentes 
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
-<p>Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.
-Además, otra cosa que podrás observar en el anterior código es que se está linkeando un archivo exterior, este archivo es de fontastic (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle.</p>
+<p>Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.</p>
+<p>Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior,este archivo es de <em>fontastic</em> (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle.</p>
+<h2 id="documentaci-n-">Documentación:</h2>
+<h3 id="sistema-de-grid-">Sistema de Grid:</h3>
+<p>Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.</p>
+<p>Para utilizar el sistema de grid debes crear un div con la clase <strong><em>row</em></strong>, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase <em>row</em> son las diferentes clases de columnas que las indicas con la clase <strong><em>col-</em></strong> y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se muestra en el siguiente bloque de código:</p>
+<p>Html:</p>
+<pre><code class="lang-html">    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-1&quot;&gt;Una columna&lt;/div&gt;
+        &lt;div class=&quot;col-2&quot;&gt;Dos columnas&lt;/div&gt;
+        &lt;div class=&quot;col-3&quot;&gt;Tres columnas&lt;/div&gt;
+        &lt;div class=&quot;col-4&quot;&gt;Cuatro columnas&lt;/div&gt;
+        &lt;div class=&quot;col-5&quot;&gt;Cinco columnas&lt;/div&gt;
+        &lt;div class=&quot;col-6&quot;&gt;Seis columnas&lt;/div&gt;
+        &lt;div class=&quot;col-7&quot;&gt;Siete columnas&lt;/div&gt;
+        &lt;div class=&quot;col-8&quot;&gt;Ocho columnas&lt;/div&gt;
+        &lt;div class=&quot;col-9&quot;&gt;Nueve columnas&lt;/div&gt;
+        &lt;div class=&quot;col-10&quot;&gt;Diez columnas&lt;/div&gt;
+        &lt;div class=&quot;col-11&quot;&gt;Once columnas&lt;/div&gt;
+        &lt;div class=&quot;col-12&quot;&gt;Doce columnas&lt;/div&gt;
+    &lt;/div&gt;
+</code></pre>
+<p>Con un poco de estilos css (indicándole a los contenedores una altura, un color de fondo, un color al texto, un centrado total al texto, una separación entre los divs, que cada contenedor valla debajo y no al lado, etc...) , obtenés el siguiente resultado:</p>
+<p><img src="/images/grid-sistem.png" alt="Grid sistem" title="Grid sistem"></p>
+<p>Sin embargo, esto no es todo acerca del sistema de grid, ya que Tyle cuenta con un sistema de grid totalmente responsive.
+Estas clases para el responsive de los elementos se definen de la siguiente manera:
+<strong><em>col</em>-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)</strong>
+Las medidas utilizadas en Tyle son las siguientes: </p>
+<table>
+<thead>
+<tr>
+<th>Clase</th>
+<th style="text-align:center">Desde</th>
+<th style="text-align:center">Hasta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>xs</em></td>
+<td style="text-align:center">480px</td>
+<td style="text-align:center">639px</td>
+</tr>
+<tr>
+<td><em>sm</em></td>
+<td style="text-align:center">640px</td>
+<td style="text-align:center">767px</td>
+</tr>
+<tr>
+<td><em>md</em></td>
+<td style="text-align:center">768px</td>
+<td style="text-align:center">1023px</td>
+</tr>
+<tr>
+<td><em>lg</em></td>
+<td style="text-align:center">1024px</td>
+<td style="text-align:center">1365px</td>
+</tr>
+<tr>
+<td><em>xl</em></td>
+<td style="text-align:center">1366px</td>
+<td style="text-align:center">+1366px</td>
+</tr>
+</tbody>
+</table>
+<p>Por lo tanto podés formar clases como por ejemplo:
+<em>col-xs-12</em> (va a ocupar 12 columnas desde 480px para arriba)
+<em>col-sm-6</em> (va a ocupar 6 columnas desde 640px para arriba)
+<em>col-md-4</em> (va a ocupar 4 columnas desde 768px para arriba)
+<em>col-lg-3</em> (va a ocupar 3 columnas desde 1024px para arriba)</p>
+<p>Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase con la medida.
+Ejemplo:</p>
+<pre><code class="lang-html">&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+<p>En este ejemplo, el div va a ocupar 12 columnas hasta 768px, debido a que a partir de 768px ocupará 4 columnas, y a partir de 1024px ocupará 3 columnas.</p>
+<p>Y así podes seguir y formar todas las combinaciones que quieras segun lo necesite tu página.</p>
 
       </body>
     </html>
