@@ -24,11 +24,12 @@
     .g-align-items-#{$key} { align-items: $value; }
     .g-justify-self-#{$key} { justify-self: $value; }
     .g-align-self-#{$key} { align-self: $value; }
+   
 }
 
 // Justify-content and align-content properties
 /* Justify-content and align-content properties */
-@each $key, $value in $content {
+@each $key, $value in $g-content {
     .g-justify-content-#{$key} { justify-content: $value; }
-    .g-align-content-#{$key} { align-content: $value; }
+    .g-align-content-#{$key} { align-content: $value; }   
 }
