@@ -102,7 +102,7 @@ Las medidas utilizadas en Tyle son las siguientes:
 | *sm*  | 640px  | 767px   |
 | *md*  | 768px  | 1023px  |
 | *lg*  | 1024px | 1365px  |
-| *xl*  | 1366px | <li>1<em>66px |
+| *xl*  | 1366px | 1366px |
 
 Por lo tanto podés formar clases como por ejemplo:
 *col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
@@ -241,13 +241,13 @@ La *g-* es para diferenciar las clases de grid de las de flexbox, ya que en flex
 - #### Align Items:
 Esta propiedad ***align-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
 <ul>
-    <li> <em>start<em>: Alinea el contenido en la parte superior del área de la cuadrícula.</em>
+    <li> <em>start<em>: Alinea el contenido en la parte superior del área de la cuadrícula.</li>
     <img src="/images/align-items-1.png" alt="Align Items" style="display: block;" />
-    <li> <em>end<em>: Alinea el contenido en la parte inferior del área de la cuadrícula.</em>
+    <li> <em>end<em>: Alinea el contenido en la parte inferior del área de la cuadrícula.</li>
     <img src="/images/align-items-2.png" alt="Align Items" style="display: block;" />
-    <li> <em>center<em>: Alinea el contenido en el centro del área de la cuadrícula.</em>
+    <li> <em>center<em>: Alinea el contenido en el centro del área de la cuadrícula.</li>
     <img src="/images/align-items-3.png" alt="Align Items" style="display: block;" />
-    <li> <em>stretch<em>: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).</em>
+    <li> <em>stretch<em>: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).</li>
     <img src="/images/justify-items-4.png" alt="Align Items" style="display: block;" />
 </ul>
 Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
