@@ -60,7 +60,7 @@ Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si que
 ```
 Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.
 
-Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior,este archivo es de _fontastic_ (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es necesario linkearlo si utilizas algún componente, si no, no es necesario).
+Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior,este archivo es de *fontastic* (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es necesario linkearlo si utilizas algún componente, si no, no es necesario).
 
 ## Documentación:
 
@@ -68,7 +68,7 @@ Además, otra cosa que podrás observar en el anterior código es que, se está 
 
 Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
 
-Para utilizar el sistema de grid debes crear un div con la clase **_row_**, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase _row_ son las diferentes clases de columnas que las indicas con la clase **_col-_** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se muestra en el siguiente bloque de código:
+Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se muestra en el siguiente bloque de código:
 
 Html:
 ```html
@@ -93,22 +93,22 @@ Con un poco de estilos css (indicándole a los contenedores una altura, un color
 
 Sin embargo, esto no es todo acerca del sistema de grid, ya que Tyle cuenta con un sistema de grid totalmente responsive.
 Estas clases para el responsive de los elementos se definen de la siguiente manera:
-**_col_-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
+***col*-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
 Las medidas utilizadas en Tyle son las siguientes: 
 
 | Clase | Desde  |  Hasta  |
 | ----- |:-----: | :-----: |
-| _xs_  | 480px  | 639px   |
-| _sm_  | 640px  | 767px   |
-| _md_  | 768px  | 1023px  |
-| _lg_  | 1024px | 1365px  |
-| _xl_  | 1366px | +1366px |
+| *xs*  | 480px  | 639px   |
+| *sm*  | 640px  | 767px   |
+| *md*  | 768px  | 1023px  |
+| *lg*  | 1024px | 1365px  |
+| *xl*  | 1366px | +1366px |
 
 Por lo tanto podés formar clases como por ejemplo:
-_col-xs-12_ (va a ocupar 12 columnas desde 480px para arriba)
-_col-sm-6_ (va a ocupar 6 columnas desde 640px para arriba)
-_col-md-4_ (va a ocupar 4 columnas desde 768px para arriba)
-_col-lg-3_ (va a ocupar 3 columnas desde 1024px para arriba)
+*col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
+*col-sm-6* (va a ocupar 6 columnas desde 640px para arriba)
+*col-md-4* (va a ocupar 4 columnas desde 768px para arriba)
+*col-lg-3* (va a ocupar 3 columnas desde 1024px para arriba)
 
 Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase con la medida.
 Ejemplo:
@@ -124,9 +124,9 @@ Y así podes seguir y formar todas las combinaciones que quieras segun lo necesi
 #### Start Column
 Tyle también cuenta con clases para que puedas elegir a partir de que columna empieza el div.
 Dicha clase se llama de la siguientes maneras:
-**_start-(A partir de que columna empieza)_**
+***start-(A partir de que columna empieza)***
 O también podes elegir a partir de que medida empezará en la columna que elijas, poniendo la clase de la siguiente forma:
-**_start-(A partir de que medida)-(A partir de que columna empieza)_**
+***start-(A partir de que medida)-(A partir de que columna empieza)***
 
 Las medidas son las mismas que las mencionadas anteriormente (xs, sm, md, lg, xl).
 
@@ -152,25 +152,25 @@ Como podrás observar (con la ayuda del inspector de google Chrome) que cada div
 
 - #### Grid Gap:
 
-La proppiedad **_grid-gap_** se puede aplicar solamente a los componentes que tengan la propiedad _display: grid_.
+La proppiedad ***grid-gap*** se puede aplicar solamente a los componentes que tengan la propiedad *display: grid*.
 Grid gap se refiere a la separación que hay entre las columnas y filas que se encuentran dentro del componente que tenga la propiedad display: grid.
 
-Como podrás ver en la siguiente imagen, el contenedor (con la clase _row_) no tiene la propiedad _grid-gap_, y por lo tanto no hay ninguna separación entre sus columnas y filas.
+Como podrás ver en la siguiente imagen, el contenedor (con la clase *row*) no tiene la propiedad *grid-gap*, y por lo tanto no hay ninguna separación entre sus columnas y filas.
 ![Sin Grid Gap](/images/grid-gap-0.png "Sin Grid Gap")
 
-En cambio, en la siguiente imagen, el contenedor si tiene la propiedad _grid-gap_, y por la tanto se genera una separación entre sus columnas y filas.
+En cambio, en la siguiente imagen, el contenedor si tiene la propiedad *grid-gap*, y por la tanto se genera una separación entre sus columnas y filas.
 ![Con Grid Gap](/images/grid-gap-1.png "Con Grid Gap")
 
-Tyle cuenta con clases para el _grid-gap_. Estas calses se llaman de la siguiente manera:
+Tyle cuenta con clases para el *grid-gap*. Estas calses se llaman de la siguiente manera:
 **grid-gap-(número)**
-El numero que va luego de _grid-gap-_ puede ir del 0 hasta al 10. Cuanto mas grande sea el número, habrá una mayor separación entre columnas y filas.
+El numero que va luego de *grid-gap-* puede ir del 0 hasta al 10. Cuanto mas grande sea el número, habrá una mayor separación entre columnas y filas.
 
 
 - #### Order:
-La propiedad **_order_** sirve para indicarle un orden al componente que tenga dicha propiedad. Solo se le puede aplicar a los hijos directos de los componentes que tengan la propiedad _display: grid_ o la propiedad _display: flex_. La propiedad _order_ solor acepta números, y estos números pueden ser tanto positivos, como negativos. El valor por defecto de la propiedad _order_ es 0.
-Tyle cuenta con clases para la propiedad _order_, y dicahs clases se indican de la siguiente forma:
-**_order-(número)**
-El número, que va luego de _order-_, puede ir desde -6 hasta 6.
+La propiedad ***order*** sirve para indicarle un orden al componente que tenga dicha propiedad. Solo se le puede aplicar a los hijos directos de los componentes que tengan la propiedad *display: grid* o la propiedad *display: flex*. La propiedad *order* solor acepta números, y estos números pueden ser tanto positivos, como negativos. El valor por defecto de la propiedad *order* es 0.
+Tyle cuenta con clases para la propiedad *order*, y dicahs clases se indican de la siguiente forma:
+***order-(número)***
+El número, que va luego de *order-*, puede ir desde -6 hasta 6.
 
 Ejemplo:
 ```html
@@ -193,9 +193,9 @@ Ejemplo:
 Resultado:
 ![Sin la propiedad order](/images/order-0.png "Sin la propiedad order")
 
-Como podrás ver en la anterior imagen, los elementos no tienen la propiedad _order_, y por lo tanto, están ubicados según su posición en el html.
+Como podrás ver en la anterior imagen, los elementos no tienen la propiedad *order*, y por lo tanto, están ubicados según su posición en el html.
 
-En cambio, en la siguiente situación, los elementos tienen la propiedad _order_, y ya no se posicionan según están ubicados en el html, si no que se posicionan según la propiedad order
+En cambio, en la siguiente situación, los elementos tienen la propiedad *order*, y ya no se posicionan según están ubicados en el html, si no que se posicionan según la propiedad order
 
 ```html
 <div class="row">
@@ -218,110 +218,122 @@ Resultado:
 ![Con la propiedad order](/images/order-1.png "Con la propiedad order")
 
 - #### Justify Items:
-Esta propiedad **_justify-items_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la fila. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea el contenido en el extremo izquierdo del área de la cuadrícula.
+Esta propiedad ***justify-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la fila. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea el contenido en el extremo izquierdo del área de la cuadrícula.
 <img src="/images/justify-items-1.png" alt="Justify Items" style="dispaly: block;">
-- _end_: Alinea el contenido en el extremo derecho del área de la cuadrícula.
+- *end*: Alinea el contenido en el extremo derecho del área de la cuadrícula.
 <img src="/images/justify-items-2.png" alt="Justify Items" style="dispaly: block;">
-- _center_: Alinea el contenido en el centro del área de la cuadrícula.
+- *center*: Alinea el contenido en el centro del área de la cuadrícula.
 <img src="/images/justify-items-3.png" alt="Justify Items" style="dispaly: block;">
-- _stretch_: Rellena toda la altura del área de la cuadrícula (este es el valor predeterminado).
+- *stretch*: Rellena toda la altura del área de la cuadrícula (este es el valor predeterminado).
 <img src="/images/justify-items-4.png" alt="Justify Items" style="dispaly: block;">
 
 
 Tyle cuenta con clases para estas propiedades. Para indicar dicahs clases se hace de la siguiente manera:
-**_g-justify-items-(valor)_**
-La _g-_ es para diferenciar las clases de grid de las de flexbox, ya que en flexbox hay propiedades con el mismo nombre pero diferente valor. Y los _valores_ son los mencionados anteriormente (start, end, center, stretch).
+
+***g-justify-items-(valor)***
+
+La *g-* es para diferenciar las clases de grid de las de flexbox, ya que en flexbox hay propiedades con el mismo nombre pero diferente valor. Y los *valores* son los mencionados anteriormente (start, end, center, stretch).
 
 
 - #### Align Items:
-Esta propiedad **_align-items_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea el contenido en la parte superior del área de la cuadrícula.
+Esta propiedad ***align-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea el contenido en la parte superior del área de la cuadrícula.
 <img src="/images/align-items-1.png" alt="Align Items" style="dispaly: block;">
-- _end_: Alinea el contenido en la parte inferior del área de la cuadrícula.
+- *end*: Alinea el contenido en la parte inferior del área de la cuadrícula.
 <img src="/images/align-items-2.png" alt="Align Items" style="dispaly: block;">
-- _center_: Alinea el contenido en el centro del área de la cuadrícula.
+- *center*: Alinea el contenido en el centro del área de la cuadrícula.
 <img src="/images/align-items-3.png" alt="Align Items" style="dispaly: block;">
-- _stretch_: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).
+- *stretch*: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).
 <img src="/images/justify-items-4.png" alt="Align Items" style="dispaly: block;">
 
 Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
-**_g-align-items-(valor)_**
-Los _valores_ son los mencionados anteriormente (start, end, center, stretch).
+
+***g-align-items-(valor)***
+
+Los *valores* son los mencionados anteriormente (start, end, center, stretch).
 
 
 - #### Justify Content:
-Esta propiedad **_justify-content_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es alinear el todo el contenido de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la cuadrícula a lo largo del eje de la fila. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea la cuadrícula con el extremo izquierdo del contenedor de la cuadrícula.
+Esta propiedad ***justify-content*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el todo el contenido de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la cuadrícula a lo largo del eje de la fila. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea la cuadrícula con el extremo izquierdo del contenedor de la cuadrícula.
 <img src="/images/justify-content-1.png" alt="Justify Content" style="dispaly: block;">
-- _end_: Alinea la grilla con el extremo derecho del contenedor de la grilla.
+- *end*: Alinea la grilla con el extremo derecho del contenedor de la grilla.
 <img src="/images/justify-content-2.png" alt="Justify Content" style="dispaly: block;">
-- _center_: Alinea la cuadrícula en el centro del contenedor de la cuadrícula.
+- *center*: Alinea la cuadrícula en el centro del contenedor de la cuadrícula.
 <img src="/images/justify-content-3.png" alt="Justify Content" style="dispaly: block;">
-- _stretch_: Cambia el tamaño de los elementos de la grilla para permitir que la grilla ocupe todo el ancho del contenedor de la grilla.
+- *stretch*: Cambia el tamaño de los elementos de la grilla para permitir que la grilla ocupe todo el ancho del contenedor de la grilla.
 <img src="/images/justify-content-4.png" alt="Justify Content" style="dispaly: block;">
-- _space-between_: Coloca una cantidad par de espacio entre cada elemento de la cuadrícula, sin espacio en los extremos.
+- *space-between*: Coloca una cantidad par de espacio entre cada elemento de la cuadrícula, sin espacio en los extremos.
 <img src="/images/justify-content-5.png" alt="Justify Content" style="dispaly: block;">
-- _space-around_: Coloca una cantidad par de espacios entre cada elemento de la grilla, con espacios de la mitad de tamaño en los extremos.
+- *space-around*: Coloca una cantidad par de espacios entre cada elemento de la grilla, con espacios de la mitad de tamaño en los extremos.
 <img src="/images/justify-content-6.png" alt="Justify Content" style="dispaly: block;">
-- _space-evenly_: Coloca una cantidad igual de espacio entre cada elemento de la cuadrícula, incluidos los extremos.
+- *space-evenly*: Coloca una cantidad igual de espacio entre cada elemento de la cuadrícula, incluidos los extremos.
 <img src="/images/justify-content-7.png" alt="Justify Content" style="dispaly: block;">
 
 
 Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
-**_g-justify-content-(valor)_**
-Los _valores_ son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
+
+***g-justify-content-(valor)***
+
+Los *valores* son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
 
 
 - #### Align Content:
-Esta propiedad **_align-content_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es esestablecer la alineación de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea la cuadrícula con la parte superior del contenedor de la cuadrícula.
+Esta propiedad ***align-content*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es esestablecer la alineación de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea la cuadrícula con la parte superior del contenedor de la cuadrícula.
 <img src="/images/align-content-1.png" alt="Align Content" style="dispaly: block;">
-- _end_: Alinea la grilla con la parte inferior del contenedor de la grilla.
+- *end*: Alinea la grilla con la parte inferior del contenedor de la grilla.
 <img src="/images/align-content-2.png" alt="Align Content" style="dispaly: block;">
-- _center_: Ainea la cuadrícula en el centro del contenedor de la cuadrícula.
+- *center*: Ainea la cuadrícula en el centro del contenedor de la cuadrícula.
 <img src="/images/align-content-3.png" alt="Align Content" style="dispaly: block;">
-- _stretch_: Cambia el tamaño de los elementos de la grilla para permitir que la grilla ocupe toda la altura del contenedor de la grilla.
+- *stretch*: Cambia el tamaño de los elementos de la grilla para permitir que la grilla ocupe toda la altura del contenedor de la grilla.
 <img src="/images/align-content-4.png" alt="Align Content" style="dispaly: block;">
-- _space-between_: Coloca una cantidad par de espacio entre cada elemento de la cuadrícula, sin espacio en los extremos.
+- *space-between*: Coloca una cantidad par de espacio entre cada elemento de la cuadrícula, sin espacio en los extremos.
 <img src="/images/align-content-5.png" alt="Align Content" style="dispaly: block;">
-- _space-around_: Coloca una cantidad par de espacios entre cada elemento de la grilla, con espacios de la mitad de tamaño en los extremos.
+- *space-around*: Coloca una cantidad par de espacios entre cada elemento de la grilla, con espacios de la mitad de tamaño en los extremos.
 <img src="/images/align-content-6.png" alt="Align Content" style="dispaly: block;">
-- _space-evenly_: Coloca una cantidad igual de espacio entre cada elemento de la cuadrícula, incluidos los extremos.
+- *space-evenly*: Coloca una cantidad igual de espacio entre cada elemento de la cuadrícula, incluidos los extremos.
 <img src="/images/align-content-7.png" alt="Align Content" style="dispaly: block;">
 
 
 Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
-**_g-align-content-(valor)_**
-Los _valores_ son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
+
+***g-align-content-(valor)***
+
+Los *valores* son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
 
 
 - #### Justify Self:
-Esta propiedad **_justify-self_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la fila. Este valor se aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea el contenido en el extremo izquierdo del área de la cuadrícula.
+Esta propiedad ***justify-self*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la fila. Este valor se aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea el contenido en el extremo izquierdo del área de la cuadrícula.
 <img src="/images/justify-self-1.png" alt="Justify Self" style="dispaly: block;">
-- _end_: Alinea el contenido en el extremo derecho del área de la cuadrícula.
+- *end*: Alinea el contenido en el extremo derecho del área de la cuadrícula.
 <img src="/images/justify-self-2.png" alt="Justify Self" style="dispaly: block;">
-- _center_: Alinea el contenido en el centro del área de la cuadrícula.
+- *center*: Alinea el contenido en el centro del área de la cuadrícula.
 <img src="/images/justify-self-3.png" alt="Justify Self" style="dispaly: block;">
-- _stretch_: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).
+- *stretch*: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).
 <img src="/images/justify-self-4.png" alt="Justify Self" style="dispaly: block;">
 
 Tyle cuenta con clases para estas propiedades. Para indicar dicahs clases se hace de la siguiente manera:
-**_g-justify-self-(valor)_**
-Los _valores_ son los mencionados anteriormente (start, end, center, stretch).
+
+***g-justify-self-(valor)***
+
+Los *valores* son los mencionados anteriormente (start, end, center, stretch).
 
 - #### Align Self:
-Esta propiedad **_align-self_** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad _display: grid_. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Este valor se aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede tener los siguientes valores:
-- _start_: Alinea el contenido en la parte superior del área de la cuadrícula.
+Esta propiedad ***align-self*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Este valor se aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede tener los siguientes valores:
+- *start*: Alinea el contenido en la parte superior del área de la cuadrícula.
 <img src="/images/align-self-1.png" alt="Align Self" style="dispaly: block;">
-- _end_: Alinea el contenido en la parte inferior del área de la cuadrícula.
+- *end*: Alinea el contenido en la parte inferior del área de la cuadrícula.
 <img src="/images/align-self-2.png" alt="Align Self" style="dispaly: block;">
-- _center_: Alinea el contenido en el centro del área de la cuadrícula.
+- *center*: Alinea el contenido en el centro del área de la cuadrícula.
 <img src="/images/align-self-3.png" alt="Align Self" style="dispaly: block;">
-- _stretch_: Rellena toda la altura del área de la cuadrícula (este es el valor predeterminado).
+- *stretch*: Rellena toda la altura del área de la cuadrícula (este es el valor predeterminado).
 <img src="/images/align-self-4.png" alt="Align Self" style="dispaly: block;">
 
 Tyle cuenta con clases para estas propiedades. Para indicar dicahs clases se hace de la siguiente manera:
-**_g-align-self-(valor)_**
-Los _valores_ son los mencionados anteriormente (start, end, center, stretch).
+
+***g-align-self-(valor)***
+
+Los *valores* son los mencionados anteriormente (start, end, center, stretch).
