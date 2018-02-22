@@ -6,72 +6,72 @@ Tyle también cuenta con componentes adicionales como por ejemplo botones, barra
 ---
 
 ## ¿Cómo utilizarlo?
-Para empezar, una vez descargado podes vincular, a tu página .html, diferentes archivos de Tyle:
-```
-tyle/ 
- ├── css/
- |   ├── tyle.css
- |   ├── tyle.min.css
- |   |
- |   ├── tyle-grid-sistem.css
- |   ├── tyle-grid-sistem.min.css
- |   |
- |   ├── tyle-utilities.css
- |   ├── tyle-utilities.min.css
- |   |
- |   ├── tyle-components.css
- |   └── tyle-components.min.css
- |
- └── js/
-     ├── tyle.js
-     └── tyle.min.js
-```
-A continuación les mostraré un cuadro con lo que contienen los diferentes archivos:
-
-|                       Archivos                          | Sistema de grid  | Componentes |     Clases utilitarias     |
-| ------------------------------------------------------- |:---------------: | :---------: | :------------------------: |
-| **tyle.css**<br>**tyle.min.css**                        |     Incluido     |  Incluido   |          Incluido          |
-| **tyle-grid-sistem.css**<br>**tyle-grid-sistem.min.css**|     Incluido     | No Incluido | Solo las de grid y flexbox |
-| **tyle-utilities.css**<br>**tyle-utilities.min.css**    |    No Incluido   | No Incluido |          Incluido          |
-| **tyle-components.css**<br>**tyle-components.min.css**  |    No Incluido   |   Incluido  |         No Incluido        |
-
-Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si querés utilizar todo lo que es Tyle, o solo su sistema de grid o sus componentes o sus clases utilitarias.
-
-### Estructura básica para comenzar a utilizar Tyle:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Comenzando a utilizar Tyle</title>
-    <link href="https://file.myfontastic.com/VKjMJTbzfBSFneVYf4x7VT/icons.css" rel="stylesheet">    
-    <link rel="stylesheet" href="tyle/css/tyle.min.css">
-</head>
-<body>
-    <!-- 
-        Contenido de tu página
-    -->
-    <script src="tyle/js/tyle.min.js"></script>
-</body>
-</html>
-```
-Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.
-
-Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior,este archivo es de *fontastic* (se utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es necesario linkearlo si utilizas algún componente, si no, no es necesario).
+ Para empezar, una vez descargado podes vincular, a tu página .html, diferentes archivos de Tyle:
+ ```
+ tyle/ 
+  ├── css/
+  |   ├── tyle.css
+  |   ├── tyle.min.css
+  |   |
+  |   ├── tyle-grid-sistem.css
+  |   ├── tyle-grid-sistem.min.css
+  |   |
+  |   ├── tyle-utilities.css
+  |   ├── tyle-utilities.min.css
+  |   |
+  |   ├── tyle-components.css
+  |   └── tyle-components.min.css
+  |
+  └── js/
+      ├── tyle.js
+      └── tyle.min.js
+ ```
+ A continuación les mostraré un cuadro con lo que contienen los diferentes archivos:
+ 
+ |                       Archivos                          | Sistema de grid  | Componentes |     Clases utilitarias     |
+ | ------------------------------------------------------- |:---------------: | :---------: | :------------------------: |
+ | **tyle.css**<br>**tyle.min.css**                        |     Incluido     |  Incluido   |          Incluido          |
+ | **tyle-grid-sistem.css**<br>**tyle-grid-sistem.min.css**|     Incluido     | No Incluido | Solo las de grid y flexbox |
+ | **tyle-utilities.css**<br>**tyle-utilities.min.css**    |    No Incluido   | No Incluido |          Incluido          |
+ | **tyle-components.css**<br>**tyle-components.min.css**  |    No Incluido   |   Incluido  |         No Incluido        |
+ 
+ Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si querés utilizar todo lo que es Tyle, o solo su sistema de grid o  sus componentes o sus clases utilitarias.
+ 
+ ### Estructura básica para comenzar a utilizar Tyle:
+ 
+ ```html
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Comenzando a utilizar Tyle</title>
+     <link href="https://file.myfontastic.com/VKjMJTbzfBSFneVYf4x7VT/icons.css" rel="stylesheet">    
+     <link rel="stylesheet" href="tyle/css/tyle.min.css">
+ </head>
+ <body>
+     <!-- 
+         Contenido de tu página
+     -->
+     <script src="tyle/js/tyle.min.js"></script>
+ </body>
+ </html>
+ ```
+ Cómo podrás observar, solor tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo  tu código con Tyle.
+ 
+ Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior,este archivo es de *fontastic* (se  utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es  necesario linkearlo si utilizas algún componente, si no, no es necesario).
 
 ## Documentación:
 
-### Sistema de Grid:
+ ### Sistema de Grid:
 
-Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
-
-Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se muestra en el siguiente bloque de código:
-
-Html:
-```html
+  Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
+  
+  Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus   respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de   columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
+  
+  Html:
+  ```html
     <div class="row">
         <div class="col-1">Una columna</div>
         <div class="col-2">Dos columnas</div>
@@ -86,98 +86,116 @@ Html:
         <div class="col-11">Once columnas</div>
         <div class="col-12">Doce columnas</div>
     </div>
-```
-Con un poco de estilos css (indicándole a los contenedores una altura, un color de fondo, un color al texto, un centrado total al texto, una separación entre los divs, que cada contenedor valla debajo y no al lado, etc...) , obtenés el siguiente resultado:
+  ```
+  Con un poco de estilos css (indicándole a los contenedores una altura, un color de fondo, un color al texto, un centrado total al texto, una   separación entre los divs, que cada contenedor valla debajo y no al lado, etc...) , obtenés el siguiente resultado:
+  
+  ![Grid sistem](/images/grid-sistem.png "Grid sistem")
+  
+  Sin embargo, esto no es todo acerca del sistema de grid, ya que Tyle cuenta con un sistema de grid totalmente responsive.
+  Estas clases para el responsive de los elementos se definen de la siguiente manera:
+  ***col*-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
+  Las medidas utilizadas en Tyle son las siguientes: 
+  
+  | Clase | Desde  |  Hasta  |
+  | ----- |:-----: | :-----: |
+  | *xs*  | 480px  | 639px   |
+  | *sm*  | 640px  | 767px   |
+  | *md*  | 768px  | 1023px  |
+  | *lg*  | 1024px | 1365px  |
+  | *xl*  | 1366px | 1366px |
+  
+  Por lo tanto podés formar clases como por ejemplo:
+  *col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
+  *col-sm-6* (va a ocupar 6 columnas desde 640px para arriba)
+  *col-md-4* (va a ocupar 4 columnas desde 768px para arriba)
+  *col-lg-3* (va a ocupar 3 columnas desde 1024px para arriba)
+  
+  Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase   con la medida.
+  Ejemplo:
+  ```html
+  <div class="row">
+      <div class="col-12 col-md-4 col-lg-3"></div>
+  </div>
+  ```
+  En este ejemplo, el div va a ocupar 12 columnas hasta 768px, debido a que a partir de 768px ocupará 4 columnas, y a partir de 1024px ocupará  3  columnas.
+  
+  Y así podes seguir y formar todas las combinaciones que quieras segun lo necesite tu página.
 
-![Grid sistem](/images/grid-sistem.png "Grid sistem")
-
-Sin embargo, esto no es todo acerca del sistema de grid, ya que Tyle cuenta con un sistema de grid totalmente responsive.
-Estas clases para el responsive de los elementos se definen de la siguiente manera:
-***col*-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
-Las medidas utilizadas en Tyle son las siguientes: 
-
-| Clase | Desde  |  Hasta  |
-| ----- |:-----: | :-----: |
-| *xs*  | 480px  | 639px   |
-| *sm*  | 640px  | 767px   |
-| *md*  | 768px  | 1023px  |
-| *lg*  | 1024px | 1365px  |
-| *xl*  | 1366px | 1366px |
-
-Por lo tanto podés formar clases como por ejemplo:
-*col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
-*col-sm-6* (va a ocupar 6 columnas desde 640px para arriba)
-*col-md-4* (va a ocupar 4 columnas desde 768px para arriba)
-*col-lg-3* (va a ocupar 3 columnas desde 1024px para arriba)
-
-Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase con la medida.
-Ejemplo:
-```html
-<div class="row">
-    <div class="col-12 col-md-4 col-lg-3"></div>
-</div>
-```
-En este ejemplo, el div va a ocupar 12 columnas hasta 768px, debido a que a partir de 768px ocupará 4 columnas, y a partir de 1024px ocupará 3 columnas.
-
-Y así podes seguir y formar todas las combinaciones que quieras segun lo necesite tu página.
-
-#### Start Column
-Tyle también cuenta con clases para que puedas elegir a partir de que columna empieza el div.
-Dicha clase se llama de la siguientes maneras:
-***start-(A partir de que columna empieza)***
-O también podes elegir a partir de que medida empezará en la columna que elijas, poniendo la clase de la siguiente forma:
-***start-(A partir de que medida)-(A partir de que columna empieza)***
-
-Las medidas son las mismas que las mencionadas anteriormente (xs, sm, md, lg, xl).
-
-En el siguiente ejemplo podrás observar mejor lo mencionado anteriormente:
-
-Html
-```html
-<div class="row">
-    <div class="col-5 start-5">Comienza en la columna 5</div>
-    <div class="col-8 start-2">Comienza en la columna 2</div>
-    <div class="col-9 start-3">Comienza en la columna 3</div>    
-</div>
-```
-Resultado:
-
-![Start Column](/images/start-col.png "Start Column")
-
-Como podrás observar (con la ayuda del inspector de google Chrome) que cada div comienza donde se lo indiques.
+  #### Start Column
+   Tyle también cuenta con clases para que puedas elegir a partir de que columna empieza el div.
+   Dicha clase se llama de la siguientes maneras:
+   ***start-(A partir de que columna empieza)***
+   O también podes elegir a partir de que medida empezará en la columna que elijas, poniendo la clase de la siguiente forma:
+   ***start-(A partir de que medida)-(A partir de que columna empieza)***
+ 
+   Las medidas son las mismas que las mencionadas anteriormente (xs, sm, md, lg, xl).
+   
+   En el siguiente ejemplo podrás observar mejor lo mencionado anteriormente:
+   
+   Html
+   ```html
+   <div class="row">
+       <div class="col-5 start-5">Comienza en la columna 5</div>
+       <div class="col-8 start-2">Comienza en la columna 2</div>
+       <div class="col-9 start-3">Comienza en la columna 3</div>    
+   </div>
+   ```
+   Resultado:
+   
+   ![Start Column](/images/start-col.png "Start Column")
+   
+   Como podrás observar (con la ayuda del inspector de google Chrome) que cada div comienza donde se lo indiques.
 
 ### Clases Utilitarias:
 
-#### Clases para la propiedad *Display:*
-La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le puede aplicar a cualquier elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases para los valores más importantes. Estos valores son:
-    <li> <em><strong>inline</strong></em>: Este valor hace que la caja de un elemento se de linea, y por lo tanto solo ocupa el espacio necesario para mostrar sus contenidos.</li>
-    <li> <em><strong>block</strong></em>: Este valor hace que la caja de un elemento se de bloque, y por lo tanto ocupa todo el espacio disponible hasta el final de su linea, aunque sus contenidos puedan no ocupar todo el sitio. </li>
-    <li> <em><strong>inline-block</strong></em>: Este valor crea cajas que son de bloque y de linea simultaneamente.  Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto a los elementos que la rodean es una caja en línea.</li>
-    <li> <em><strong>list-item</strong></em>: Este valor hace que cualquier elemento de cualquier tipo al que se le aplique se muestre como si fuera un elemento de una lista.</li>    
-    <li> <em><strong>flex</strong></em>: Este valor define un contenedor flexible; en línea o bloque dependiendo del valor dado. Permite un contexto flexible para todos sus hijos directos. Al definir este valor a un contenedor se genera lo siguiente: 
-    <img src="/images/flexbox.png" alt="Flexbox" style="display: block;" />
-        <ul>
-            <li><em><strong>main axis</strong></em>: El eje principal de un contenedor flexible es el *main axis* a lo largo del cual se disponen los elementos flexibles. No es necesariamente horizontal; depende de la propiedad *flex-direction**<li>
-            <li><em><strong>main-start | main-end</strong></em>: Los elementos flexibles se colocan dentro del contenedor comenzando desde el *main-axis* y hasta el *main-end*.<li>
-            <li><em><strong>main size</strong></em>:  El ancho o la altura de un elemento flexible se define por cualquier que esté en la dimensión principal, y es el tamaño *main size*. La propiedad de tamaño principal del elemento Flex es la propiedad 'ancho' o 'alto', cualquiera que esté en la dimensión principal.<li>
-            <li><em><strong>cross axis</strong></em>: El eje perpendicular al *main axis* se llama *cross axis*. Su dirección depende de la dirección del *main axis*.<li>
-            <li><em><strong>cross-start | cross-end</strong></em>: Las líneas flexibles se llenan con elementos y se colocan en el contenedor comenzando en el lado de *cross start* del contenedor flexible y yendo hacia el lado del *cross end*.<li>
-            <li><em><strong>cross size</strong></em>: El ancho o la altura de un elemento flexible, cualquiera que esté en la dimensión transversal, es el *cross size* del artículo. La propiedad de tamaño cruzado es cualquiera de 'ancho' o 'altura' que esté en la dimensión transversa<li>            
-        </ul>
-    </li>
-    <li> <em><strong>inline-flex</strong></em>: Establece un contenedor de ítems flexible en línea, de forma equivalente a inline-block.</li>
-    <li> <em><strong>grid</strong></em>: Define al elemento como una grilla. Se debe aplicar a un contenedor y, así todos sus hijos directos podrán recibir propiedades de grid.</li>
-    <li> <em><strong>inline-grid</strong></em>: Establece un contenedor de grid en línea, de forma equivalente a inline-block.</li>
-    <li> <em><strong>none</strong></em>: Este valor hace que el elemento al que se le aplica no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad *display: none* sobre un elemento, todos sus descendientes también desaparecen por completo de la página. </li>
-
-Para indicar una clase para la propiedad *display*, debes poner la clase de la siguiente manera:
-
-***d-(valor)***
-
-Los valores son los mencionados anteriormente (inline, block, inline-block, list-item, flex, inline-flex, grid, inline-grid, none).
-
-
-#### Clases de Grid:
+ #### Clases para la propiedad *Display:*
+  La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le  puede aplicar a cualquier  elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases  para los valores más importantes. Estos valores son:
+      <ul>
+        <li> <em><strong>inline</strong></em>: Este valor hace que la caja de un elemento se de linea, y por lo tanto solo ocupa el espacio necesario para mostrar sus contenidos.       
+            <img src="/images/display-inline.png" alt="Display" style="display: block;" /> 
+        </li>
+        <li> <em><strong>block</strong></em>: Este valor hace que la caja de un elemento se de bloque, y por lo tanto ocupa todo el espacio disponible hasta el final de su linea, aunque sus contenidos puedan no ocupar todo el sitio. 
+            <img src="/images/display-block.png" alt="Display" style="display: block;" />         
+        </li>
+        <li> <em><strong>inline-block</strong></em>: Este valor crea cajas que son de bloque y de linea simultaneamente.  Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto a los elementos que la rodean es una caja en línea.
+            <img src="/images/display-inline-block.png" alt="Display" style="display: block;" />         
+        </li>
+        <li> <em><strong>list-item</strong></em>: Este valor hace que cualquier elemento de cualquier tipo al que se le aplique se muestre como si fuera un elemento de una lista.
+            <img src="/images/display-list-item.png" alt="Display" style="display: block;" />         
+        </li>    
+        <li> <em><strong>flex</strong></em>: Este valor define un contenedor flexible; en línea o bloque dependiendo del valor dado. Permite un contexto flexible para todos sus hijos directos. Al definir este valor a un contenedor se genera lo siguiente: 
+            <img src="/images/flexbox.png" alt="Flexbox" style="display: block;" />
+            <ul style="margin-left: 30px">
+                <li><em><strong>main axis</strong></em>: El eje principal de un contenedor flexible es el *main axis* a lo largo del cual se disponen los elementos flexibles. No es necesariamente horizontal; depende de la propiedad *flex-direction**</li>
+                <li><em><strong>main-start | main-end</strong></em>: Los elementos flexibles se colocan dentro del contenedor comenzando desde el *main-axis* y hasta el *main-end*.</li>
+                <li><em><strong>main size</strong></em>:  El ancho o la altura de un elemento flexible se define por cualquier que esté en la dimensión principal, y es el tamaño *main size*. La propiedad de tamaño principal del elemento Flex es la propiedad 'ancho' o 'alto', cualquiera que esté en la dimensión principal.</li>
+                <li><em><strong>cross axis</strong></em>: El eje perpendicular al *main axis* se llama *cross axis*. Su dirección depende de la dirección del *main axis*.</li>
+                <li><em><strong>cross-start | cross-end</strong></em>: Las líneas flexibles se llenan con elementos y se colocan en el contenedor comenzando en el lado de *cross start* del contenedor flexible y yendo hacia el lado del *cross end*.</li>
+                <li><em><strong>cross size</strong></em>: El ancho o la altura de un elemento flexible, cualquiera que esté en la dimensión transversal, es el *cross size* del artículo. La propiedad de tamaño cruzado es cualquiera de 'ancho' o 'altura' que esté en la dimensión transversa</li>            
+            </ul>
+            <img src="/images/display-flex.png" alt="Display" style="display: block;" />             
+        </li>
+        <li> <em><strong>inline-flex</strong></em>: Establece un contenedor de ítems flexible en línea, de forma equivalente a inline-block.
+            <img src="/images/display-inline-flex.png" alt="Display" style="display: block;" />         
+        </li>
+        <li> <em><strong>grid</strong></em>: Define al elemento como una grilla. Por si sola, esta propiedad no hace nada, si no que va en conjunto de otras propiedades. Se debe aplicar a un contenedor y, así el contendedor y todos sus hijos directos podrán recibir propiedades de grid.
+            <img src="/images/display-grid.png" alt="Display" style="display: block;" />         
+        </li>
+        <li> <em><strong>inline-grid</strong></em>: Establece un contenedor de grid en línea, de forma equivalente a inline-block.
+            <img src="/images/display-inline-grid.png" alt="Display" style="display: block;" />         
+        </li>
+        <li> <em><strong>none</strong></em>: Este valor hace que el elemento al que se le aplica no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad *display: none* sobre un elemento, todos sus descendientes también desaparecen por completo de la página.
+            <img src="/images/display-none.png" alt="Display" style="display: block;" />         
+         </li>
+      </ul>
+  Para indicar una clase para la propiedad *display*, debes poner la clase de la siguiente manera:
+  
+  ***d-(valor)***
+  
+  Los valores son los mencionados anteriormente (inline, block, inline-block, list-item, flex, inline-flex, grid,  inline-grid, none).
+ 
+ 
+ #### Clases de Grid:
  
   - #### Grid Gap:
   
@@ -375,117 +393,114 @@ Los valores son los mencionados anteriormente (inline, block, inline-block, list
   ***g-align-self-(valor)***
   
   Los *valores* son los mencionados anteriormente (start, end, center, stretch).
+  
  
-
-#### Clases de Flexbox:
+ #### Clases de Flexbox:
  
   - #### Flex Direction:
-  La propiedad ***flex-direction*** establece la dirección de un elemento flexible dentro de un contenedor (es decir que el contenedor tenga la  propiedad *display: flex*).
+   La propiedad ***flex-direction*** establece la dirección de un elemento flexible dentro de un contenedor (es decir que el contenedor tenga  la  propiedad *display: flex*).
+  
+   La propiedad *flex-direction* puede tener los siguientes valores:
+   <li> <em>row:</em> Este es el valor por defecto. Los elementos flexibles se muestran horizontalmente, como una fila</li>
+   <li> <em>row reverse:</em> Los elementos flexibles se muestran horizontalmente, como una fila, pero en orden invertido</li>
+   <li> <em>Column:</em> Los elementos flexibles se muestran verticalmente, como una columna</li>
+   <li> <em>Column reverse:</em> Los elementos flexibles se muestran verticalmente, como una columna, pero en orden invertido</li>
+  
+   En la siguiente imagen podrás apreciar mejor esta propiedad:
+  
+   <img src="/images/flex-direction.png" alt="Flex direction" style="display: block;" />
+  
+   Tyle ya cuenta con clases para dicha propiedad, y estas clases se indican de la siguiente manera:
+  
+   ***f-flex-direction-(valor)***
+  
+   Todas las clases de flexbox que siguen a continuación y, estas mismas clases también, llevan una *f-* delante de la clase para  diferenciarlas   de las clases de css grid, que tienen la misma propiedad pero diferentes valores. Los valores que van luego de  *f-flex-direction-* son los   mencionados anteriormente (row, row-reverse, col, col-reverse).
  
-  La propiedad *flex-direction* puede tener los siguientes valores:
- <li> <em>row:</em> Este es el valor por defecto. Los elementos flexibles se muestran horizontalmente, como una fila</li>
- <li> <em>row reverse:</em> Los elementos flexibles se muestran horizontalmente, como una fila, pero en orden invertido</li>
- <li> <em>Column:</em> Los elementos flexibles se muestran verticalmente, como una columna</li>
- <li> <em>Column reverse:</em> Los elementos flexibles se muestran verticalmente, como una columna, pero en orden invertido</li>
- 
- En la siguiente imagen podrás apreciar mejor esta propiedad:
- 
- <img src="/images/flex-direction.png" alt="Flex direction" style="display: block;" />
- 
- Tyle ya cuenta con clases para dicha propiedad, y estas clases se indican de la siguiente manera:
- 
- ***f-flex-direction-(valor)***
- 
- Todas las clases de flexbox que siguen a continuación y, estas mismas clases también, llevan una *f-* delante de la clase para diferenciarlas  de las clases de css grid, que tienen la misma propiedad pero diferentes valores. Los valores que van luego de *f-flex-direction-* son los  mencionados anteriormente (row, row-reverse, col, col-reverse).
- 
- - #### Flex Wrap:
- La propiedad ***flex-wrap*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad *flex-wrap*,
- especifica si los elementos flexibles deben ajustarse o no. Como ya fue mencionado anteriormente, lo que hace la propiedad *dispaly: flex* es poner todos sus elementos hijos en una sola linea, a pesar de que no entren, al no entrar, se disminuye el tamaño de los elementos hijos para que puedan entrar. Si tu no quieres que esto ocurra, debes utilizar la propiedad *flex-wrap*, que solo acepta los siguientes valores:
- 
- <li> <em>nowrap:</em> Este es el valor por defecto, y por lo tanto, los elementos hijos se ajustarán al contenido de ser necesario.</li>
- <li> <em>wrap:</em> Este valor especifica que si los elementos hijos, del contenedor flexible, no entran, se irán a la siguiente fila/columna (según el <em>flex-direction</em>), generando de esta manera un contenedor flexible de líneas multiples.</li>
- <li> <em>wrap-reverse:</em> Este valor especifica lo mismo que el valor <em>wrap</em>, solo que revierte los elementos.</li>
- 
- En la siguiente imagen podrás apreciar mejor la propiedad *flex-wrap*:
- <img src="/images/flex-wrap.png" alt="Flex Wrap" style="display: block;" />
- 
- Tyle ya cuenta con clases para dicha propiedad, y estas clases se indican de la siguiente manera:
- 
- ***f-flex-wrap-(valor)***
- 
- Los valores que van luego de *f-flex-wrap-* son los mencioandos anteriormente (no-wrap, wra, wrap-reverse).
- 
- - #### Flex Grow:
- La propiedad ***flex-grow*** solo se le puede aplicar a los hijos de los contenedores que tengan lo propiedad *display: flex*. Esta propiedad  *flex-grow* especifica la capacidad de que un elemento flexible crezca si es posible. Esta propiedad acepta cualquier número positivo, y  funciona de la siguiente manera:
- Lo que hace es calcular el espacio disponible, y darselos a los que tengan esta propiedad según el valor que tengan.
- Por ejemplo: Si hay un elemento que tenga un *flex-grow: 1* y otro tiene un *flex-grow: 3*, se calcula el espacio disponible y lo divide entre  4, ya que suma el valor de esta propiedad de cada elemento del contenedor, y le da 3/4 partes al segundo elemento y 1/4 parte al primer  elemento.
- 
- En el siguiente ejemplo entenderás esto mejor:
- <img src="/images/flex-grow-1.png" alt="Flex Grow" style="display: block;" />
- <img src="/images/flex-grow-2.png" alt="Flex Grow" style="display: block;" />
- 
- Como habrás podido observar, al primer elemento se le ha agregado la propiedad *flex-grow* y ha crecido según el espacio disponible que había.
- 
- Una vez más, Tyle ya cuenta con clases para esta propiedad, y se indican de la siguiente manera: 
- 
- ***f-flex-grow-(número)*** 
- 
- El número que va luego de *f-flex-grow* puede ir del 1 al 5.
- 
-  - #### Flex Shrink: 
-  La propiedad ***flex-shrink*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad  *flex-shrink* especifica la capacidad de que un elemento flexible se encoja. Esta propiedad acepta cualquier número positivo. Esta propiedad,funciona de una manera muy similar a *flex-grow*, pero con resultado opuesto.
-  En el siguiente ejemplo lo podrás entender mejor:
-  <img src="/images/flex-shrink-1.png" alt="Flex Shrink" style="display: block;" />
-  Como podrás observar, los 4 elementos no entran en el container.
-  Pero aplicando un *flex-shrink* al primer elemento sucede lo siguiente:
-  <img src="/images/flex-shrink-2.png" alt="Flex Shrink" style="display: block;" /> 
-  Al aplicarle un *flex-shrink* al primer elemento, este se encojió dandole más espacio a los demás elementos.
-
-  Tyle ya cuenta con clases para esta propiedad, y se indican de la siguiente manera:
+  - #### Flex Wrap:
+   La propiedad ***flex-wrap*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad  *flex-wrap*,especifica si los elementos flexibles deben ajustarse o no. Como ya fue mencionado anteriormente, lo que hace la propiedad  *dispaly: flex* es poner todos sus elementos hijos en una sola linea, a pesar de que no entren, al no entrar, se disminuye el tamaño de los elementos hijos para  que puedan entrar. Si tu no quieres que esto ocurra, debes utilizar la propiedad *flex-wrap*, que solo acepta los  siguientes valores:
    
-  ***f-flex-shrink-(número)*** 
+   <li> <em>nowrap:</em> Este es el valor por defecto, y por lo tanto, los elementos hijos se ajustarán al contenido de ser necesario.</li>
+   <li> <em>wrap:</em> Este valor especifica que si los elementos hijos, del contenedor flexible, no entran, se irán a la siguiente  fila/columna (según el <em>flex-direction</em>), generando de esta manera un contenedor flexible de líneas multiples.</li>
+   <li> <em>wrap-reverse:</em> Este valor especifica lo mismo que el valor <em>wrap</em>, solo que revierte los elementos.</li>
+   
+   En la siguiente imagen podrás apreciar mejor la propiedad *flex-wrap*:
+   <img src="/images/flex-wrap.png" alt="Flex Wrap" style="display: block;" />
+   
+   Tyle ya cuenta con clases para dicha propiedad, y estas clases se indican de la siguiente manera:
+   
+   ***f-flex-wrap-(valor)***
+   
+   Los valores que van luego de *f-flex-wrap-* son los mencioandos anteriormente (no-wrap, wra, wrap-reverse).
  
-  El número que va luego de *f-flex-shrink* puede ir del 1 al 5.
+  - #### Flex Grow:
+   La propiedad ***flex-grow*** solo se le puede aplicar a los hijos de los contenedores que tengan lo propiedad *display: flex*. Esta propiedad  *flex-grow* especifica la capacidad de que un elemento flexible crezca si es posible. Esta propiedad acepta cualquier número positivo, y  funciona de la siguiente manera:
+   Lo que hace es calcular el espacio disponible, y darselos a los que tengan esta propiedad según el valor que tengan.
+   Por ejemplo: Si hay un elemento que tenga un *flex-grow: 1* y otro tiene un *flex-grow: 3*, se calcula el espacio disponible y lo divide entre 4, ya que suma el valor de esta propiedad de cada elemento del contenedor, y le da 3/4 partes al segundo elemento y 1/4 parte al primer elemento.
+ 
+   En el siguiente ejemplo entenderás esto mejor:
+   <img src="/images/flex-grow-1.png" alt="Flex Grow" style="display: block;" />
+   <img src="/images/flex-grow-2.png" alt="Flex Grow" style="display: block;" />
+  
+   Como habrás podido observar, al primer elemento se le ha agregado la propiedad *flex-grow* y ha crecido según el espacio disponible que había.
+  
+   Una vez más, Tyle ya cuenta con clases para esta propiedad, y se indican de la siguiente manera: 
+  
+   ***f-flex-grow-(número)*** 
+  
+   El número que va luego de *f-flex-grow* puede ir del 1 al 5.
+  
+  - #### Flex Shrink: 
+   La propiedad ***flex-shrink*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad   *flex-shrink* especifica la capacidad de que un elemento flexible se encoja. Esta propiedad acepta cualquier número positivo. Esta propiedad, funciona de una manera muy similar a *flex-grow*, pero con resultado opuesto.
+   En el siguiente ejemplo lo podrás entender mejor:
+   <img src="/images/flex-shrink-1.png" alt="Flex Shrink" style="display: block;" />
+   Como podrás observar, los 4 elementos no entran en el container.
+   Pero aplicando un *flex-shrink* al primer elemento sucede lo siguiente:
+   <img src="/images/flex-shrink-2.png" alt="Flex Shrink" style="display: block;" /> 
+   Al aplicarle un *flex-shrink* al primer elemento, este se encojió dandole más espacio a los demás elementos.
+ 
+   Tyle ya cuenta con clases para esta propiedad, y se indican de la siguiente manera:
+    
+   ***f-flex-shrink-(número)*** 
+  
+   El número que va luego de *f-flex-shrink* puede ir del 1 al 5.
 
   - #### Order:
-  La propiedad ***order*** también se puede utilizar en los elementos hijos de un contenedor que tenga la propiedad *display: flex*, y esta  propiedad *order* es la misma que la mencionada anteriormente (en las calses de grid), y funciona exactamente de la misma manera.
+   La propiedad ***order*** también se puede utilizar en los elementos hijos de un contenedor que tenga la propiedad *display: flex*, y esta  propiedad *order* es la misma que la mencionada anteriormente (en las calses de grid), y funciona exactamente de la misma manera.
 
-  
   - #### Align Items:
-  Esta propiedad ***align-items*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad  *display: flex*. La propiedad *align-items* define el comportamiento predeterminado de cómo se colocan los elementos flexibles a lo largo del eje transversal en la línea actual. Dicha propiedad puede tener los siguientes valores:
-  <ul>
-      <li> <em>flex-start<em>: Alinea el contenido en la parte superior del eje transversal.</li>
-      <li> <em>flex-end<em>: Alinea el contenido en la parte inferior del eje transversal.</li>
-      <li> <em>center<em>: Alinea el contenido en el centro del eje transversal.</li>
-      <li> <em>baseline<em>: Las lineas base de los elementos están alineados.</li>
-      <li> <em>stretch<em>: Los elementos se estiran hasta llenar todo el contenedor (este es el valor por defecto).</li>
-  </ul>
-  <img src="/images/f-align-items.png" alt="Align Items" style="display: block;" /> 
-  
-  Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
-  
-  ***f-align-items-(valor)***
-  
-  Los *valores* son los mencionados anteriormente (start, end, center, baseline, stretch).
-  
+   Esta propiedad ***align-items*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad  *display: flex*. La propiedad *align-items* define el comportamiento predeterminado de cómo se colocan los elementos flexibles a lo largo del eje transversal en la línea actual. Dicha propiedad puede tener los siguientes valores:
+   <ul>
+       <li> <em>flex-start<em>: Alinea el contenido en la parte superior del eje transversal.</li>
+       <li> <em>flex-end<em>: Alinea el contenido en la parte inferior del eje transversal.</li>
+       <li> <em>center<em>: Alinea el contenido en el centro del eje transversal.</li>
+       <li> <em>baseline<em>: Las lineas base de los elementos están alineados.</li>
+       <li> <em>stretch<em>: Los elementos se estiran hasta llenar todo el contenedor (este es el valor por defecto).</li>
+   </ul>
+   <img src="/images/f-align-items.png" alt="Align Items" style="display: block;" /> 
+   
+   Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
+   
+   ***f-align-items-(valor)***
+   
+   Los *valores* son los mencionados anteriormente (start, end, center, baseline, stretch).
   
   - #### Justify Content:
-  Esta propiedad ***justify-content*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad  *display: flex*. Lo  que hace esta propiedad es alinear a lo largo del eje principal. Ayuda a distribuir el espacio libre que sobra cuando todos los elementos flexibles de una línea son inflexibles o flexibles, pero han alcanzado su tamaño máximo. También ejerce algún control sobre la alineación de los elementos cuando se desbordan la línea.. Dicha propiedad puede tener los  siguientes valores:
-  <ul>
-      <li> <em>flex-start:</em> Alinea el contenido hacia la linea de inicio del contenedor flexible.</li>
-      <li> <em>flex-end:</em> Alinea el contenido hacia la linea de fin del contenedor flexible.</li>
-      <li> <em>center:</em> Alinea el contenido hacia la linea del centro del contenedor flexible. </li>
-      <li> <em>space-between:</em> Distribuye el contenido de manera uniforme. El primer elemento va hacia la linea de inicio y, el último hacia la linea de fin.</li>
-      <li> <em>space-around:</em> Distribuye el contenido de manera uniforme con espacios entre los elementos. Estos espacios son de la  mitad de tamaño en los extremos.</li>
-      <li> <em>space-evenly:</em>  Distribuye el contenido de manera uniforme con espacios exactamente iguales (tanto al inicio como al final) entre los elementos. </li>
-  </ul>
-  <img src="/images/f-justify-content.png" alt="Justify Content" style="display: block;" /> 
-
-  Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
-  
-  ***f-justify-content-(valor)***
-  
-  Los *valores* son los mencionados anteriormente (start, end, center, beetween, around, evenly).
+   Esta propiedad ***justify-content*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad  *display: flex*. Lo  que hace esta propiedad es alinear a lo largo del eje principal. Ayuda a distribuir el espacio libre que sobra cuando todos los  elementos flexibles de una línea son inflexibles o flexibles, pero han alcanzado su tamaño máximo. También ejerce algún control sobre la  alineación de los elementos cuando se desbordan la línea.. Dicha propiedad puede tener los  siguientes valores:
+   <ul>
+       <li> <em>flex-start:</em> Alinea el contenido hacia la linea de inicio del contenedor flexible.</li>
+       <li> <em>flex-end:</em> Alinea el contenido hacia la linea de fin del contenedor flexible.</li>
+       <li> <em>center:</em> Alinea el contenido hacia la linea del centro del contenedor flexible. </li>
+       <li> <em>space-between:</em> Distribuye el contenido de manera uniforme. El primer elemento va hacia la linea de inicio y, el último  hacia la linea de fin.</li>
+       <li> <em>space-around:</em> Distribuye el contenido de manera uniforme con espacios entre los elementos. Estos espacios son de la  mitad de tamaño en los extremos.</li>
+       <li> <em>space-evenly:</em>  Distribuye el contenido de manera uniforme con espacios exactamente iguales (tanto al inicio como al final)entre los elementos. </li>
+   </ul>
+   <img src="/images/f-justify-content.png" alt="Justify Content" style="display: block;" /> 
+ 
+   Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
+   
+   ***f-justify-content-(valor)***
+   
+   Los *valores* son los mencionados anteriormente (start, end, center, beetween, around, evenly).
   
   
   - #### Align Content:
