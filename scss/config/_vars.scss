@@ -73,8 +73,7 @@ $flex: (wrap: wrap, wrap-reverse: wrap-reverse, no-wrap: nowrap);
 $justify-content: (start: flex-start, end: flex-end, center: center, between: space-between, around: space-around, evenly: space-evenly);    
 $align-content: (start: flex-start, end: flex-end, center: center, between: space-between, around: space-around, stretch: stretch);       
 $align-items: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);   
-$align-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);   
-$justify-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch);
+$align-self: (start: flex-start, end: flex-end, center: center, baseline: baseline, stretch: stretch, auto: auto);   
 $flex-grow: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5);       
 $flex-shrink: (1: 1, 2: 2, 3: 3, 4: 4, 5: 5);  
 

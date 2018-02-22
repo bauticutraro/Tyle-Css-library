@@ -734,20 +734,9 @@ body {
   -ms-flex-item-align: stretch;
   align-self: stretch; }
 
-.f-justify-self-start {
-  justify-self: flex-start; }
-
-.f-justify-self-end {
-  justify-self: flex-end; }
-
-.f-justify-self-center {
-  justify-self: center; }
-
-.f-justify-self-baseline {
-  justify-self: baseline; }
-
-.f-justify-self-stretch {
-  justify-self: stretch; }
+.f-align-self-auto {
+  -ms-flex-item-align: auto;
+  align-self: auto; }
 
 .f-flex-grow-1 {
   -webkit-box-flex: 1;
