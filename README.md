@@ -148,6 +148,35 @@ Como podrás observar (con la ayuda del inspector de google Chrome) que cada div
 
 ### Clases Utilitarias:
 
+#### Clases para la propiedad *Display:*
+La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le puede aplicar a cualquier elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases para los valores más importantes. Estos valores son:
+    <li> <em><strong>inline</strong></em>: Este valor hace que la caja de un elemento se de linea, y por lo tanto solo ocupa el espacio necesario para mostrar sus contenidos.</li>
+    <li> <em><strong>block</strong></em>: Este valor hace que la caja de un elemento se de bloque, y por lo tanto ocupa todo el espacio disponible hasta el final de su linea, aunque sus contenidos puedan no ocupar todo el sitio. </li>
+    <li> <em><strong>inline-block</strong></em>: Este valor crea cajas que son de bloque y de linea simultaneamente.  Una caja de tipo inline-block se comporta como si fuera de bloque, pero respecto a los elementos que la rodean es una caja en línea.</li>
+    <li> <em><strong>list-item</strong></em>: Este valor hace que cualquier elemento de cualquier tipo al que se le aplique se muestre como si fuera un elemento de una lista.</li>    
+    <li> <em><strong>flex</strong></em>: Este valor define un contenedor flexible; en línea o bloque dependiendo del valor dado. Permite un contexto flexible para todos sus hijos directos. Al definir este valor a un contenedor se genera lo siguiente: 
+    <img src="/images/flexbox.png" alt="Flexbox" style="display: block;" />
+        <ul>
+            <li><em><strong>main axis</strong></em>: El eje principal de un contenedor flexible es el *main axis* a lo largo del cual se disponen los elementos flexibles. No es necesariamente horizontal; depende de la propiedad *flex-direction**<li>
+            <li><em><strong>main-start | main-end</strong></em>: Los elementos flexibles se colocan dentro del contenedor comenzando desde el *main-axis* y hasta el *main-end*.<li>
+            <li><em><strong>main size</strong></em>:  El ancho o la altura de un elemento flexible se define por cualquier que esté en la dimensión principal, y es el tamaño *main size*. La propiedad de tamaño principal del elemento Flex es la propiedad 'ancho' o 'alto', cualquiera que esté en la dimensión principal.<li>
+            <li><em><strong>cross axis</strong></em>: El eje perpendicular al *main axis* se llama *cross axis*. Su dirección depende de la dirección del *main axis*.<li>
+            <li><em><strong>cross-start | cross-end</strong></em>: Las líneas flexibles se llenan con elementos y se colocan en el contenedor comenzando en el lado de *cross start* del contenedor flexible y yendo hacia el lado del *cross end*.<li>
+            <li><em><strong>cross size</strong></em>: El ancho o la altura de un elemento flexible, cualquiera que esté en la dimensión transversal, es el *cross size* del artículo. La propiedad de tamaño cruzado es cualquiera de 'ancho' o 'altura' que esté en la dimensión transversa<li>            
+        </ul>
+    </li>
+    <li> <em><strong>inline-flex</strong></em>: Establece un contenedor de ítems flexible en línea, de forma equivalente a inline-block.</li>
+    <li> <em><strong>grid</strong></em>: Define al elemento como una grilla. Se debe aplicar a un contenedor y, así todos sus hijos directos podrán recibir propiedades de grid.</li>
+    <li> <em><strong>inline-grid</strong></em>: Establece un contenedor de grid en línea, de forma equivalente a inline-block.</li>
+    <li> <em><strong>none</strong></em>: Este valor hace que el elemento al que se le aplica no genere ninguna caja. El resultado es que el elemento desaparece por completo de la página y no ocupa sitio, por lo que los elementos adyacentes ocupan su lugar. Si se utiliza la propiedad *display: none* sobre un elemento, todos sus descendientes también desaparecen por completo de la página. </li>
+
+Para indicar una clase para la propiedad *display*, debes poner la clase de la siguiente manera:
+
+***d-(valor)***
+
+Los valores son los mencionados anteriormente (inline, block, inline-block, list-item, flex, inline-flex, grid, inline-grid, none).
+
+
 #### Clases de Grid:
  
   - #### Grid Gap:
