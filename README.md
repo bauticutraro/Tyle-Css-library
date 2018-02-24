@@ -149,8 +149,10 @@
    Como podrás observar (con la ayuda del inspector de google Chrome) que cada div comienza donde se lo indiques.
 
  ### Clases Utilitarias:
+  
+  <details>
+   <summary style="cursor: pointer; display:inline-block; outline: 0;"><h4 style="display: inline-block">Clases para la propiedad <em>Display:</em><h4></summary>
 
-  #### Clases para la propiedad *Display:*
    La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le  puede aplicar a cualquier   elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases  para los valores más importantes. Estos valores son:
        <ul>
         <li> <em><strong>inline</strong></em>: Este valor hace que la caja de un elemento se de linea, y por lo tanto solo ocupa el espacio necesario para mostrar sus contenidos.       
@@ -203,7 +205,8 @@
  
    Como podrás saber, las *medidas responsive* son *xs*, *sm*, *md*, *lg* y *xl*; y los valores son *inline*,   *block*, *inline-block*, *list-item*, *flex*, *inline-flex*, *grid*, *inline-grid* y *none*.
    Ya con esto, puedes hacer todas las convinaciones que tu pagina requiera. 
- 
+  </details>
+
   #### Clases de Grid:
  
    - #### Grid Gap:
@@ -607,7 +610,7 @@
    
    Los nombres de los colores son los mencionados anteriormente en la tabla.
 
-  #### Bordes: 
+  #### Clases para los Bordes: 
     
    La propeidad ***border*** le da un borde al elemento aplicado. Este borde puede ser de difrentes tipos, diferentes colores, puede tener diferentes anchos, las esquinas rendondeadas, etc.
    Tyle cuenta con algunas propiedades para los bordes. Estas propiedades con las que cuenta Tyle son el ***border-radius*** (funciona para redondear las esquinas) y el ***border-color***.
@@ -643,10 +646,15 @@
    <img src="/images/border-radius.png" alt="Border Radius" style="display: block;" />   
    <img src="/images/border-color.png" alt="Border Color" style="display: block;" />      
       
+  #### Clases para el Width y Height:
 
+   Las propeidades ***width*** y ***height*** se utilizan para definir las dimensiones de un elemento. Estas propiedades permiten valores numéricos con sus respectivas unidades. La propiedad *width* se utiliza para definir el ancho de un elemento, mientras la propiedad *height* se utiliza para definir la altura de un elemento.
+   Tyle cuenta con clases para estas propiedades, y se indican de la siguiente manera:
 
-
-
+   *Height*: ***h-(valor)***  
+   *Width*: ***w-(valor)***  
+      
+   Los valores que aceptan estas clases van del 0 al 100, siempre y cuando el número se multiplo de 5, es decir que los valores van de 5 en 5 (0, 5, 10, 15, 20, 25, 30...). El valor en estas clases equivale al porcentaje, es decir que si utilizas la clase, por ejemplo, *w-75*, va a tener un *width* de 75% de su contenedor.    
 
 
 
