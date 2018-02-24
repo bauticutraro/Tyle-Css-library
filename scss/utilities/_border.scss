@@ -1,9 +1,12 @@
 /* ============================= Border ============================= */
 
 /* ========================== Border Radius ========================= */
+
 @each $class-name, $value in $border-radius {
-    .b-radius-#{$class-name} {
-        border-radius: $value;
+    @each $side, $property in $border-radius-sides {
+        .b#{$side}-radius-#{$class-name} {
+            border#{$property}-radius: $value;
+        }
     }
 }
 
@@ -15,13 +18,3 @@
         }
     }
 }
-
-
-
-.cuadro {
-    width: 90%;
-    height: 200px;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-

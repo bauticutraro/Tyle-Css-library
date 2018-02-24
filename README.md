@@ -577,6 +577,7 @@
        <img src="/images/padding.png" alt="Padding" style="display: block;" />   
 
   #### Paleta de colores: 
+  
    Tyle cuenta con una paleta de colores. Estos colores pueden ser aplicados tanto al color de fondo, como al color del texto mediante clases de Tyle.
 
    - Colores:
@@ -596,8 +597,210 @@
 
    Para indicar los diferentes colores de fondo o colores de texto, se deben indicar las clases de la siguiente manera:
    - Background Color:
+
      ***bg-(nombre del color)***
+
    - Color:
+
      ***color-(nombre del color)***
+
    
    Los nombres de los colores son los mencionados anteriormente en la tabla.
+
+  #### Bordes: 
+    
+   La propeidad ***border*** le da un borde al elemento aplicado. Este borde puede ser de difrentes tipos, diferentes colores, puede tener diferentes anchos, las esquinas rendondeadas, etc.
+   Tyle cuenta con algunas propiedades para los bordes. Estas propiedades con las que cuenta Tyle son el ***border-radius*** (funciona para redondear las esquinas) y el ***border-color***.
+
+   Estas clases para los bordes se indican de las siguientes maneras:
+
+   - #### Border Radius:
+     
+      ***b-radius-(valor)***
+
+      Los valores son: *0*, *1*, *2*, *3*, *4*, *5*, *6* y *radius*
+      Si querés que el *border-radius* se le aplique solo a un lado en específico, tenés que indicar el lado luego de la *b*, de la siguiente manera:
+ 
+      ***b(lado)-radius-(valor)***
+
+     Los diferentes lados son *tl* (top-left), *tr* (top-right), *bl* (bottom-left) y *br* (bottom-right).
+                  
+   - #### Border Color:
+      La propiedad *border-color* se indica de la siguiente forma:
+ 
+      ***b-(color)***
+ 
+     Los diferentes colores son los mencionados anteriormente en la paleta de colores.
+     También con Tyle podés indicar el color de un borde en específico de la siguiente manera:
+
+     ***b(lado)-(color)***
+
+     Los lados son *t* (top), *r* (right), *b* (bottom) y *l* (left).
+     Es importante remarcar que las clases para el color del borde no funcionan si no se le indican antes un ancho y un estilo de borde (con las propiedades *border-width* y *border-style*)
+
+     En las siguientes imágenes se muestra un ejemplo de los diferentes bordes: 
+
+   <img src="/images/border-radius.png" alt="Border Radius" style="display: block;" />   
+   <img src="/images/border-color.png" alt="Border Color" style="display: block;" />      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

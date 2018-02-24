@@ -550,11 +550,36 @@ Al aplicarle un <em>flex-shrink</em> al primer elemento, este se encojió dandol
 | <strong><em>Black</em></strong>     |       #000000       |  <div style="background-color: #000000; width: 150px; color: #fff">Background<br>Black</div>     | <div style="background-color: #fff; color: #000000; width: 150px;">Color<br>Black</div>|</p>
 <p>Para indicar los diferentes colores de fondo o colores de texto, se deben indicar las clases de la siguiente manera:</p>
 </li>
-<li>Background Color:
-<strong><em>bg-(nombre del color)</em></strong></li>
-<li><p>Color:
-<strong><em>color-(nombre del color)</em></strong></p>
-<p>Los nombres de los colores son los mencionados anteriormente en la tabla.</p>
+<li><p>Background Color:</p>
+<p><strong><em>bg-(nombre del color)</em></strong></p>
+</li>
+<li><p>Color:</p>
+<p><strong><em>color-(nombre del color)</em></strong></p>
+</li>
+</ul>
+<p>   Los nombres de los colores son los mencionados anteriormente en la tabla.</p>
+<h4 id="bordes-">Bordes:</h4>
+<p>   La propeidad <strong><em>border</em></strong> le da un borde al elemento aplicado. Este borde puede ser de difrentes tipos, diferentes colores, puede tener diferentes anchos, las esquinas rendondeadas, etc.
+   Tyle cuenta con algunas propiedades para los bordes. Estas propiedades con las que cuenta Tyle son el <strong><em>border-radius</em></strong> (funciona para redondear las esquinas) y el <strong><em>border-color</em></strong>.</p>
+<p>   Estas clases para los bordes se indican de las siguientes maneras:</p>
+<ul>
+<li><h4 id="border-radius-">Border Radius:</h4>
+<p> <strong><em>b-radius-(valor)</em></strong></p>
+<p> Los valores son: <em>0</em>, <em>1</em>, <em>2</em>, <em>3</em>, <em>4</em>, <em>5</em>, <em>6</em> y <em>radius</em>
+ Si querés que el <em>border-radius</em> se le aplique solo a un lado en específico, tenés que indicar el lado luego de la <em>b</em>, de la siguiente manera:</p>
+<p> <strong><em>b(lado)-radius-(valor)</em></strong></p>
+<p>Los diferentes lados son <em>tl</em> (top-left), <em>tr</em> (top-right), <em>bl</em> (bottom-left) y <em>br</em> (bottom-right).</p>
+</li>
+<li><h4 id="border-color-">Border Color:</h4>
+<p> La propiedad <em>border-color</em> se indica de la siguiente forma:</p>
+<p> <strong><em>b-(color)</em></strong></p>
+<p>Los diferentes colores son los mencionados anteriormente en la paleta de colores.
+También con Tyle podés indicar el color de un borde en específico de la siguiente manera:</p>
+<p><strong><em>b(lado)-(color)</em></strong></p>
+<p>Los lados son <em>t</em> (top), <em>r</em> (right), <em>b</em> (bottom) y <em>l</em> (left).
+Es importante remarcar que las clases para el color del borde no funcionan si no se le indican antes un ancho y un estilo de borde (con las propiedades <em>border-width</em> y <em>border-style</em>)</p>
+<p>En las siguientes imágenes se muestra un ejemplo de los diferentes bordes: </p>
+<p><img src="/images/border-radius.png" alt="Border Radius" style="display: block;" /><br><img src="/images/border-color.png" alt="Border Color" style="display: block;" />      </p>
 </li>
 </ul>
 

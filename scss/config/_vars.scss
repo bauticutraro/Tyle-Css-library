@@ -214,6 +214,14 @@ $border-radius: (
     circle: 100%
 );
 
+$border-radius-sides: (
+    '': '',
+    tl: -top-left,
+    tr: -top-right,
+    bl: -bottom-left,
+    br: -bottom-right
+);
+
 $border-sides: (
     '': '',
     t: -top,
