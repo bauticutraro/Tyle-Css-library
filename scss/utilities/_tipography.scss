@@ -9,21 +9,21 @@
 
 /* ============================= Font Weight ============================= */
 @each $class-name, $value in $weight {
-    .fw-#{$class-name} {
+    .f-weight-#{$class-name} {
         font-weight: $value;
     }
 }
 
 /* ============================= Text Align ============================= */
 @each $class-name, $value in $align {
-    .text-#{$class-name} {
+    .t-align-#{$class-name} {
         text-align: $value;
     }
 }
 
 /* ============================= Text Decoration ============================= */
 @each $class-name, $value in $decoration {
-    .td-#{$class-name} {
+    .t-decoration-#{$class-name} {
         text-decoration: $value;
     }
 }

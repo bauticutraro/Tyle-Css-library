@@ -66,11 +66,11 @@
  
 ## Documentación:
 
- ### Sistema de Grid:
-
+ <details>
+  <summary style="cursor: pointer; display: inline-block; outline: 0;"><h3 style="display: inline-block">Sistema de Grid<h3></summary>
   Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
   
-  Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus   respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de   columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
+  Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus   respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
   
   Html:
   ```html
@@ -147,11 +147,13 @@
    ![Start Column](/images/start-col.png "Start Column")
    
    Como podrás observar (con la ayuda del inspector de google Chrome) que cada div comienza donde se lo indiques.
+ </details>
+ 
+<details>
+  <summary style="cursor: pointer; display: inline-block; outline: 0;"><h3 style="display: inline-block">Clases Utilitarias:<h3></summary>
 
- ### Clases Utilitarias:
-  
-  <details>
-   <summary style="cursor: pointer; display:inline-block; outline: 0;"><h4 style="display: inline-block">Clases para la propiedad <em>Display:</em><h4></summary>
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases para la propiedad <em>Display:</em><h4></summary>
 
    La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le  puede aplicar a cualquier   elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases  para los valores más importantes. Estos valores son:
        <ul>
@@ -207,8 +209,9 @@
    Ya con esto, puedes hacer todas las convinaciones que tu pagina requiera. 
   </details>
 
-  #### Clases de Grid:
- 
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases de Grid:<h4></summary>
+
    - #### Grid Gap:
      La proppiedad ***grid-gap*** se puede aplicar solamente a los componentes que tengan la propiedad *display: grid*.
      Grid gap se refiere a la separación que hay entre las columnas y filas que se encuentran dentro del componente que tenga la propiedad    display: grid.
@@ -297,13 +300,13 @@
    - #### Align Items:
      Esta propiedad ***align-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo   que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Dicha propiedad  puede tener los siguientes valores:
      <ul>
-       <li> <em>start<em>: Alinea el contenido en la parte superior del área de la cuadrícula.</li>
+       <li> <em>start</em>: Alinea el contenido en la parte superior del área de la cuadrícula.</li>
        <img src="/images/align-items-1.png" alt="Align Items" style="display: block;" />
-       <li> <em>end<em>: Alinea el contenido en la parte inferior del área de la cuadrícula.</li>
+       <li> <em>end</em>: Alinea el contenido en la parte inferior del área de la cuadrícula.</li>
        <img src="/images/align-items-2.png" alt="Align Items" style="display: block;" />
-       <li> <em>center<em>: Alinea el contenido en el centro del área de la cuadrícula.</li>
+       <li> <em>center</em>: Alinea el contenido en el centro del área de la cuadrícula.</li>
        <img src="/images/align-items-3.png" alt="Align Items" style="display: block;" />
-       <li> <em>stretch<em>: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).</li>
+       <li> <em>stretch</em>: Rellena todo el ancho del área de la cuadrícula (este es el valor por defecto).</li>
        <img src="/images/justify-items-4.png" alt="Align Items" style="display: block;" />
      </ul>
      Tyle cuenta con clases para estas propiedades. Para indicar dichas clases se hace de la siguiente manera:
@@ -399,9 +402,11 @@
      ***g-align-self-(valor)***
    
      Los *valores* son los mencionados anteriormente (start, end, center, stretch).
-   
-  #### Clases de Flexbox:
-  
+  </details>
+
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases de Flexbox:<h4></summary>
+
    - #### Flex Direction:
      La propiedad ***flex-direction*** establece la dirección de un elemento flexible dentro de un contenedor (es decir que el contenedor tenga la propiedad *display: flex*).
    
@@ -542,9 +547,11 @@
      ***f-align-self-(valor)***
     
      Los *valores* son los mencionados anteriormente (start, end, center, stretch, baseline, auto).
+  </details>
 
-  #### Clases para las propiedades *margin* y *padding:*
-  
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases para las propiedades <em>margin</em> y <em>padding:</em><h4></summary>
+
    - #### Margin:
       La propiedad ***margin*** se utiliza para generar un espaciado entre los elementos, fuera de cualquier borde definido. Con css tenés control total sobre el *margin*. Existen propiedades para establecer el margin de cada lado de un elemento (arriba, derecha, abajo e izquierda).
       Las diferentes propiedades para el margin son:
@@ -578,9 +585,11 @@
 
       Las propiedades abreviadas son ***p*** (para el *padding*), ***pt*** (para el *padding-top*), ***pr*** (para el *padding-right*), ***pb*** (para el *padding-bottom*) y ***pl*** (para el *padding-left*). Pero Tyle también tiene clases para establecer el *padding* en left y en right al mismo tiempo (***px***) y para top y bottom (***py***). Los valores son: *0*, *1*, *2*, *3*, *4* y *5*. En la siguiente imagen podrás observar las diferentes medidas para los *paddings*:
        <img src="/images/padding.png" alt="Padding" style="display: block;" />   
+  </details>
+ 
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Paleta de Colores:<h4></summary>
 
-  #### Paleta de colores: 
-  
    Tyle cuenta con una paleta de colores. Estos colores pueden ser aplicados tanto al color de fondo, como al color del texto mediante clases de Tyle.
 
    - Colores:
@@ -609,9 +618,11 @@
 
    
    Los nombres de los colores son los mencionados anteriormente en la tabla.
+  </details>
+     
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases para los Bordes:<h4></summary>
 
-  #### Clases para los Bordes: 
-    
    La propeidad ***border*** le da un borde al elemento aplicado. Este borde puede ser de difrentes tipos, diferentes colores, puede tener diferentes anchos, las esquinas rendondeadas, etc.
    Tyle cuenta con algunas propiedades para los bordes. Estas propiedades con las que cuenta Tyle son el ***border-radius*** (funciona para redondear las esquinas) y el ***border-color***.
 
@@ -645,9 +656,10 @@
 
    <img src="/images/border-radius.png" alt="Border Radius" style="display: block;" />   
    <img src="/images/border-color.png" alt="Border Color" style="display: block;" />      
-      
-  #### Clases para el Width y Height:
+  </details>
 
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases para el <em>Width</em> y <em>Height:</em><h4></summary>
    Las propeidades ***width*** y ***height*** se utilizan para definir las dimensiones de un elemento. Estas propiedades permiten valores numéricos con sus respectivas unidades. La propiedad *width* se utiliza para definir el ancho de un elemento, mientras la propiedad *height* se utiliza para definir la altura de un elemento.
    Tyle cuenta con clases para estas propiedades, y se indican de la siguiente manera:
 
@@ -655,21 +667,43 @@
    *Width*: ***w-(valor)***  
       
    Los valores que aceptan estas clases van del 0 al 100, siempre y cuando el número se multiplo de 5, es decir que los valores van de 5 en 5 (0, 5, 10, 15, 20, 25, 30...). El valor en estas clases equivale al porcentaje, es decir que si utilizas la clase, por ejemplo, *w-75*, va a tener un *width* de 75% de su contenedor.    
+  </details>
 
+  <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><h4 style="display: inline-block">Clases para la Tipografía:<h4></summary>
 
+   Tyle cuenta clases para algunas de las diferentes propiedades que se le pueden dar a los textos. Cuenta con diferentes clases para el tamaño de los textos, para su grosor, para su alineación y para su decoración.
 
+   - ***Tamaño del texto:*** Estas clases se indican de la siguientes maneras:
+     ***header-(valor1)***
+     ***font-(valor2)***
+     ***small-(valor3)***  
+     El valor1 puede ir del 1 al 7, siendo 1 el tamaño más grande y 7 el más chico.
+     El valor2 puede ir del 1 al 3, siendo 1 el tamaño más grande y 3 el más chico.
+     El valor3 puede ir del 1 al 2, siendo 1 el tamaño más grande y 2 el más chico.
+     En la siguiente imagen podrás apreciar los distintos tamaños de las clases para el texto:
+     <img src="images/font-1.png" style="display: block" />
+      
+   - ***Grosor del texto:*** Estas clases se indican de la siguiente manera:   
+     ***f-weight-(valor)***
+     El valor puede ir del 1 al 6, siende 1 el menor valor y 6 el mayor.
+     En la siguiente imagen podrás observar las diferentes clases para el grosor del texto:
+     <img src="images/font-2.png" style="display: block" />
 
+   - ***Decoración del texto:*** Estas clases se indican de la siguientes maneras:
+     ***t-decoration-(valor)***
+     Los valores que acepta esta clase son *none*, *underline*, *overline* y *del*. 
+     En la siguiente imagen podrás observar las diferentes clases para la decoración del texto:
+     <img src="images/font-3.png" style="display: block" />
 
+   - ***Alineación del texto:*** Estas clases se indican de la siguientes maneras:
+     ***t-align-(valor)***
+     Los valores que acepta esta clase son *left*, *center*, *right* y *justify*. 
+     En la siguiente imagen podrás observar las diferentes clases para la alineación del texto:
+     <img src="images/font-4.png" style="display: block" />
+  </details>
 
-
-
-
-
-
-
-
-
-
+</details>
 
 
 
