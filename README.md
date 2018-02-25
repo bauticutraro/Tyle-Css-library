@@ -98,13 +98,13 @@
   ***col*-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
   Las medidas utilizadas en Tyle son las siguientes: 
   
-  | Clase | Desde  |  Hasta  |
-  | ----- |:-----: | :-----: |
-  | *xs*  | 480px  | 639px   |
-  | *sm*  | 640px  | 767px   |
-  | *md*  | 768px  | 1023px  |
-  | *lg*  | 1024px | 1365px  |
-  | *xl*  | 1366px | 1366px  |
+  | Clase | Desde  |   Hasta   |
+  | ----- |:-----: |  :-----:  |
+  | *xs*  | 480px  |  639px    |
+  | *sm*  | 640px  |  767px    |
+  | *md*  | 768px  |  1023px   |
+  | *lg*  | 1024px |  1365px   |
+  | *xl*  | 1366px | + 1366px  |
   
   Por lo tanto podés formar clases como por ejemplo:
   *col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
@@ -673,6 +673,7 @@
 
   <details style="padding-left: 20px">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el <em>Width</em> y <em>Height:</em></strong></summary>
+
    Las propeidades ***width*** y ***height*** se utilizan para definir las dimensiones de un elemento. Estas propiedades permiten valores numéricos con sus respectivas unidades. La propiedad *width* se utiliza para definir el ancho de un elemento, mientras la propiedad *height* se utiliza para definir la altura de un elemento.
    Tyle cuenta con clases para estas propiedades, y se indican de la siguiente manera:
 
@@ -690,29 +691,37 @@
    Tyle cuenta clases para algunas de las diferentes propiedades que se le pueden dar a los textos. Cuenta con diferentes clases para el tamaño de los textos, para su grosor, para su alineación y para su decoración.
 
    - ***Tamaño del texto:*** Estas clases se indican de la siguientes maneras:
+
      ***header-(valor1)***
      ***font-(valor2)***
-     ***small-(valor3)***  
+     ***small-(valor3)*** 
+
      El valor1 puede ir del 1 al 7, siendo 1 el tamaño más grande y 7 el más chico.
      El valor2 puede ir del 1 al 3, siendo 1 el tamaño más grande y 3 el más chico.
      El valor3 puede ir del 1 al 2, siendo 1 el tamaño más grande y 2 el más chico.
      En la siguiente imagen podrás apreciar los distintos tamaños de las clases para el texto:
      <img src="images/font-1.png" style="display: block" />
       
-   - ***Grosor del texto:*** Estas clases se indican de la siguiente manera:   
+   - ***Grosor del texto:*** Estas clases se indican de la siguiente manera:  
+
      ***f-weight-(valor)***
+
      El valor puede ir del 1 al 6, siende 1 el menor valor y 6 el mayor.
      En la siguiente imagen podrás observar las diferentes clases para el grosor del texto:
      <img src="images/font-2.png" style="display: block" />
 
-   - ***Decoración del texto:*** Estas clases se indican de la siguientes maneras:
+   - ***Decoración del texto:*** Estas clases se indican de la siguiente manera:
+
      ***t-decoration-(valor)***
+
      Los valores que acepta esta clase son *none*, *underline*, *overline* y *del*. 
      En la siguiente imagen podrás observar las diferentes clases para la decoración del texto:
      <img src="images/font-3.png" style="display: block" />
 
-   - ***Alineación del texto:*** Estas clases se indican de la siguientes maneras:
+   - ***Alineación del texto:*** Estas clases se indican de la siguiente manera:
+
      ***t-align-(valor)***
+
      Los valores que acepta esta clase son *left*, *center*, *right* y *justify*. 
      En la siguiente imagen podrás observar las diferentes clases para la alineación del texto:
      <img src="images/font-4.png" style="display: block" />
@@ -743,6 +752,7 @@
     
    Las diferentes clases para el ***container***, como su nombre lo indica, se utilizan para contener a los diferentes elementos.
    Tyle cuenta con 4 tipos diferentes de container:
+
    ***container-full:*** Ocupa el 100%.
    ***container:*** Ocupa el 90%.
    ***container-2:*** Ocupa el 80%.
@@ -757,7 +767,6 @@
   
    Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase ***container*** se indica de la siguiente  manera: 
    ***container-(medida responsive)***
-   
   </details>
 
   ---

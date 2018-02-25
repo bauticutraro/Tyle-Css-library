@@ -119,13 +119,13 @@
   <strong><em>col</em>-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)</strong>
   Las medidas utilizadas en Tyle son las siguientes: 
 
-  | Clase | Desde  |  Hasta  |
-  | ----- |:-----: | :-----: |
-  | <em>xs</em>  | 480px  | 639px   |
-  | <em>sm</em>  | 640px  | 767px   |
-  | <em>md</em>  | 768px  | 1023px  |
-  | <em>lg</em>  | 1024px | 1365px  |
-  | <em>xl</em>  | 1366px | 1366px  |
+  | Clase | Desde  |   Hasta   |
+  | ----- |:-----: |  :-----:  |
+  | <em>xs</em>  | 480px  |  639px    |
+  | <em>sm</em>  | 640px  |  767px    |
+  | <em>md</em>  | 768px  |  1023px   |
+  | <em>lg</em>  | 1024px |  1365px   |
+  | <em>xl</em>  | 1366px | + 1366px  |
 
   Por lo tanto podés formar clases como por ejemplo:
   <em>col-xs-12</em> (va a ocupar 12 columnas desde 480px para arriba)
@@ -665,6 +665,7 @@
 <hr>
   <details style="padding-left: 20px">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el <em>Width</em> y <em>Height:</em></strong></summary>
+
    Las propeidades <strong><em>width</em></strong> y <strong><em>height</em></strong> se utilizan para definir las dimensiones de un elemento. Estas propiedades permiten valores numéricos con sus respectivas unidades. La propiedad <em>width</em> se utiliza para definir el ancho de un elemento, mientras la propiedad <em>height</em> se utiliza para definir la altura de un elemento.
    Tyle cuenta con clases para estas propiedades, y se indican de la siguiente manera:
 
@@ -678,27 +679,36 @@
    Tyle cuenta clases para algunas de las diferentes propiedades que se le pueden dar a los textos. Cuenta con diferentes clases para el tamaño de los textos, para su grosor, para su alineación y para su decoración.
 
    - <strong><em>Tamaño del texto:</em></strong> Estas clases se indican de la siguientes maneras:
+
      <strong><em>header-(valor1)</em></strong>
      <strong><em>font-(valor2)</em></strong>
-     <strong><em>small-(valor3)</em></strong><br>     El valor1 puede ir del 1 al 7, siendo 1 el tamaño más grande y 7 el más chico.
+     <strong><em>small-(valor3)</em></strong> 
+
+     El valor1 puede ir del 1 al 7, siendo 1 el tamaño más grande y 7 el más chico.
      El valor2 puede ir del 1 al 3, siendo 1 el tamaño más grande y 3 el más chico.
      El valor3 puede ir del 1 al 2, siendo 1 el tamaño más grande y 2 el más chico.
      En la siguiente imagen podrás apreciar los distintos tamaños de las clases para el texto:
      <img src="images/font-1.png" style="display: block" />
 
-   - <strong><em>Grosor del texto:</em></strong> Estas clases se indican de la siguiente manera:<br>     <strong><em>f-weight-(valor)</em></strong>
+   - <strong><em>Grosor del texto:</em></strong> Estas clases se indican de la siguiente manera:<br>
+     <strong><em>f-weight-(valor)</em></strong>
+
      El valor puede ir del 1 al 6, siende 1 el menor valor y 6 el mayor.
      En la siguiente imagen podrás observar las diferentes clases para el grosor del texto:
      <img src="images/font-2.png" style="display: block" />
 
-   - <strong><em>Decoración del texto:</em></strong> Estas clases se indican de la siguientes maneras:
+   - <strong><em>Decoración del texto:</em></strong> Estas clases se indican de la siguiente manera:
+
      <strong><em>t-decoration-(valor)</em></strong>
+
      Los valores que acepta esta clase son <em>none</em>, <em>underline</em>, <em>overline</em> y <em>del</em>. 
      En la siguiente imagen podrás observar las diferentes clases para la decoración del texto:
      <img src="images/font-3.png" style="display: block" />
 
-   - <strong><em>Alineación del texto:</em></strong> Estas clases se indican de la siguientes maneras:
+   - <strong><em>Alineación del texto:</em></strong> Estas clases se indican de la siguiente manera:
+
      <strong><em>t-align-(valor)</em></strong>
+
      Los valores que acepta esta clase son <em>left</em>, <em>center</em>, <em>right</em> y <em>justify</em>. 
      En la siguiente imagen podrás observar las diferentes clases para la alineación del texto:
      <img src="images/font-4.png" style="display: block" />
@@ -725,6 +735,7 @@
 
    Las diferentes clases para el <strong><em>container</em></strong>, como su nombre lo indica, se utilizan para contener a los diferentes elementos.
    Tyle cuenta con 4 tipos diferentes de container:
+
    <strong><em>container-full:</em></strong> Ocupa el 100%.
    <strong><em>container:</em></strong> Ocupa el 90%.
    <strong><em>container-2:</em></strong> Ocupa el 80%.
@@ -738,7 +749,6 @@
 
    Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase <strong><em>container</em></strong> se indica de la siguiente  manera: 
    <strong><em>container-(medida responsive)</em></strong>
-
   </details>
 
 <hr>
