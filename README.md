@@ -693,13 +693,16 @@
    - ***Tamaño del texto:*** Estas clases se indican de la siguientes maneras:
 
      ***header-(valor1)***
+
      ***font-(valor2)***
+
      ***small-(valor3)*** 
 
      El valor1 puede ir del 1 al 7, siendo 1 el tamaño más grande y 7 el más chico.
      El valor2 puede ir del 1 al 3, siendo 1 el tamaño más grande y 3 el más chico.
      El valor3 puede ir del 1 al 2, siendo 1 el tamaño más grande y 2 el más chico.
      En la siguiente imagen podrás apreciar los distintos tamaños de las clases para el texto:
+
      <img src="images/font-1.png" style="display: block" />
       
    - ***Grosor del texto:*** Estas clases se indican de la siguiente manera:  
@@ -708,6 +711,7 @@
 
      El valor puede ir del 1 al 6, siende 1 el menor valor y 6 el mayor.
      En la siguiente imagen podrás observar las diferentes clases para el grosor del texto:
+
      <img src="images/font-2.png" style="display: block" />
 
    - ***Decoración del texto:*** Estas clases se indican de la siguiente manera:
@@ -716,6 +720,7 @@
 
      Los valores que acepta esta clase son *none*, *underline*, *overline* y *del*. 
      En la siguiente imagen podrás observar las diferentes clases para la decoración del texto:
+
      <img src="images/font-3.png" style="display: block" />
 
    - ***Alineación del texto:*** Estas clases se indican de la siguiente manera:
@@ -724,6 +729,7 @@
 
      Los valores que acepta esta clase son *left*, *center*, *right* y *justify*. 
      En la siguiente imagen podrás observar las diferentes clases para la alineación del texto:
+     
      <img src="images/font-4.png" style="display: block" />
   </details>
 
@@ -754,8 +760,11 @@
    Tyle cuenta con 4 tipos diferentes de container:
 
    ***container-full:*** Ocupa el 100%.
+
    ***container:*** Ocupa el 90%.
+
    ***container-2:*** Ocupa el 80%.
+
    ***container-3:*** Ocupa el 70%.   
 
    Aplicando las diferentes clases para *containers*, y con un poco de estilos para el color de fondo y para la letra, queda de la siguiente manera:
@@ -766,6 +775,7 @@
    ***container-(medida responsive)-(tipo de container)***
   
    Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase ***container*** se indica de la siguiente  manera: 
+
    ***container-(medida responsive)***
   </details>
 
