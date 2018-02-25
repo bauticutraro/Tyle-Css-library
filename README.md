@@ -213,7 +213,7 @@
   ---
 
   <details style="padding-left: 20px">
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases de Grid:<strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases de Grid:</strong></summary>
 
    - #### Grid Gap:
      La proppiedad ***grid-gap*** se puede aplicar solamente a los componentes que tengan la propiedad *display: grid*.
@@ -485,11 +485,11 @@
    - #### Align Items:
      Esta propiedad ***align-items*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad *display: flex*. La propiedad *align-items* define el comportamiento predeterminado de cómo se colocan los elementos flexibles a lo largo del eje transversal  en la línea actual. Dicha propiedad puede tener los siguientes valores:
      <ul>
-       <li> <em>flex-start<em>: Alinea el contenido en la parte superior del eje transversal.</li>
-       <li> <em>flex-end<em>: Alinea el contenido en la parte inferior del eje transversal.</li>
-       <li> <em>center<em>: Alinea el contenido en el centro del eje transversal.</li>
-       <li> <em>baseline<em>: Las lineas base de los elementos están alineados.</li>
-       <li> <em>stretch<em>: Los elementos se estiran hasta llenar todo el contenedor (este es el valor por defecto).</li>
+       <li> <em>flex-start</em>: Alinea el contenido en la parte superior del eje transversal.</li>
+       <li> <em>flex-end</em>: Alinea el contenido en la parte inferior del eje transversal.</li>
+       <li> <em>center</em>: Alinea el contenido en el centro del eje transversal.</li>
+       <li> <em>baseline</em>: Las lineas base de los elementos están alineados.</li>
+       <li> <em>stretch</em>: Los elementos se estiran hasta llenar todo el contenedor (este es el valor por defecto).</li>
      </ul>
      <img src="/images/f-align-items.png" alt="Align Items" style="display: block;" /> 
     
@@ -731,8 +731,7 @@
    Los diferentes valores van del 1 al 10, siendo el 10 el que tiene mayor efecto.
    Acontinuación verás una tabla en la que se muestra los nombres de los diferentes filtros y sus funciones:
    <img src="/images/filter.png" alt="Border Radius" style="display: block;" />   
-   
-  </details>
+ </details>
 
 
 
