@@ -748,14 +748,16 @@
    ***container-2:*** Ocupa el 80%.
    ***container-3:*** Ocupa el 70%.   
 
-   Aplicando las diferentes clases para *containers*, y con un poco de estilos para el color de fondo y pra la letra, queda de la siguiente manera:
+   Aplicando las diferentes clases para *containers*, y con un poco de estilos para el color de fondo y para la letra, queda de la siguiente manera:
    <img src="images/container.png" />
 
    Además de esto, estas diferentes clases cuentan con el responsive, teniendo la posibiliadad de elegir a partir de cuando querés que se aplique tal *container*. Para esto, las clases se indican de la siguiente manera:
    
    ***container-(medida responsive)-(tipo de container)***
   
-   Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase ***container*** se indica de la siguiente  manera: ***container-(medida responsive)***.
+   Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase ***container*** se indica de la siguiente  manera: 
+   ***container-(medida responsive)***
+   
   </details>
 
   ---
