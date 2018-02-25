@@ -2,6 +2,8 @@
   /* ============================================= Container ============================================= */
 
 .container,
+.container-2,
+.container-3,
 .container-full {
   width: 100%;
   padding-right: 15px;
@@ -9,13 +11,34 @@
   margin-right: auto;
   margin-left: auto; }
 
+
+  .container { width: 90% }
+  .container-2 { width: 80% }
+  .container-3 { width: 70% }
+  
+
   /* ===================================== Container - Media queries ===================================== */
-  @each $key, $value in $responsive {
-      @media screen and (min-width: $value) {
-          .container {
-              $val: $value / 1px;
-              $val-percent: ((94% * $val) / 100%) * 1px;
-              max-width: $val-percent ; 
-          }
-      }
-  }
+//   @each $key, $value in $responsive {
+//       @media screen and (min-width: $value) {
+//           .container {
+//               $val: $value / 1px;
+//               $val-percent: ((94% * $val) / 100%) * 1px;
+//               max-width: $val-percent ; 
+//           }
+//       }
+//   }
+
+$containers-names: '', -2, -3, -full;
+$containers-values: 90%, 80%, 70%, 100%;
+
+@each $responsive-name, $responsive-value in $responsive {
+    @media screen and (min-width: $responsive-value) {       
+        @for $i from 1 through length($containers-names) {
+            $container-name: nth($containers-names, $i);
+            $container-value: nth($containers-values, $i);            
+            .container-#{$responsive-name}#{$container-name} {
+                width: $container-value;
+            }
+        }
+    }
+}

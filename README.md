@@ -15,8 +15,8 @@
   |   ├── tyle.css
   |   ├── tyle.min.css
   |   |
-  |   ├── tyle-grid-sistem.css
-  |   ├── tyle-grid-sistem.min.css
+  |   ├── tyle-grid-system.css
+  |   ├── tyle-grid-system.min.css
   |   |
   |   ├── tyle-utilities.css
   |   ├── tyle-utilities.min.css
@@ -33,7 +33,7 @@
  |                       Archivos                          | Sistema de grid  | Componentes |     Clases utilitarias     |
  | ------------------------------------------------------- |:---------------: | :---------: | :------------------------: |
  | **tyle.css**<br>**tyle.min.css**                        |     Incluido     |  Incluido   |          Incluido          |
- | **tyle-grid-sistem.css**<br>**tyle-grid-sistem.min.css**|     Incluido     | No Incluido | Solo las de grid y flexbox |
+ | **tyle-grid-system.css**<br>**tyle-grid-system.min.css**|     Incluido     | No Incluido | Solo las de grid y flexbox |
  | **tyle-utilities.css**<br>**tyle-utilities.min.css**    |    No Incluido   | No Incluido |          Incluido          |
  | **tyle-components.css**<br>**tyle-components.min.css**  |    No Incluido   |   Incluido  |         No Incluido        |
  
@@ -149,9 +149,9 @@
    Como podrás observar (con la ayuda del inspector de google Chrome) que cada div comienza donde se lo indiques.
  </details>
 
----
+ ---
 
-### Clases Utilitarias:
+ ### Clases Utilitarias:
 
   <details style="padding-left: 20px">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para la propiedad <em>Display:</em></strong></summary>
@@ -719,7 +719,8 @@
   </details>
 
   ---
- <details style="padding-left: 20px">
+
+  <details style="padding-left: 20px">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para las imagenes:</strong></summary>
 
    Tyle cuenta con diferentes clases para las imagenes. Estas clases son para el responsive de las imagenes y otras para ponerles filtros.
@@ -731,11 +732,33 @@
    Los diferentes valores van del 1 al 10, siendo el 10 el que tiene mayor efecto.
    Acontinuación verás una tabla en la que se muestra los nombres de los diferentes filtros y sus funciones:
    <img src="/images/filter.png" alt="Border Radius" style="display: block;" />   
- </details>
+  </details>
 
+  ---
 
+ ### Componentes:
+  
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container</strong></summary>
+    
+   Las diferentes clases para el ***container***, como su nombre lo indica, se utilizan para contener a los diferentes elementos.
+   Tyle cuenta con 4 tipos diferentes de container:
+   ***container-full:*** Ocupa el 100%.
+   ***container:*** Ocupa el 90%.
+   ***container-2:*** Ocupa el 80%.
+   ***container-3:*** Ocupa el 70%.   
 
+   Aplicando las diferentes clases para *containers*, y con un poco de estilos para el color de fondo y pra la letra, queda de la siguiente manera:
+   <img src="images/container.png" />
 
+   Además de esto, estas diferentes clases cuentan con el responsive, teniendo la posibiliadad de elegir a partir de cuando querés que se aplique tal *container*. Para esto, las clases se indican de la siguiente manera:
+   
+   ***container-(medida responsive)-(tipo de container)***
+  
+   Las medidas responsive son las mencionadas anteriormente en el sistema de grid, y los tipos de container son  los mensionados anteriormente (2, 3, full). En el caso de la clase ***container*** se indica de la siguiente  manera: ***container-(medida responsive)***.
+  </details>
+
+  ---
 
 
 

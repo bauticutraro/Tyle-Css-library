@@ -8,16 +8,18 @@
 // Mixins
 @import 'mixins/mixins';
 
+// Grid System
+@import 'grid-system/grid-system';
+
 // Components
-@import 'components/grid-system';
 @import 'components/container';
-@import 'components/scrollbar';
 @import 'components/buttons';
-@import 'components/progress-circle';
+@import 'components/scrollbar';
 @import 'components/progress-bar';
+@import 'components/progress-circle';
 @import 'components/poster';
-@import 'components/modal';
 @import 'components/card';
+@import 'components/modal';
 @import 'components/nav';
 
 // Utilities

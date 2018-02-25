@@ -194,18 +194,138 @@ body { font-family: sans-serif; }
   .start-xl-12 { grid-column-start: 12; } }
 
 /* ============================================= Container ============================================= */
-.container, .container-full { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+.container, .container-2, .container-3, .container-full { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+.container { width: 90%; }
+
+.container-2 { width: 80%; }
+
+.container-3 { width: 70%; }
 
 /* ===================================== Container - Media queries ===================================== */
-@media screen and (min-width: 480px) { .container { max-width: 451.2px; } }
+@media screen and (min-width: 480px) { .container-xs { width: 90%; }
+  .container-xs-2 { width: 80%; }
+  .container-xs-3 { width: 70%; }
+  .container-xs-full { width: 100%; } }
 
-@media screen and (min-width: 640px) { .container { max-width: 601.6px; } }
+@media screen and (min-width: 640px) { .container-sm { width: 90%; }
+  .container-sm-2 { width: 80%; }
+  .container-sm-3 { width: 70%; }
+  .container-sm-full { width: 100%; } }
 
-@media screen and (min-width: 768px) { .container { max-width: 721.92px; } }
+@media screen and (min-width: 768px) { .container-md { width: 90%; }
+  .container-md-2 { width: 80%; }
+  .container-md-3 { width: 70%; }
+  .container-md-full { width: 100%; } }
 
-@media screen and (min-width: 1024px) { .container { max-width: 962.56px; } }
+@media screen and (min-width: 1024px) { .container-lg { width: 90%; }
+  .container-lg-2 { width: 80%; }
+  .container-lg-3 { width: 70%; }
+  .container-lg-full { width: 100%; } }
 
-@media screen and (min-width: 1366px) { .container { max-width: 1284.04px; } }
+@media screen and (min-width: 1366px) { .container-xl { width: 90%; }
+  .container-xl-2 { width: 80%; }
+  .container-xl-3 { width: 70%; }
+  .container-xl-full { width: 100%; } }
+
+/* ========================== Button component ========================= */
+.button { display: inline-block; padding: .375rem .75rem; text-align: center; border-radius: .15rem; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 1rem; line-height: 1.5; border: 1px solid transparent; -webkit-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; margin: .25rem; cursor: pointer; }
+
+.button:active { -webkit-transform: scale(0.95); -ms-transform: scale(0.95); transform: scale(0.95); }
+
+.button:focus { outline: 0; }
+
+[class*="button-"] { color: #fff; }
+
+/* ========================== Button Color ========================= */
+.button-primary { background-color: #0576FA; }
+
+.button-primary:hover { background-color: #056ae1; }
+
+.button-secondary { background-color: #6E787D; }
+
+.button-secondary:hover { background-color: #626b6f; }
+
+.button-info { background-color: #1EAAC8; }
+
+.button-info:hover { background-color: #1b97b2; }
+
+.button-success { background-color: #23C040; }
+
+.button-success:hover { background-color: #1faa39; }
+
+.button-warning { background-color: #FABE0A; }
+
+.button-warning:hover { background-color: #e6ae05; }
+
+.button-danger { background-color: #F53040; }
+
+.button-danger:hover { background-color: #f4182a; }
+
+.button-light { background-color: #F0F0F0; color: #000; }
+
+.button-light:hover { background-color: #e3e3e3; }
+
+.button-white { background-color: #FFFFFF; color: #000; }
+
+.button-white:hover { background-color: #f2f2f2; }
+
+.button-dark { background-color: #1E1E1E; }
+
+.button-dark:hover { background-color: #111111; }
+
+.button-black { background-color: #000000; }
+
+.button-black:hover { background-color: black; }
+
+/* ========================== Button Outline-Color ========================= */
+.button-outline-primary { background: transparent; border: 1px solid #0576FA; color: #0576FA; }
+
+.button-outline-primary:hover { border: 1px solid #045ec8; color: #045ec8; }
+
+.button-outline-secondary { background: transparent; border: 1px solid #6E787D; color: #6E787D; }
+
+.button-outline-secondary:hover { border: 1px solid #565e62; color: #565e62; }
+
+.button-outline-info { background: transparent; border: 1px solid #1EAAC8; color: #1EAAC8; }
+
+.button-outline-info:hover { border: 1px solid #17849c; color: #17849c; }
+
+.button-outline-success { background: transparent; border: 1px solid #23C040; color: #23C040; }
+
+.button-outline-success:hover { border: 1px solid #1b9532; color: #1b9532; }
+
+.button-outline-warning { background: transparent; border: 1px solid #FABE0A; color: #FABE0A; }
+
+.button-outline-warning:hover { border: 1px solid #cd9b04; color: #cd9b04; }
+
+.button-outline-danger { background: transparent; border: 1px solid #F53040; color: #F53040; }
+
+.button-outline-danger:hover { border: 1px solid #e70b1d; color: #e70b1d; }
+
+.button-outline-light { background: transparent; border: 1px solid #F0F0F0; color: #F0F0F0; }
+
+.button-outline-light:hover { border: 1px solid #d7d7d7; color: #d7d7d7; }
+
+.button-outline-white { background: transparent; border: 1px solid #FFFFFF; color: #FFFFFF; }
+
+.button-outline-white:hover { border: 1px solid #e6e6e6; color: #e6e6e6; }
+
+.button-outline-dark { background: transparent; border: 1px solid #1E1E1E; color: #1E1E1E; }
+
+.button-outline-dark:hover { border: 1px solid #050505; color: #050505; }
+
+.button-outline-black { background: transparent; border: 1px solid #000000; color: #000000; }
+
+.button-outline-black:hover { border: 1px solid black; color: black; }
+
+.button-lg { -webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); }
+
+.button-lg.button:active { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
+
+.button-sm { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
+
+.button-sm.button:active { -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); }
 
 /* =========================== CUSTOM SCROLLBAR ========================== */
 /* Main scrollbar class */
@@ -337,104 +457,10 @@ body { font-family: sans-serif; }
 
 .scrollbar-bg-black::-webkit-scrollbar-track { background: #4d4d4d; }
 
-/* ========================== Button component ========================= */
-.button { display: inline-block; padding: .375rem .75rem; text-align: center; border-radius: .15rem; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; font-size: 1rem; line-height: 1.5; border: 1px solid transparent; -webkit-transition: all .15s ease-in-out; -o-transition: all .15s ease-in-out; transition: all .15s ease-in-out; margin: .25rem; cursor: pointer; }
+/* ========================== Progress Bar ========================= */
+.progress-bar { width: 100%; border-width: 1px; border-style: solid; margin-top: 1rem; padding: .3rem; position: relative; height: 2rem; }
 
-.button:active { -webkit-transform: scale(0.95); -ms-transform: scale(0.95); transform: scale(0.95); }
-
-.button:focus { outline: 0; }
-
-[class*="button-"] { color: #fff; }
-
-/* ========================== Button Color ========================= */
-.button-primary { background-color: #0576FA; }
-
-.button-primary:hover { background-color: #056ae1; }
-
-.button-secondary { background-color: #6E787D; }
-
-.button-secondary:hover { background-color: #626b6f; }
-
-.button-info { background-color: #1EAAC8; }
-
-.button-info:hover { background-color: #1b97b2; }
-
-.button-success { background-color: #23C040; }
-
-.button-success:hover { background-color: #1faa39; }
-
-.button-warning { background-color: #FABE0A; }
-
-.button-warning:hover { background-color: #e6ae05; }
-
-.button-danger { background-color: #F53040; }
-
-.button-danger:hover { background-color: #f4182a; }
-
-.button-light { background-color: #F0F0F0; color: #000; }
-
-.button-light:hover { background-color: #e3e3e3; }
-
-.button-white { background-color: #FFFFFF; color: #000; }
-
-.button-white:hover { background-color: #f2f2f2; }
-
-.button-dark { background-color: #1E1E1E; }
-
-.button-dark:hover { background-color: #111111; }
-
-.button-black { background-color: #000000; }
-
-.button-black:hover { background-color: black; }
-
-/* ========================== Button Outline-Color ========================= */
-.button-outline-primary { background: transparent; border: 1px solid #0576FA; color: #0576FA; }
-
-.button-outline-primary:hover { border: 1px solid #045ec8; color: #045ec8; }
-
-.button-outline-secondary { background: transparent; border: 1px solid #6E787D; color: #6E787D; }
-
-.button-outline-secondary:hover { border: 1px solid #565e62; color: #565e62; }
-
-.button-outline-info { background: transparent; border: 1px solid #1EAAC8; color: #1EAAC8; }
-
-.button-outline-info:hover { border: 1px solid #17849c; color: #17849c; }
-
-.button-outline-success { background: transparent; border: 1px solid #23C040; color: #23C040; }
-
-.button-outline-success:hover { border: 1px solid #1b9532; color: #1b9532; }
-
-.button-outline-warning { background: transparent; border: 1px solid #FABE0A; color: #FABE0A; }
-
-.button-outline-warning:hover { border: 1px solid #cd9b04; color: #cd9b04; }
-
-.button-outline-danger { background: transparent; border: 1px solid #F53040; color: #F53040; }
-
-.button-outline-danger:hover { border: 1px solid #e70b1d; color: #e70b1d; }
-
-.button-outline-light { background: transparent; border: 1px solid #F0F0F0; color: #F0F0F0; }
-
-.button-outline-light:hover { border: 1px solid #d7d7d7; color: #d7d7d7; }
-
-.button-outline-white { background: transparent; border: 1px solid #FFFFFF; color: #FFFFFF; }
-
-.button-outline-white:hover { border: 1px solid #e6e6e6; color: #e6e6e6; }
-
-.button-outline-dark { background: transparent; border: 1px solid #1E1E1E; color: #1E1E1E; }
-
-.button-outline-dark:hover { border: 1px solid #050505; color: #050505; }
-
-.button-outline-black { background: transparent; border: 1px solid #000000; color: #000000; }
-
-.button-outline-black:hover { border: 1px solid black; color: black; }
-
-.button-lg { -webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); }
-
-.button-lg.button:active { -webkit-transform: scale(1.2); -ms-transform: scale(1.2); transform: scale(1.2); }
-
-.button-sm { -webkit-transform: scale(0.8); -ms-transform: scale(0.8); transform: scale(0.8); }
-
-.button-sm.button:active { -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); }
+.progress-bar-percent { position: absolute; top: 0; bottom: 0; left: 0; max-width: 100%; width: 50%; font-size: 1rem; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 /* ========================== Progress Circle ========================= */
 :root { --color: black; --color2: rgba(0, 0, 0, 0.2); }
@@ -557,11 +583,6 @@ body { font-family: sans-serif; }
 
 .progress-circle-percent-100::after { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); }
 
-/* ========================== Progress Bar ========================= */
-.progress-bar { width: 100%; border-width: 1px; border-style: solid; margin-top: 1rem; padding: .3rem; position: relative; height: 2rem; }
-
-.progress-bar-percent { position: absolute; top: 0; bottom: 0; left: 0; max-width: 100%; width: 50%; font-size: 1rem; color: #fff; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-
 /* ====================== Poster ===================== */
 .poster { position: relative; }
 
@@ -588,6 +609,24 @@ body { font-family: sans-serif; }
 .poster-dark::before { background-color: #1E1E1E; }
 
 .poster-black::before { background-color: #000000; }
+
+.card { width: 100%; height: auto; border: 1px solid #c8c8c8; border-radius: 10px; margin-bottom: 3rem; }
+
+.card-container { padding: 1.25rem; }
+
+.card-title { font-weight: bold; font-size: 2rem; margin-bottom: .2rem; }
+
+.card-subtitle { font-size: 1.5rem; font-weight: bold; margin-bottom: .2rem; }
+
+.card-text { margin-top: 1rem; }
+
+.card-img-top { border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%; height: auto; }
+
+.card-footer, .card-header { padding: .75rem 1.25rem; background-color: rgba(0, 0, 0, 0.03); }
+
+.card-header { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
+
+.card-footer { border-top: 1px solid rgba(0, 0, 0, 0.125); }
 
 /* ====================== Modal Component ===================== */
 .modal { top: 0; right: 0; bottom: 0; left: 0; position: fixed; z-index: 1000; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; display: none; background-color: rgba(0, 0, 0, 0.6); }
@@ -685,24 +724,6 @@ body { font-family: sans-serif; }
 body.scroll-none { padding-right: 17px; overflow-y: hidden; }
 
 body.scrollbar.scroll-none { padding-right: .5rem; }
-
-.card { width: 100%; height: auto; border: 1px solid #c8c8c8; border-radius: 10px; margin-bottom: 3rem; }
-
-.card-container { padding: 1.25rem; }
-
-.card-title { font-weight: bold; font-size: 2rem; margin-bottom: .2rem; }
-
-.card-subtitle { font-size: 1.5rem; font-weight: bold; margin-bottom: .2rem; }
-
-.card-text { margin-top: 1rem; }
-
-.card-img-top { border-top-left-radius: 10px; border-top-right-radius: 10px; width: 100%; height: auto; }
-
-.card-footer, .card-header { padding: .75rem 1.25rem; background-color: rgba(0, 0, 0, 0.03); }
-
-.card-header { border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-
-.card-footer { border-top: 1px solid rgba(0, 0, 0, 0.125); }
 
 /* ======================================================================================== //
 //                                        NAV BARS                                          //
