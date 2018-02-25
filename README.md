@@ -719,7 +719,20 @@
   </details>
 
   ---
+ <details style="padding-left: 20px">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para las imagenes:</strong></summary>
 
+   Tyle cuenta con diferentes clases para las imagenes. Estas clases son para el responsive de las imagenes y otras para ponerles filtros.
+   Para indicar que una imagen se responsive con Tyle, solo le debes poner la clase ***img-responsive*** a la imagen.
+   Las clases para los diferentes filtros se indican de la siguiente manera:
+
+   ***filter-(nombre del filtro)-(valor)***
+
+   Los diferentes valores van del 1 al 10, siendo el 10 el que tiene mayor efecto.
+   Acontinuación verás una tabla en la que se muestra los nombres de los diferentes filtros y sus funciones:
+   <img src="/images/filter.png" alt="Border Radius" style="display: block;" />   
+   
+  </details>
 
 
 

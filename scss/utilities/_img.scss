@@ -2,4 +2,25 @@
 
 .img-responsive {
     max-width: 100%;
+    height: auto;
+}
+
+// Filtros
+
+$filter-properties: blur, grayscale, invert, sepia, brightness, contrast, saturate;
+$filter-class:      blur, gray-scale, invert, sepia, brightness, contrast, saturate;
+$filter-maps:       $blur, $gray-scale, $invert, $sepia, $brightness, $contrast, $saturate;
+
+$parentesis-1: '(';
+$parentesis-2: ')';
+
+@for $i from 1 through length($filter-properties) {
+    $filter-property: nth($filter-properties,$i);
+    $filter-components: nth($filter-maps,$i);
+    $filter-class-name: nth($filter-class,$i);            
+    @each $key, $value in $filter-components {
+        .filter-#{$filter-class-name}-#{$key} {
+            filter: #{$filter-property}#{$parentesis-1}#{$value}#{$parentesis-2};
+        }
+    }
 }
