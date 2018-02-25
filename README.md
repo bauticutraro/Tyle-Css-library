@@ -603,18 +603,18 @@
 
    - Colores:
     
-   |     Nombre      |  Valor Hexadecimal  |                     Background Color                         |             Text color            |  
-   | --------------  |:------------------: |:------------------------------------------------------------:|:---------------------------------:|
-   | ***Primary***   |       #0576FA       |  <div style="background-color: #0576FA; width: 150px; color: #fff">Background<br>Primary</div>   | <div style="background-color: #fff; color: #0576FA; width: 150px;">Color<br>Primary</div>|
-   | ***Secondary*** |       #6E787D       |  <div style="background-color: #6E787D; width: 150px; color: #fff">Background<br>Secondary</div> | <div style="background-color: #fff; color: #6E787D; width: 150px;">Color<br>Secondary</div>|
-   | ***Info***      |       #1EAAC8       |  <div style="background-color: #1EAAC8; width: 150px; color: #fff">Background<br>Info</div>      | <div style="background-color: #fff; color: #1EAAC8; width: 150px;">Color<br>Info</div>|
-   | ***Success***   |       #23C040       |  <div style="background-color: #23C040; width: 150px; color: #fff">Background<br>Success</div>   | <div style="background-color: #fff; color: #23C040; width: 150px;">Color<br>Success</div>|
-   | ***Warning***   |       #FABE0A       |  <div style="background-color: #FABE0A; width: 150px; color: #fff">Background<br>Warning</div>   | <div style="background-color: #fff; color: #FABE0A; width: 150px;">Color<br>Warning</div>|
-   | ***Danger***    |       #F53040       |  <div style="background-color: #F53040; width: 150px; color: #fff">Background<br>Danger</div>    | <div style="background-color: #fff; color: #F53040; width: 150px;">Color<br>Danger</div>|
-   | ***Light***     |       #F0F0F0       |  <div style="background-color: #F0F0F0; width: 150px; color: #000">Background<br>Light</div>     | <div style="background-color: #111; color: #F0F0F0; width: 150px;">Color<br>Light</div>|
-   | ***Dark***      |       #1E1E1E       |  <div style="background-color: #1E1E1E; width: 150px; color: #fff">Background<br>Dark</div>      | <div style="background-color: #fff; color: #1E1E1E; width: 150px;">Color<br>Dark</div>|
-   | ***White***     |       #FFFFFF       |  <div style="background-color: #FFFFFF; width: 150px; color: #000">Background<br>White</div>     | <div style="background-color: #111; color: #FFFFFF; width: 150px;">Color<br>White</div>|
-   | ***Black***     |       #000000       |  <div style="background-color: #000000; width: 150px; color: #fff">Background<br>Black</div>     | <div style="background-color: #fff; color: #000000; width: 150px;">Color<br>Black</div>|
+   |     Nombre      |  Valor Hexadecimal  |
+   | --------------  |:------------------: |
+   | ***Primary***   |       #0576FA       |
+   | ***Secondary*** |       #6E787D       |
+   | ***Info***      |       #1EAAC8       |
+   | ***Success***   |       #23C040       |
+   | ***Warning***   |       #FABE0A       |
+   | ***Danger***    |       #F53040       |
+   | ***Light***     |       #F0F0F0       |
+   | ***Dark***      |       #1E1E1E       |
+   | ***White***     |       #FFFFFF       |
+   | ***Black***     |       #000000       |
 
    Para indicar los diferentes colores de fondo o colores de texto, se deben indicar las clases de la siguiente manera:
    - Background Color:
