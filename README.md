@@ -70,7 +70,7 @@
   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Sistema de Grid</strong></summary>
   Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
   
-  Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus   respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
+  Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
   
   Html:
   ```html
@@ -89,13 +89,15 @@
         <div class="col-12">Doce columnas</div>
     </div>
   ```
-  Con un poco de estilos css (indicándole a los contenedores una altura, un color de fondo, un color al texto, un centrado total al texto, una   separación entre los divs, que cada contenedor valla debajo y no al lado, etc...) , obtenés el siguiente resultado:
+  Con un poco de estilos css (indicándole a los contenedores una altura, un color de fondo, un color al texto, un centrado total al texto, una separación entre los divs, que cada contenedor valla debajo y no al lado, etc...)  obtenés el siguiente resultado:
   
   ![Grid sistem](/images/grid-sistem.png "Grid sistem")
   
   Sin embargo, esto no es todo acerca del sistema de grid, ya que Tyle cuenta con un sistema de grid totalmente responsive.
   Estas clases para el responsive de los elementos se definen de la siguiente manera:
+
   ***col*-(a partir de que medida ocupa dichas columnas)-(Número de columnas a ocupar)**
+
   Las medidas utilizadas en Tyle son las siguientes: 
   
   | Clase | Desde  |   Hasta   |
@@ -107,9 +109,13 @@
   | *xl*  | 1366px | + 1366px  |
   
   Por lo tanto podés formar clases como por ejemplo:
+
   *col-xs-12* (va a ocupar 12 columnas desde 480px para arriba)
+
   *col-sm-6* (va a ocupar 6 columnas desde 640px para arriba)
+
   *col-md-4* (va a ocupar 4 columnas desde 768px para arriba)
+  
   *col-lg-3* (va a ocupar 3 columnas desde 1024px para arriba)
   
   Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase   con la medida.
@@ -729,7 +735,7 @@
 
      Los valores que acepta esta clase son *left*, *center*, *right* y *justify*. 
      En la siguiente imagen podrás observar las diferentes clases para la alineación del texto:
-     
+
      <img src="images/font-4.png" style="display: block" />
   </details>
 
