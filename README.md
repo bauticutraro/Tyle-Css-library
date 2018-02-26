@@ -68,6 +68,7 @@
 
  <details>
   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Sistema de Grid</strong></summary>
+
   Para empezar, Tyle cuenta con un sistema de grid de 12 columnas. Dicho sistema esta hecho con Css grid.
   
   Para utilizar el sistema de grid debes crear un div con la clase ***row***, y allí dentro del div ponés los distintos componenetes con sus respectivas clases del sistema de grid. Dichas clases que le debes poner a los hijos del div con la clase *row* son las diferentes clases de columnas que las indicas con la clase ***col-*** y luego del guión le indicas cuantas columnas querés que ocupe tu elemento. Tal como se   muestra en el siguiente bloque de código:
@@ -115,7 +116,7 @@
   *col-sm-6* (va a ocupar 6 columnas desde 640px para arriba)
 
   *col-md-4* (va a ocupar 4 columnas desde 768px para arriba)
-  
+
   *col-lg-3* (va a ocupar 3 columnas desde 1024px para arriba)
   
   Si no pones la medida en la clase col, quiere decir que siempre va a ocupar las columnas que le indiques, al menos que le agregues otra clase   con la medida.
@@ -129,7 +130,8 @@
   
   Y así podes seguir y formar todas las combinaciones que quieras segun lo necesite tu página.
 
-  #### Start Column
+  #### Start Column:
+
    Tyle también cuenta con clases para que puedas elegir a partir de que columna empieza el div.
    Dicha clase se llama de la siguientes maneras:
    ***start-(A partir de que columna empieza)***
@@ -162,7 +164,7 @@
   <details style="padding-left: 20px">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para la propiedad <em>Display:</em></strong></summary>
 
-   La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le  puede aplicar a cualquier   elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases  para los valores más importantes. Estos valores son:
+   La propiedad ***display*** especifica el comportamiento de visualización de un elemento. Dicha propiedad se le puede aplicar a cualquier elemento. Esta propiedad puede aceptar muchos valores diferentes. Tyle tiene clases para los valores más importantes. Estos valores son:
        <ul>
         <li> <em><strong>inline</strong></em>: Este valor hace que la caja de un elemento se de linea, y por lo tanto solo ocupa el espacio necesario para mostrar sus contenidos.       
             <img src="/images/display-inline.png" alt="Display" style="display: block;" /> 
@@ -222,6 +224,7 @@
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases de Grid:</strong></summary>
 
    - #### Grid Gap:
+
      La proppiedad ***grid-gap*** se puede aplicar solamente a los componentes que tengan la propiedad *display: grid*.
      Grid gap se refiere a la separación que hay entre las columnas y filas que se encuentran dentro del componente que tenga la propiedad    display: grid.
     
@@ -236,6 +239,7 @@
      El numero que va luego de *grid-gap-* puede ir del 0 hasta al 10. Cuanto mas grande sea el número, habrá una mayor separación entre   columnas y filas.
    
    - #### Order:
+
      La propiedad ***order*** sirve para indicarle un orden al componente que tenga dicha propiedad. Solo se le puede aplicar a los hijos     directos de los componentes que tengan la propiedad *display: grid* o la propiedad *display: flex*. La propiedad *order* solor acepta     números, y estos números pueden ser tanto positivos, como negativos. El valor por defecto de la propiedad *order* es 0.
      Tyle cuenta con clases para la propiedad *order*, y dicahs clases se indican de la siguiente forma:
      ***order-(número)***
@@ -287,6 +291,7 @@
      ![Con la propiedad order](/images/order-1.png "Con la propiedad order")
    
    - #### Justify Items:
+
      Esta propiedad ***justify-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo  del eje de la fila. Dicha propiedad  puede  tener los siguientes valores:
    
      <ul>
@@ -307,6 +312,7 @@
      La *g-* es para diferenciar las clases de grid de las de flexbox, ya que en flexbox hay propiedades con el mismo nombre  pero diferente   valor. Y los *valores* son los mencionados anteriormente (start, end, center, stretch).
    
    - #### Align Items:
+
      Esta propiedad ***align-items*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo   que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Dicha propiedad  puede tener los siguientes valores:
      <ul>
        <li> <em>start</em>: Alinea el contenido en la parte superior del área de la cuadrícula.</li>
@@ -325,6 +331,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, stretch).
    
    - #### Justify Content:
+
      Esta propiedad ***justify-content*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad  *display: grid*.  Lo  que hace esta propiedad es alinear el todo el contenido de la cuadrícula dentro del contenedor de la  cuadrícula. Esta propiedad alinea la cuadrícula a lo largo del eje de la fila. Dicha propiedad puede tener los  siguientes valores:
      <ul>
        <li> <em>start:</em> Alinea la cuadrícula con el extremo izquierdo del contenedor de la cuadrícula.</li>
@@ -350,6 +357,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
    
    - #### Align Content:
+
      Esta propiedad ***align-content*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es esestablecer la alineación de la cuadrícula dentro del contenedor de la cuadrícula. Esta propiedad alinea la   cuadrícula a lo largo del eje de la columna. Dicha propiedad puede tener los siguientes valores:
      <ul>
        <li> <em>start:</em> Alinea la cuadrícula con la parte superior del contenedor de la cuadrícula.</li>
@@ -375,6 +383,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, stretch, beetween, around, evenly).
    
    - #### Justify Self:
+
      Esta propiedad ***justify-self*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo  que  hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo  del eje de la fila. Este valor se   aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede  tener los siguientes valores:
      <ul>
        <li> <em>start:</em> Alinea el contenido en el extremo izquierdo del área de la cuadrícula.</li>
@@ -394,6 +403,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, stretch).
   
    - #### Align Self:
+
      Esta propiedad ***align-self*** se le debe aplicar (en el caso de grid) a los contenedores que tengan la propiedad *display: grid*. Lo que hace esta propiedad es alinear el contenido dentro de un elemento de la cuadrícula a lo largo del eje de la columna. Este valor se aplica al contenido dentro de un único elemento de la grilla. Dicha propiedad puede tener los siguientes valores:
      <ul>
        <li> <em>start:</em> Alinea el contenido en la parte superior del área de la cuadrícula.</li>
@@ -419,6 +429,7 @@
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases de Flexbox:</strong></summary>
 
    - #### Flex Direction:
+
      La propiedad ***flex-direction*** establece la dirección de un elemento flexible dentro de un contenedor (es decir que el contenedor tenga la propiedad *display: flex*).
    
      La propiedad *flex-direction* puede tener los siguientes valores:
@@ -438,6 +449,7 @@
      Todas las clases de flexbox que siguen a continuación y, estas mismas clases también, llevan una *f-* delante de la clase para   diferenciarlas   de las clases de css grid, que tienen la misma propiedad pero diferentes valores. Los valores que van luego de   *f-flex-direction-* son los   mencionados anteriormente (row, row-reverse, col, col-reverse).
   
    - #### Flex Wrap:
+
      La propiedad ***flex-wrap*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad   *flex-wrap*,especifica si los elementos flexibles deben ajustarse o no. Como ya fue mencionado anteriormente, lo que hace la propiedad   *dispaly: flex* es poner todos sus elementos hijos en una sola linea, a pesar de que no entren, al no entrar, se disminuye el tamaño de los  elementos hijos para  que puedan entrar. Si tu no quieres que esto ocurra, debes utilizar la propiedad *flex-wrap*, que solo acepta los   siguientes valores:
     
      <li> <em>nowrap:</em> Este es el valor por defecto, y por lo tanto, los elementos hijos se ajustarán al contenido de ser necesario.</li>
@@ -454,6 +466,7 @@
      Los valores que van luego de *f-flex-wrap-* son los mencioandos anteriormente (no-wrap, wra, wrap-reverse).
   
    - #### Flex Grow:
+
      La propiedad ***flex-grow*** solo se le puede aplicar a los hijos de los contenedores que tengan lo propiedad *display: flex*. Esta  propiedad  *flex-grow* especifica la capacidad de que un elemento flexible crezca si es posible. Esta propiedad acepta cualquier número  positivo, y  funciona de la siguiente manera:
      Lo que hace es calcular el espacio disponible, y darselos a los que tengan esta propiedad según el valor que tengan.
      Por ejemplo: Si hay un elemento que tenga un *flex-grow: 1* y otro tiene un *flex-grow: 3*, se calcula el espacio disponible y lo divide  entre 4, ya que suma el valor de esta propiedad de cada elemento del contenedor, y le da 3/4 partes al segundo elemento y 1/4 parte al  primer elemento.
@@ -471,6 +484,7 @@
      El número que va luego de *f-flex-grow* puede ir del 1 al 5.
    
    - #### Flex Shrink: 
+
      La propiedad ***flex-shrink*** solo se le puede aplicar a los contenedores que tengan la propiedad *display: flex;*. Esta propiedad    *flex-shrink* especifica la capacidad de que un elemento flexible se encoja. Esta propiedad acepta cualquier número positivo. Esta  propiedad, funciona de una manera muy similar a *flex-grow*, pero con resultado opuesto.
      En el siguiente ejemplo lo podrás entender mejor:
      <img src="/images/flex-shrink-1.png" alt="Flex Shrink" style="display: block;" />
@@ -486,9 +500,11 @@
      El número que va luego de *f-flex-shrink* puede ir del 1 al 5.
  
    - #### Order:
+
      La propiedad ***order*** también se puede utilizar en los elementos hijos de un contenedor que tenga la propiedad *display: flex*, y esta  propiedad *order* es la misma que la mencionada anteriormente (en las calses de grid), y funciona exactamente de la misma manera.
  
    - #### Align Items:
+
      Esta propiedad ***align-items*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad *display: flex*. La propiedad *align-items* define el comportamiento predeterminado de cómo se colocan los elementos flexibles a lo largo del eje transversal  en la línea actual. Dicha propiedad puede tener los siguientes valores:
      <ul>
        <li> <em>flex-start</em>: Alinea el contenido en la parte superior del eje transversal.</li>
@@ -506,6 +522,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, baseline, stretch).
    
    - #### Justify Content:
+
      Esta propiedad ***justify-content*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad *display:  flex*. Lo  que hace esta propiedad es alinear a lo largo del eje principal. Ayuda a distribuir el espacio libre que sobra cuando todos los elementos flexibles de una línea son inflexibles o flexibles, pero han alcanzado su tamaño máximo. También ejerce algún control sobre la   alineación de los elementos cuando se desbordan la línea. Dicha propiedad puede tener los  siguientes valores:
      <ul>
        <li> <em>flex-start:</em> Alinea el contenido hacia la linea de inicio del contenedor flexible.</li>
@@ -524,6 +541,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, beetween, around, evenly).
    
    - #### Align Content:
+
      Esta propiedad ***align-content*** se le debe aplicar (en el caso de flexbox) a los contenedores que tengan la propiedad *display: flex*. Esta propiedad alinea las líneas de un contenedor flexible dentro del contenedor flexible cuando hay espacio adicional en el eje   transversal. Dicha propiedad puede tener los siguientes valores:
      <ul>
        <li> <em>flex-start:</em> Alinea el contenido en la linea de inicio del eje transversal.</li>
@@ -542,6 +560,7 @@
      Los *valores* son los mencionados anteriormente (start, end, center, stretch, beetween, around).
    
    - #### Align Self:
+
      Esta propiedad ***align-self*** se le debe aplicar (en el caso de flexbox) a los hijos de los contenedores que tengan la propiedad    *display: flex*. Lo que  hace esta propiedad es alinear el elemento, al que se le aplique esta propiedad, en el eje transversal. Dicha   propiedad puede tener los siguientes valores:
      <ul>
        <li> <em>flex-start:</em> El elemento se alinea en la linea de inicio del eje transversal.</li>
@@ -566,6 +585,7 @@
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para las propiedades <em>margin</em> y <em>padding:</em></strong></summary>
 
    - #### Margin:
+
       La propiedad ***margin*** se utiliza para generar un espaciado entre los elementos, fuera de cualquier borde definido. Con css tenés control total sobre el *margin*. Existen propiedades para establecer el margin de cada lado de un elemento (arriba, derecha, abajo e izquierda).
       Las diferentes propiedades para el margin son:
       - *margin:* Establece un espaciado en los cuatro lados.
@@ -584,6 +604,7 @@
        <img src="/images/margin.png" alt="Margin" style="display: block;" />      
 
    - #### Padding:
+   
       La propiedad ***padding*** se utiliza para generar un espaciado alrededor del contenido de un elemento, dentro cualquier borde definido. Al igual que con ek *margin*, con css tenés control total sobre el *padding*. Existen propiedades para establecer el padding de cada lado de un elemento (arriba, derecha, abajo e izquierda).
       Las diferentes propiedades para el padding son:
       - *padding:* Establece un espaciado  dentro del contenido del elemento en los cuatro lados.
