@@ -808,9 +808,112 @@
 
   ---
 
+ <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones</strong></summary>
 
+   Los botones se crean mediante la etiqueta ***&lt;button&gt;*** (de apertura) y ***&lt;/button&gt;*** (de cierre). Debtro de estas etiquetas puedes poner cualquier texto. Hay dieferentes tipos de botones, y el tipo de botón se elige mediante el atributo *type*. Este atributo por defecto es *button*.
+   Tyle cuenta con diferentes clases para los botones.
 
+   Para cada botón que quieras hacer con Tyle, tienes que ponerle la clase ***button***, y ya se genera el botón por defecto.
 
+   Además del botón por defecto, hay otro tipo de botón, que es el ***outline***, y a los que se refiere es que el botón solo tendrá color alrededor (un borde), y el color del texto que contenga será igual al de su borde.
+   Para indicar este tipo de botón tienes que, además de la clase *button*, agregar la clase ***button-outline***.
+
+   También Tyle cuenta con 3 diferentes tamaños para los botones. Uno es el que viene por defecto, otro más chico,que se indica con la clase ***button-sm***; y otro más grande, que se indica con la clase ***button-lg***.
+
+   En el siguiente ejemplo se mostraran los diferentes tipos de botones mencionados anteriormente:
+
+   HTML
+   ```html
+    <div class="container">
+      <button class="button">Default</button>
+      <button class="button button-outline">Default Outline</button>
+      <button class="button button-lg">Default Lg</button>
+      <button class="button button-lg button-outline">Default Lg Outline</button>
+      <button class="button button-sm">Default Sm</button>
+      <button class="button button-sm button-outline">Default Sm Outline</button>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/button-1.png" style="display: block;">
+
+   Como ya se menciono anteriormente, esos eran los botones por defecto. También hay diferentes tipos de colores para los botones, estos colores son los mencionados anteriormente en la *paleta de colores*.
+   Para indicar el color de un botón, debes poner, además de la clase *button* (ya que esta es la que genera los estilos básicos del botón), una clase de la siguiente manera:
+
+   ***button-(color)***
+
+   Los diferentes colores son, como ya se mencionó anteriormente, los de la paleta de colores.
+   Si quieres, también puedes cambiar el color de un botón *outline* poniendo una clase de la siguiente manera:
+
+   ***button-outline-(color)***
+
+   En la siguiente imagen podrás observar todos los diferentes tipos de botones que puedes hacer:
+
+   <img src="images/button-2.png" style="display: block;">
+
+  </details>
+  
+  ---
+
+ <details style="padding-left: 20px;" open> 
+  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
+
+   El ***scrollbar*** es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
+   Tyle ofrece clases para modificar el *scrollbar*.
+   Para modificar el *scrollbar* con Tyle, tienes que poner la clase ***scrollbar*** al componente que deseas cambiarle el que ya viene por  defecto. Al agregar esta clase a tu componente, se genera el siguiente *scrollbar*, que es el por defecto que trae Tyle:
+ 
+  <img src="images/scrollbar-1.png" style="display: block;">
+
+  Sin embargo, los colores que trae por defecto la clase *scrollbar* se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase *scrollbar*) de la siguiente manera: 
+
+  ***scrollabr-(color)***
+
+  Los diferentes colores son los menconados en la *paleta de colores*.
+
+  En la siguiente imagen podrá ver ejemplos de algunos de los diferentes colores del *scrollbar:*
+  
+  <img src="images/scrollbar-2.png" style="display: block;">
+
+  Además de poder cambiar el color de la barra, puedes cambiar el fondo del *scrollbar* indicando una clase de la siguiente manera:
+
+  ***scrollabr-bg-(color)**
+
+  A continuación podrá ver en la imagen ejemplos del color de fondo:
+
+  <img src="images/scrollbar-3.png" style="display: block;">
+
+  Además de todo lo mencionado, Tyle cuenta con clases como para dar otro "efecto" al *scrollbar*. Este "efecto" se indica con la clase ***scrollbar-3d***, y le puedes aplicar esta clase a cualquiera que tenga la clase *scrollbar*, aunque también tenga clases de diferentes colores de la barra y de fondo.
+  En la siguiente imagen verás ejemplos de esta clase:
+
+  <img src="images/scrollbar-4.png" style="display: block;">
+
+  Ahora, verán un ejemplo de el *scrollbar* hecho en html:
+
+  HTML
+  ```html
+      <div class="container">
+
+        <div class="box scrollbar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>
+
+        <div class="box scrollbar scrollbar-3d scrollbar-primary scrollbar-bg-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>
+
+        <div class="box scrollbar scrollbar-danger">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>
+
+        <div class="box scrollbar scrollbar-light scrollbar-bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>  
+
+        <div class="box scrollbar scrollbar-3d scrollbar-dark scrollbar-bg-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>
+
+        <!-- La clase box (no es de Tyle) indica un alto, un ancho y un color de fondo -->
+    </div>
+  ```
+
+  Resultado:
+  
+  <img src="images/scrollbar-5.png" style="display: block;">
+  
+    
+</details>
 
 
 

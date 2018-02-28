@@ -1,7 +1,10 @@
 /* =========================== CUSTOM SCROLLBAR ========================== */
 
 /* Main scrollbar class */
-.scrollbar { overflow-y: scroll; }
+.scrollbar { 
+    overflow-y: scroll;
+    overflow-x: hidden;
+ }
 
 $default-color: #f2f2f2;
 /* Default values of the scrollbar */
@@ -27,15 +30,22 @@ $default-color: #f2f2f2;
         &:hover { box-shadow: -3px -3px 6px  darken($default-color, 60) inset,3px 3px 3px  darken($default-color, 30) inset; }
     }
 }
-
   
 /* Different colors of the scrollbar */
 @each $color, $value in $colors {
     .scrollbar-#{$color}::-webkit-scrollbar-thumb {
         background-color: $value;
-
         
         &:hover { background-color: darken($value, 10); }
+
+            @if $color == light {
+                background: darken($value, 9);
+                &:hover { background-color: darken($value, 15); }
+            }
+
+            @if $color == black {
+                &:hover { background-color: lighten($value, 15); }
+            }
     }
 
     /* Different colors of the scrollbar-3d */    
@@ -45,11 +55,24 @@ $default-color: #f2f2f2;
             box-shadow: -3px -3px 6px $value inset,3px 3px 3px lighten($value, 10) inset;
 
             &:hover { box-shadow: -3px -3px 6px darken($value, 10) inset,3px 3px 3px $value inset; }
+
+            @if $color == light {
+                box-shadow: -3px -3px 6px darken($value, 25) inset,3px 3px 3px darken($value, 15) inset;
+
+                &:hover { box-shadow: -3px -3px 6px darken($value, 35) inset,3px 3px 3px darken($value, 25) inset; }
+            }
         }
     }
 }
 
 /* Different background colors of the scrollbar */
 @each $color, $value in $colors {
-    .scrollbar-bg-#{$color}::-webkit-scrollbar-track {background: lighten($value, 30)}
+    .scrollbar-bg-#{$color}::-webkit-scrollbar-track {
+        background: lighten($value, 30);
+
+            @if $color == light {
+                background: darken($value, 3);
+            }
+    
+    }
 }

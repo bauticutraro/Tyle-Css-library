@@ -15,18 +15,6 @@
   .container { width: 90% }
   .container-2 { width: 80% }
   .container-3 { width: 70% }
-  
-
-  /* ===================================== Container - Media queries ===================================== */
-//   @each $key, $value in $responsive {
-//       @media screen and (min-width: $value) {
-//           .container {
-//               $val: $value / 1px;
-//               $val-percent: ((94% * $val) / 100%) * 1px;
-//               max-width: $val-percent ; 
-//           }
-//       }
-//   }
 
 $containers-names: '', -2, -3, -full;
 $containers-values: 90%, 80%, 70%, 100%;

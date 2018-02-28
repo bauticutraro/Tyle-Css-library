@@ -48,7 +48,6 @@ body {
   width: 70%;
 }
 
-/* ===================================== Container - Media queries ===================================== */
 @media screen and (min-width: 480px) {
   .container-xs {
     width: 90%;
@@ -128,258 +127,316 @@ body {
 .button {
   display: inline-block;
   padding: .375rem .75rem;
+  margin: .25rem;
   text-align: center;
-  border-radius: .15rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 1rem;
-  line-height: 1.5;
-  border: 1px solid transparent;
-  -webkit-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out;
-  margin: .25rem;
   cursor: pointer;
+  line-height: 1.5;
+  border: 1.5px solid transparent;
+  -webkit-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+  font-size: 1rem;
+  border-radius: .15rem;
+  color: #000;
+  background-color: #ddd;
 }
 
 .button:active {
-  -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
-  transform: scale(0.95);
+  -webkit-transform: scale(0.96);
+  -ms-transform: scale(0.96);
+  transform: scale(0.96);
 }
 
 .button:focus {
   outline: 0;
 }
 
-[class*="button-"] {
-  color: #fff;
+.button:hover {
+  background-color: #c4c4c4;
+}
+
+[class*="button-outline"] {
+  border-color: #ddd;
+  background-color: transparent;
+  color: #ddd;
+}
+
+[class*="button-outline"]:hover {
+  background-color: transparent;
+  border-color: #aaaaaa;
+  color: #aaaaaa;
 }
 
 /* ========================== Button Color ========================= */
 .button-primary {
   background-color: #0576FA;
+  color: #fff;
 }
 
 .button-primary:hover {
-  background-color: #056ae1;
+  background-color: #0463d2;
 }
 
 .button-secondary {
   background-color: #6E787D;
+  color: #fff;
 }
 
 .button-secondary:hover {
-  background-color: #626b6f;
+  background-color: #5b6367;
 }
 
 .button-info {
   background-color: #1EAAC8;
+  color: #fff;
 }
 
 .button-info:hover {
-  background-color: #1b97b2;
+  background-color: #198ca5;
 }
 
 .button-success {
   background-color: #23C040;
+  color: #fff;
 }
 
 .button-success:hover {
-  background-color: #1faa39;
+  background-color: #1d9d34;
 }
 
 .button-warning {
   background-color: #FABE0A;
+  color: #fff;
 }
 
 .button-warning:hover {
-  background-color: #e6ae05;
+  background-color: #d7a204;
 }
 
 .button-danger {
   background-color: #F53040;
+  color: #fff;
 }
 
 .button-danger:hover {
-  background-color: #f4182a;
+  background-color: #f10c1e;
+}
+
+.button-danger:hover {
+  background-color: #cf0a1a;
 }
 
 .button-light {
   background-color: #F0F0F0;
+  color: #fff;
   color: #000;
 }
 
 .button-light:hover {
-  background-color: #e3e3e3;
+  background-color: gainsboro;
+}
+
+.button-light:hover {
+  background-color: #cacaca;
 }
 
 .button-white {
   background-color: #FFFFFF;
+  color: #fff;
   color: #000;
 }
 
 .button-white:hover {
-  background-color: #f2f2f2;
+  background-color: #ebebeb;
+}
+
+.button-white:hover {
+  background-color: #d9d9d9;
 }
 
 .button-dark {
   background-color: #1E1E1E;
+  color: #fff;
 }
 
 .button-dark:hover {
-  background-color: #111111;
+  background-color: #0a0a0a;
+}
+
+.button-dark:hover {
+  background-color: #262626;
 }
 
 .button-black {
   background-color: #000000;
+  color: #fff;
 }
 
 .button-black:hover {
   background-color: black;
 }
 
+.button-black:hover {
+  background-color: #171717;
+}
+
 /* ========================== Button Outline-Color ========================= */
 .button-outline-primary {
-  background: transparent;
-  border: 1px solid #0576FA;
+  background-color: transparent;
+  border-color: #0576FA;
   color: #0576FA;
 }
 
 .button-outline-primary:hover {
-  border: 1px solid #045ec8;
+  border-color: #045ec8;
   color: #045ec8;
 }
 
 .button-outline-secondary {
-  background: transparent;
-  border: 1px solid #6E787D;
+  background-color: transparent;
+  border-color: #6E787D;
   color: #6E787D;
 }
 
 .button-outline-secondary:hover {
-  border: 1px solid #565e62;
+  border-color: #565e62;
   color: #565e62;
 }
 
 .button-outline-info {
-  background: transparent;
-  border: 1px solid #1EAAC8;
+  background-color: transparent;
+  border-color: #1EAAC8;
   color: #1EAAC8;
 }
 
 .button-outline-info:hover {
-  border: 1px solid #17849c;
+  border-color: #17849c;
   color: #17849c;
 }
 
 .button-outline-success {
-  background: transparent;
-  border: 1px solid #23C040;
+  background-color: transparent;
+  border-color: #23C040;
   color: #23C040;
 }
 
 .button-outline-success:hover {
-  border: 1px solid #1b9532;
+  border-color: #1b9532;
   color: #1b9532;
 }
 
 .button-outline-warning {
-  background: transparent;
-  border: 1px solid #FABE0A;
+  background-color: transparent;
+  border-color: #FABE0A;
   color: #FABE0A;
 }
 
 .button-outline-warning:hover {
-  border: 1px solid #cd9b04;
+  border-color: #cd9b04;
   color: #cd9b04;
 }
 
 .button-outline-danger {
-  background: transparent;
-  border: 1px solid #F53040;
+  background-color: transparent;
+  border-color: #F53040;
   color: #F53040;
 }
 
 .button-outline-danger:hover {
-  border: 1px solid #e70b1d;
+  border-color: #e70b1d;
   color: #e70b1d;
 }
 
+.button-outline-danger:hover {
+  border-color: #b60917;
+  color: #b60917;
+}
+
 .button-outline-light {
-  background: transparent;
-  border: 1px solid #F0F0F0;
+  background-color: transparent;
+  border-color: #F0F0F0;
   color: #F0F0F0;
 }
 
 .button-outline-light:hover {
-  border: 1px solid #d7d7d7;
+  border-color: #d7d7d7;
   color: #d7d7d7;
 }
 
+.button-outline-light:hover {
+  border-color: #bdbdbd;
+  color: #bdbdbd;
+}
+
 .button-outline-white {
-  background: transparent;
-  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  border-color: #FFFFFF;
   color: #FFFFFF;
 }
 
 .button-outline-white:hover {
-  border: 1px solid #e6e6e6;
+  border-color: #e6e6e6;
   color: #e6e6e6;
 }
 
+.button-outline-white:hover {
+  border-color: #cccccc;
+  color: #cccccc;
+}
+
 .button-outline-dark {
-  background: transparent;
-  border: 1px solid #1E1E1E;
+  background-color: transparent;
+  border-color: #1E1E1E;
   color: #1E1E1E;
 }
 
 .button-outline-dark:hover {
-  border: 1px solid #050505;
+  border-color: #050505;
   color: #050505;
 }
 
+.button-outline-dark:hover {
+  border-color: #2b2b2b;
+  color: #2b2b2b;
+}
+
 .button-outline-black {
-  background: transparent;
-  border: 1px solid #000000;
+  background-color: transparent;
+  border-color: #000000;
   color: #000000;
 }
 
 .button-outline-black:hover {
-  border: 1px solid black;
+  border-color: black;
   color: black;
 }
 
-.button-lg {
-  -webkit-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
+.button-outline-black:hover {
+  border-color: #1a1a1a;
+  color: #1a1a1a;
 }
 
-.button-lg.button:active {
-  -webkit-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  transform: scale(1.2);
+.button-lg {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: .3rem;
 }
 
 .button-sm {
-  -webkit-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  transform: scale(0.8);
-}
-
-.button-sm.button:active {
-  -webkit-transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  transform: scale(0.7);
+  padding: .25rem .5rem;
+  font-size: .875rem;
+  border-radius: .2rem;
 }
 
 /* =========================== CUSTOM SCROLLBAR ========================== */
 /* Main scrollbar class */
 .scrollbar {
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 /* Default values of the scrollbar */
@@ -535,10 +592,15 @@ body {
 
 .scrollbar-light::-webkit-scrollbar-thumb {
   background-color: #F0F0F0;
+  background: #d9d9d9;
 }
 
 .scrollbar-light::-webkit-scrollbar-thumb:hover {
   background-color: #d7d7d7;
+}
+
+.scrollbar-light::-webkit-scrollbar-thumb:hover {
+  background-color: #cacaca;
 }
 
 /* Different colors of the scrollbar-3d */
@@ -546,11 +608,18 @@ body {
   background-color: transparent;
   -webkit-box-shadow: -3px -3px 6px #F0F0F0 inset, 3px 3px 3px white inset;
   box-shadow: -3px -3px 6px #F0F0F0 inset, 3px 3px 3px white inset;
+  -webkit-box-shadow: -3px -3px 6px #b0b0b0 inset, 3px 3px 3px #cacaca inset;
+  box-shadow: -3px -3px 6px #b0b0b0 inset, 3px 3px 3px #cacaca inset;
 }
 
 .scrollbar-light.scrollbar-3d::-webkit-scrollbar-thumb:hover {
   -webkit-box-shadow: -3px -3px 6px #d7d7d7 inset, 3px 3px 3px #F0F0F0 inset;
   box-shadow: -3px -3px 6px #d7d7d7 inset, 3px 3px 3px #F0F0F0 inset;
+}
+
+.scrollbar-light.scrollbar-3d::-webkit-scrollbar-thumb:hover {
+  -webkit-box-shadow: -3px -3px 6px #979797 inset, 3px 3px 3px #b0b0b0 inset;
+  box-shadow: -3px -3px 6px #979797 inset, 3px 3px 3px #b0b0b0 inset;
 }
 
 .scrollbar-white::-webkit-scrollbar-thumb {
@@ -601,6 +670,10 @@ body {
   background-color: black;
 }
 
+.scrollbar-black::-webkit-scrollbar-thumb:hover {
+  background-color: #262626;
+}
+
 /* Different colors of the scrollbar-3d */
 .scrollbar-black.scrollbar-3d::-webkit-scrollbar-thumb {
   background-color: transparent;
@@ -640,6 +713,7 @@ body {
 
 .scrollbar-bg-light::-webkit-scrollbar-track {
   background: white;
+  background: #e8e8e8;
 }
 
 .scrollbar-bg-white::-webkit-scrollbar-track {
