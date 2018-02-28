@@ -851,12 +851,11 @@
    En la siguiente imagen podrás observar todos los diferentes tipos de botones que puedes hacer:
 
    <img src="images/button-2.png" style="display: block;">
-
-  </details>
+ </details>
   
   ---
 
- <details style="padding-left: 20px;" open> 
+ <details style="padding-left: 20px;"> 
   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
 
    El ***scrollbar*** es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
@@ -909,17 +908,120 @@
   ```
 
   Resultado:
-  
+
   <img src="images/scrollbar-5.png" style="display: block;">
-  
-    
 </details>
 
+  ---
 
+<details style="padding-left: 20px;"> 
+  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
 
+  Las barras de progreso (***progress bar***) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
 
+  Tyle ya tiene clases para realizar una barra de progreso facilmente.
+  Las *progress-bar* con Tyle se crean mediante un *div* con la clase ***progress-bar***, y dentro de este *div*, creas otro *div* con la clase ***progress-bar-percent***. Este último *div* es el que genera el porcentaje de la *progress-bar*, y para indicarle la cantidad del progreso, se hace mediante la propiedad *width*. Por ejemplo, si al *div* con la clase *progress-bar-percent* le agregás un ancho de 76%, la barra de progreso indicará que va por el 76%. El texto que va d¡en la barra de progreso, lo tienes que poner dentro del div con la clase *progress-bar-percent*.
+  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
 
+  HTML
+  ```html
+    <div class="progress-bar">
+        <div class="progress-bar-percent">76%</div> <!-- Se le indicó mediante css un width de 76% -->
+    </div>
+  ```  
 
+  Resultado:
+  <img src="images/progress-bar-1.png" style="display: block">
+
+  Para cambiar el color de esta barra que indica el porcentaje, se le tiene que agregar (al *div* con la clase *progress-bar-percent*) la siguiente clase (ya mencionada anteriormente en la paleta de colores):
+
+  *bg-(color)*
+
+  Los colores son los de la *paleta de colores*.
+  Ejemplo:
+
+  HTML
+  ```html
+    <div class="progress-bar">
+        <div class="progress-bar-percent bg-danger">76%</div> <!-- Se le indicó mediante css un width de 76% -->
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-bar-percent bg-primary">38%</div> <!-- Se le indicó mediante css un width de 38% -->
+    </div>
+
+    <div class="progress-bar">
+        <div class="progress-bar-percent bg-dark">50%</div> <!-- Se le indicó mediante css un width de 50% -->
+    </div>
+  ```  
+
+  Resultado:
+  <img src="images/progress-bar-2.png" style="display: block">
+
+  Además de poder cambiar el color de fondo de la barra del porcentaje, tienes la opción de cambiar el color de fondo del *progress-bar*, de la misma manera; poniendo la clase *bg-(color)* al *div* con la clase *progress-bar*.
+   
+  HTML
+  ```html
+  <div class="progress-bar bg-light">
+      <div class="progress-bar-percent bg-danger">76%</div> <!-- Se le indicó mediante css un width de 76% -->
+  </div>
+
+  <div class="progress-bar bg-info">
+      <div class="progress-bar-percent bg-primary">38%</div> <!-- Se le indicó mediante css un width de 38% -->
+  </div>
+
+  <div class="progress-bar bg-dark">
+      <div class="progress-bar-percent bg-light color-dark">50%</div> <!-- Se le indicó mediante css un width de 50% -->
+  </div>
+  ```  
+
+  Resultado:
+  <img src="images/progress-bar-3.png" style="display: block">
+
+  Además de poder cambiar los colores, con Tyle, se puede cambiar los tamaños de la *progress-bar*. Hay 3 tipos diferentes de tamaño para la *progress-bar*, y uno de ellos es el que viene por defecto. Para cambiar el tamaño, se le debe indicar al *div* con la clase *progress-bar* la clase ***progress-bar-sm*** (menor tamaño) o la clase ***progress-bar-lg*** (mayor tamaño).
+  Ejemplo: 
+
+  HTML
+  ```html
+  <div class="progress-bar progress-bar-lg">
+      <div class="progress-bar-percent bg-success">76%</div> 
+  </div>
+
+  <div class="progress-bar">
+      <div class="progress-bar-percent bg-info">38%</div>
+  </div>
+  
+  <div class="progress-bar progress-bar-sm bg-dark">
+      <div class="progress-bar-percent bg-warning color-dark">50%</div>
+  </div>
+  ```  
+
+  Resultado:
+  <img src="images/progress-bar-4.png" style="display: block">
+
+  Por último para las *progress-bar*, esta la opción de poner más de una barra de porcentaje en una *progress-bar* de una manera mu facil. Solo tenés que poner dentro del *div* con la clase *progress-bar* otra barra de porcentaje. Si las dos o más barras de porcentaje superan el 100% de la *progress-bar*, estas barras se achicaran para no ocupar más del 100%.
+  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+
+   HTML
+  ```html
+  <div class="progress-bar">
+      <div class="progress-bar-percent bg-success">26%</div> 
+      <div class="progress-bar-percent bg-danger">56%</div> 
+      <div class="progress-bar-percent bg-primary">15%</div>             
+  </div>
+
+  <div class="progress-bar"> <!-- Las barras de porcentaje superan el 100% -->
+      <div class="progress-bar-percent bg-info">48%</div> 
+      <div class="progress-bar-percent bg-warning">12%</div>
+      <div class="progress-bar-percent bg-secondary">50%</div>            
+  </div>
+  ```  
+
+  Resultado:
+  <img src="images/progress-bar-5.png" style="display: block">
+</details>
+
+  ---
 
 
 
