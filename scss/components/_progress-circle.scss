@@ -1,16 +1,12 @@
 $progress-circle-size: 12rem;
-$progress-circle-ratio: 58%;
+$progress-circle-ratio: 60%;
 /* ========================== Progress Circle ========================= */
-:root {
-  --color: darken(lightblue, 100);
-  --color2: rgba(darken(lightblue, 100), .2);
-}
 
 /* ====================== Progress Circle  Colors ===================== */
 @each $color, $value in $colors {
   .progress-bg-#{$color} {
-    --color: $value;
-    --color2: rgba($value, .3);
+    --progress-circle-color: $value;
+    --progress-circle-color-2: rgba($value, .3);
   }
 }
 
@@ -19,66 +15,65 @@ $progress-circle-ratio: 58%;
 .progress-circle-text,
 .progress-circle-percent::after,
 .progress-circle-percent::before {
-   width: $progress-circle-size;
-   height: $progress-circle-size;
+   width: var(--progress-circle-size);
+   height: calc(var(--progress-circle-size) / 2);
+
 }
 
+
 .progress-circle {
-   clip-path: polygon(0% 0%, 0% 50%, 100% 50%, 100% 0%); 
    overflow: hidden;
+   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); 
    display: inline-flex;
    justify-content: center;
    font-family: sans-serif;
-   margin: .5rem;
+   margin: 20px;
+   border-radius: 50% / 100% 100% 0 0;
+   background-image: radial-gradient(circle at bottom, transparent $progress-circle-ratio, var(--progress-circle-color-2) $progress-circle-ratio + 1%); 
 
+   &-percent {
+     display: flex;
+     transform: translateY(calc(var(--progress-circle-size) / 2)) translateX(-var(--progress-circle-size)) rotateX(-180deg);   
+     position: absolute;
+     background-image: radial-gradient(circle at bottom,transparent $progress-circle-ratio, var(--progress-circle-color) $progress-circle-ratio + 1%);       
+     border-radius: 50% / 100% 100% 0 0;
+     transform-origin: bottom center;  
+   
+     &::after { content: ''; }
+     
+   }
   
-   &-text {
-    border-radius: 100%;
-    position: relative;
-    background: radial-gradient(transparent $progress-circle-ratio, var(--color2) $progress-circle-ratio + 1%);
-    text-align: center;
-    line-height: $progress-circle-size * 0.916666;
-    font-size: $progress-circle-size * 0.125;
-    text-transform: uppercase;
-    color: var(--color);
-    user-select: none;
+   &-text,
+   &-percent-text {
+    line-height: calc(calc(var(--progress-circle-size) * 0.916666) / 1.1);
+    font-size: calc(var(--progress-circle-size) * 0.12);
+    position: absolute;   
+    text-align: center;    
+    color: var(--progress-circle-color);
+    user-select: none; 
   }
   
-  &-percent {
-    transform: rotateY(-180deg);
-    display: flex;
-    position: relative;
+  &-percent-text {
+    font-size: calc(var(--progress-circle-size) * 0.083333333);
+    line-height: calc(calc(var(--progress-circle-size) * 0.6666666) / 1.1);
   
-    &::after {
-      content: '';
-      position: absolute;
-      background: radial-gradient(transparent $progress-circle-ratio, var(--color) $progress-circle-ratio + 1%);
-      border-radius: 100%;
-      clip-path: polygon(100% 100%,100% 50%,0% 50%,0% 100%); 
-    }
-    
-    &::before {
-      position: absolute;
-      font-size: $progress-circle-size * 0.083333333;
-      color: var(--color);
-      line-height: $progress-circle-size * 0.6666666;
-      text-align: center;
-      transform: rotateY(180deg);
-    }
+    &::after { content: '%'; }
   }
+
 }
 
-@function progress($percent){
-  $deg: $percent / 100 * 180deg;
-  @return $deg;
+.progress-circle-xl {
+  --progress-circle-size: $progress-circle-size + $progress-circle-size / 3;
 }
 
-@for $i from 0 through 20{
-  $rotate: progress($i*5);
-  $content: $i * 5;
-  .progress-circle-percent-#{$i*5} {
-    &::before {content: '#{$content}%';}
-    &::after {transform: rotate(-#{$rotate});}  
-  }
+.progress-circle-lg {
+  --progress-circle-size: $progress-circle-size + $progress-circle-size / 6;
 }
 
+.progress-circle-sm {
+  --progress-circle-size: $progress-circle-size - $progress-circle-size / 6;
+}
+
+.progress-circle-xs {
+  --progress-circle-size: $progress-circle-size - $progress-circle-size / 3;
+}

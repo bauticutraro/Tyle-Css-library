@@ -60,3 +60,16 @@ toggle('nav-list-container', 'nav', 'show-nav', document.body, 'scroll-none');
 
 // Nav search bar
 toggle('nav-input', 'search', 'show-input', closeInput, 'translate-0');
+
+
+// cricle progress
+function progress(percent){
+    let deg = percent / 100 * 180;
+    return deg + "deg";
+  }
+
+Array.from(document.querySelectorAll(".progress-circle-percent"), (el) => {
+    let progressCircle = el.getAttribute('data-value');
+    let rotate = progress(progressCircle);
+    el.style.transform=`rotate(calc(-180deg + ${rotate}))`   
+});

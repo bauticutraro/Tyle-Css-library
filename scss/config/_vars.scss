@@ -156,6 +156,9 @@ $black        : #000000;
     --white      : #FFFFFF;
     --dark       : #1E1E1E;
     --black      : #000000;
+    --progress-circle-color: lighten(rgb(201, 201, 201), 5);
+    --progress-circle-color-2: rgba(lighten(rgb(201, 201, 201), 5), .2);
+    --progress-circle-size: 12rem;
 }
 
     // ======================================================================================== //

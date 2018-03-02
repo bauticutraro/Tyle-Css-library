@@ -989,6 +989,101 @@
 </details>
 
 <hr>
+<details style="padding-left: 20px;"> 
+  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
+
+  Una alternativa a las <em>progress-bar</em> son los <em>progress-circle</em> cuya función es la misma (indicar el progreso que se ha realizado).
+
+  Hacer un <em>progress-circle</em> con Tyle es muy sencillo. Para hacerlo tienes que crear un <em>div</em> con la clase <strong><em>progress-circle</em></strong>, este será el div que contenga los diferentes elementos que se utilizan para crear el <em>progress-circle</em>. Dentro de este <em>div</em> van 3 elementos:
+
+  <strong><em>progress-circle-percent:</em></strong> Este es el que indica el porcentaje de forma gráfica. Para indicar el porcentaje tienes que agregar a este elemento el atributo <strong><em>data-value</em></strong>. El valor que le pongas a este atributo será el porcentaje. Este elemento va con la etiqueta <strong><em>&lt;div&gt;</em></strong> .
+
+  <strong><em>progress-circle-percent-text:</em></strong> Este es el que indica el porcentaje con números. Dentro de este tu mismo le indicas el porcentaje (no cambia nada del gráfico solor son números). Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
+
+  <strong><em>progress-circle-text:</em></strong> Este indica el tema del gráfico. Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
+
+  En el siguiente ejemplo notarás mejor lo mencionado anteriormente
+
+  HTML
+  <code>html
+  &lt;div class=&quot;progress-circle&quot;&gt;
+    &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;78&quot;&gt;&lt;/div&gt;
+    &lt;p class=&quot;progress-circle-text&quot;&gt;ProgressCircle&lt;/p&gt;
+    &lt;p class=&quot;progress-circle-percent-text&quot;&gt;78&lt;/p&gt;
+  &lt;/div&gt;</code>
+
+  Resultado:
+  <img src="images/progress-circle-1.png" style="display: block;">
+
+  El <em>progress-circle</em>, de la anterior imagen, es el quen trae por defecto Tyle. Como podrás haber adivinado, podés cambiar el color de los <em>progress-circle</em>. Para hacerlo, tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
+
+  <strong><em>progress-bg-(color)</em></strong>
+
+  Los diferentes colores son los mencionados en la paleta de colores.
+
+  A continuación verás un ejemplo de lo mencionado:
+  HTML
+  <code>html
+    &lt;div class=&quot;progress-circle progress-bg-danger&quot;&gt;
+      &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;63&quot;&gt;&lt;/div&gt;
+      &lt;p class=&quot;progress-circle-text&quot;&gt;Danger&lt;/p&gt;
+      &lt;p class=&quot;progress-circle-percent-text&quot;&gt;63&lt;/p&gt;
+    &lt;/div&gt;</code>
+
+  Resultado:
+  <img src="images/progress-circle-2.png" style="display: block;">
+
+  Como podrás haber notado, también se cambia el color del texto, pero si deseas cambiarlo puedes hacerlo agregando las clases (ya mencionadas anteiormente en la <em>paleta de colores</em>) <em>color-(color)</em>.
+
+  A continuación verás una imagen con los diferentes tipos de colores para los <em>progress-circle:</em>
+  <img src="images/progress-circle-3.png" style="display: block;">
+
+  Por último, para los <em>progress-circle</em> hay 5 tipos de tamaños diferentes: <em>xl</em>(más grande) <em>lg</em> (2do más grande), el que viene por defecto, <em>sm</em> (2do más chcio) y <em>xs</em> (más chico)
+  Para indicar el tamaño tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
+
+  <strong><em>progress-circle-(medida)</em></strong>
+
+  En el siguietne ejemplo podrás notar los 5 tipos diferentes de tamaños:
+
+  HTML
+  <code>html
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;progress-circle progress-bg-success progress-circle-xl&quot;&gt;
+          &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;97&quot;&gt;&lt;/div&gt;
+          &lt;p class=&quot;progress-circle-text color-info&quot;&gt;XL&lt;/p&gt;
+          &lt;p class=&quot;progress-circle-percent-text color-info&quot;&gt;97&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;progress-circle progress-bg-danger progress-circle-lg&quot;&gt;
+          &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;83&quot;&gt;&lt;/div&gt;
+          &lt;p class=&quot;progress-circle-text color-info&quot;&gt;LG&lt;/p&gt;
+          &lt;p class=&quot;progress-circle-percent-text color-info&quot;&gt;83&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;progress-circle progress-bg-dark&quot;&gt;
+          &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;57&quot;&gt;&lt;/div&gt;
+          &lt;p class=&quot;progress-circle-text color-light&quot;&gt;DEFAULT&lt;/p&gt;
+          &lt;p class=&quot;progress-circle-percent-text color-light&quot;&gt;57&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;progress-circle progress-bg-primary progress-circle-sm&quot;&gt;
+          &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;45&quot;&gt;&lt;/div&gt;
+          &lt;p class=&quot;progress-circle-text color-success&quot;&gt;SM&lt;/p&gt;
+          &lt;p class=&quot;progress-circle-percent-text color-success&quot;&gt;45&lt;/p&gt;
+      &lt;/div&gt;
+
+      &lt;div class=&quot;progress-circle progress-bg-info progress-circle-xs&quot;&gt;
+          &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;32&quot;&gt;&lt;/div&gt;
+          &lt;p class=&quot;progress-circle-text color-light&quot;&gt;XS&lt;/p&gt;
+          &lt;p class=&quot;progress-circle-percent-text color-light&quot;&gt;32&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+  Resultado:
+  <img src="images/progress-circle-4.png" style="display: block;">
+</details>
+
+<hr>
 
       </body>
     </html>
