@@ -633,7 +633,6 @@ body {
 .button {
   display: inline-block;
   padding: .375rem .75rem;
-  margin: .25rem;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1483,6 +1482,50 @@ body {
 
 .poster-black::before {
   background-color: #000000;
+}
+
+.poster-0::before {
+  opacity: 0;
+}
+
+.poster-1::before {
+  opacity: 0.1;
+}
+
+.poster-2::before {
+  opacity: 0.2;
+}
+
+.poster-3::before {
+  opacity: 0.3;
+}
+
+.poster-4::before {
+  opacity: 0.4;
+}
+
+.poster-5::before {
+  opacity: 0.5;
+}
+
+.poster-6::before {
+  opacity: 0.6;
+}
+
+.poster-7::before {
+  opacity: 0.7;
+}
+
+.poster-8::before {
+  opacity: 0.8;
+}
+
+.poster-9::before {
+  opacity: 0.9;
+}
+
+.poster-10::before {
+  opacity: 1;
 }
 
 .card {
@@ -4693,4 +4736,94 @@ body.scrollbar.scroll-none {
 .filter-saturate-10 {
   -webkit-filter: saturate(0);
   filter: saturate(0);
+}
+
+/* ============================= Opacity ============================= */
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-1 {
+  opacity: 0.1;
+}
+
+.opacity-2 {
+  opacity: 0.2;
+}
+
+.opacity-3 {
+  opacity: 0.3;
+}
+
+.opacity-4 {
+  opacity: 0.4;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+.opacity-7 {
+  opacity: 0.7;
+}
+
+.opacity-8 {
+  opacity: 0.8;
+}
+
+.opacity-9 {
+  opacity: 0.9;
+}
+
+.opacity-10 {
+  opacity: 1;
+}
+
+/* ============================= Z-index ============================= */
+.z-index-0 {
+  z-index: 0;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-200 {
+  z-index: 200;
+}
+
+.z-index-300 {
+  z-index: 300;
+}
+
+.z-index-400 {
+  z-index: 400;
+}
+
+.z-index-500 {
+  z-index: 500;
+}
+
+.z-index-600 {
+  z-index: 600;
+}
+
+.z-index-700 {
+  z-index: 700;
+}
+
+.z-index-800 {
+  z-index: 800;
+}
+
+.z-index-900 {
+  z-index: 900;
+}
+
+.z-index-1000 {
+  z-index: 1000;
 }

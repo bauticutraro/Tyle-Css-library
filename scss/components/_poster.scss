@@ -13,9 +13,7 @@
         opacity: .4;
     }
 
-    * {
-        position: relative;
-    }
+    * { position: relative; }
 }
 
 @each $color, $value in $colors {
@@ -23,5 +21,12 @@
         &::before {
             background-color: $value;
         }
+    }
+}
+
+@for $i from 0 through 10 {
+    $value: $i / 10;
+    .poster-#{$i} {
+        &::before { opacity: $value; }
     }
 }

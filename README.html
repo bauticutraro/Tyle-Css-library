@@ -762,6 +762,36 @@
    <img src="/images/filter.png" alt="Border Radius" style="display: block;" /><br>  </details>
 
 <hr>
+  <details style="padding-left: 20px;">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para la Opacidad:</strong></summary><br>
+   La propiedad <em>opacity</em> establece la opacidad o transparencia para un elemento. El valor por defecto es 1 (máximo valor) y el mínimo valor es 0 (transparencia total).
+
+   Con Tyle, para indicar la opacidad de un elemento se hace mediante la siguiente clase: 
+
+   <strong><em>opacity-(valor)</em></strong>
+
+   Los diferentes valores van del 0 al 10, donde 0 sería transparente y 10 el valor por defecto.
+
+   En la siguiente imagen podrás observar mejor la utilidad de esta propiedad:
+
+   <img src="images/opacity.png" style="display: block;">
+  </details>
+
+<hr>
+  <details style="padding-left: 20px;">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el Z-index:</strong></summary><br>   La propiedad <em>z-index</em> especifica el orden de un elemento en el eje <em>z</em>. Con esta propiedad podés elegir que elemento va arriba i cual abajo dependiendo de su valor. Esta propiedad acepta cualquier número, y por defecto es 0.
+   Tyle cuenta con 11 valores diferentes para esta propiedad, y se indica de la siguiente manera:
+
+   <strong><em>z-index-(valor)</em></strong>
+
+   El valor va de 0 a 1000, siempre y cuando sea múltiplo de 100, es decir 0, 100, 200, 300, 400, etc..
+
+   En la siguientes imágenes notarás mejor la utilidad de esta propiedad:
+
+   <img src="images/z-index.png" style="display: block;">
+   <img src="images/z-index-2.png" style="display: block;"><br>  </details>
+
+<hr>
 <h3 id="componentes-">Componentes:</h3>
   <details style="padding-left: 20px;"> 
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container</strong></summary>
@@ -789,7 +819,7 @@
   </details>
 
 <hr>
- <details style="padding-left: 20px;"> 
+  <details style="padding-left: 20px;"> 
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones</strong></summary>
 
    Los botones se crean mediante la etiqueta <strong><em>&lt;button&gt;</em></strong> (de apertura) y <strong><em>&lt;/button&gt;</em></strong> (de cierre). Debtro de estas etiquetas puedes poner cualquier texto. Hay dieferentes tipos de botones, y el tipo de botón se elige mediante el atributo <em>type</em>. Este atributo por defecto es <em>button</em>.
@@ -831,45 +861,45 @@
    En la siguiente imagen podrás observar todos los diferentes tipos de botones que puedes hacer:
 
    <img src="images/button-2.png" style="display: block;">
- </details>
+  </details>
 
 <hr>
- <details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
 
    El <strong><em>scrollbar</em></strong> es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
    Tyle ofrece clases para modificar el <em>scrollbar</em>.
    Para modificar el <em>scrollbar</em> con Tyle, tienes que poner la clase <strong><em>scrollbar</em></strong> al componente que deseas cambiarle el que ya viene por  defecto. Al agregar esta clase a tu componente, se genera el siguiente <em>scrollbar</em>, que es el por defecto que trae Tyle:
 
-  <img src="images/scrollbar-1.png" style="display: block;">
+   <img src="images/scrollbar-1.png" style="display: block;">
 
-  Sin embargo, los colores que trae por defecto la clase <em>scrollbar</em> se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase <em>scrollbar</em>) de la siguiente manera: 
+   Sin embargo, los colores que trae por defecto la clase <em>scrollbar</em> se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase <em>scrollbar</em>) de la siguiente manera: 
 
-  <strong><em>scrollabr-(color)</em></strong>
+   <strong><em>scrollabr-(color)</em></strong>
 
-  Los diferentes colores son los menconados en la <em>paleta de colores</em>.
+   Los diferentes colores son los menconados en la <em>paleta de colores</em>.
 
-  En la siguiente imagen podrá ver ejemplos de algunos de los diferentes colores del <em>scrollbar:</em>
+   En la siguiente imagen podrá ver ejemplos de algunos de los diferentes colores del <em>scrollbar:</em>
 
-  <img src="images/scrollbar-2.png" style="display: block;">
+   <img src="images/scrollbar-2.png" style="display: block;">
 
-  Además de poder cambiar el color de la barra, puedes cambiar el fondo del <em>scrollbar</em> indicando una clase de la siguiente manera:
+   Además de poder cambiar el color de la barra, puedes cambiar el fondo del <em>scrollbar</em> indicando una clase de la siguiente manera:
 
-  <strong>*scrollabr-bg-(color)</strong>
+   <strong>*scrollabr-bg-(color)</strong>
 
-  A continuación podrá ver en la imagen ejemplos del color de fondo:
+   A continuación podrá ver en la imagen ejemplos del color de fondo:
 
-  <img src="images/scrollbar-3.png" style="display: block;">
+   <img src="images/scrollbar-3.png" style="display: block;">
 
-  Además de todo lo mencionado, Tyle cuenta con clases como para dar otro &quot;efecto&quot; al <em>scrollbar</em>. Este &quot;efecto&quot; se indica con la clase <strong><em>scrollbar-3d</em></strong>, y le puedes aplicar esta clase a cualquiera que tenga la clase <em>scrollbar</em>, aunque también tenga clases de diferentes colores de la barra y de fondo.
-  En la siguiente imagen verás ejemplos de esta clase:
+   Además de todo lo mencionado, Tyle cuenta con clases como para dar otro &quot;efecto&quot; al <em>scrollbar</em>. Este &quot;efecto&quot; se indica con la clase <strong><em>scrollbar-3d</em></strong>, y le puedes aplicar esta clase a cualquiera que tenga la clase <em>scrollbar</em>, aunque también tenga clases de diferentes colores de la barra y de fondo.
+   En la siguiente imagen verás ejemplos de esta clase:
 
-  <img src="images/scrollbar-4.png" style="display: block;">
+   <img src="images/scrollbar-4.png" style="display: block;">
 
-  Ahora, verán un ejemplo de el <em>scrollbar</em> hecho en html:
+   Ahora, verán un ejemplo de el <em>scrollbar</em> hecho en html:
 
-  HTML
-  <code>html
+   HTML
+   <code>html
       &lt;div class=&quot;container&quot;&gt;
 
         &lt;div class=&quot;box scrollbar&quot;&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.&lt;/div&gt;
@@ -885,38 +915,82 @@
         &lt;!-- La clase box (no es de Tyle) indica un alto, un ancho y un color de fondo --&gt;
     &lt;/div&gt;</code>
 
-  Resultado:
+   Resultado:
 
-  <img src="images/scrollbar-5.png" style="display: block;">
-</details>
+   <img src="images/scrollbar-5.png" style="display: block;">
+  </details>
 
 <hr>
-<details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster</strong></summary>
 
-  Las barras de progreso (<strong><em>progress bar</em></strong>) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
+   El componenete <strong><em>poster</em></strong> sirve para cubrir el fondo de un <em>div</em>, pero al tener una opacidad, si hay una imagen de fondo, esta se verá debajo del poster, pero se verá. Es importante destacar que todos los hijos que esten dentro del elemento con la clase <em>poster</em>, se verán encima del <em>poster</em>, es decir que no se verán afectados. El <em>poster</em> puede ser de cualquier color de la <em>paleta de colores</em>.
+   Para inidicar que un elemento tenga un <em>poster</em>, se le debe poner la clase <em>poster</em> y  la clase <strong><em>poster-(color)</em></strong>. Sin esta última clase no tendrá efecto el <em>poster</em>, ya que por defecto es transparente. 
 
-  Tyle ya tiene clases para realizar una barra de progreso facilmente.
-  Las <em>progress-bar</em> con Tyle se crean mediante un <em>div</em> con la clase <strong><em>progress-bar</em></strong>, y dentro de este <em>div</em>, creas otro <em>div</em> con la clase <strong><em>progress-bar-percent</em></strong>. Este último <em>div</em> es el que genera el porcentaje de la <em>progress-bar</em>, y para indicarle la cantidad del progreso, se hace mediante la propiedad <em>width</em>. Por ejemplo, si al <em>div</em> con la clase <em>progress-bar-percent</em> le agregás un ancho de 76%, la barra de progreso indicará que va por el 76%. El texto que va d¡en la barra de progreso, lo tienes que poner dentro del div con la clase <em>progress-bar-percent</em>.
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+   En el siguiente ejemplo notarás lo mencionado anteriormente:
 
-  HTML
-  <code>html
+   HTML
+   <code>html
+    &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;box poster poster-primary&quot;&gt; &lt;!--  La clase box (no es de Tyle) da un alto, un ancho, un centrado a sus elementos hijos, y da una imagen de fondo --&gt;
+          &lt;p&gt;Poster Primary&lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;</code>
+   Reesultado:
+   <img src="images/poster-1.png" style="display: block;">
+
+   A continuación, en el siguiente ejemplo, podrán ver mejor que los componentes hijos del <em>poster</em> van por encima de él. En este ejemplo se utilizarán algunas clases utilitarias de Tyle, y un componenete de Tyle:
+
+   HTML
+   <code>html
+   &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;box poster poster-info&quot;&gt;
+          &lt;h1&gt;Poster Title&lt;/h1&gt;
+          &lt;h2 class=&quot;mb-2&quot;&gt;Poster Subtitle&lt;/h2&gt;
+          &lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora repellat fuga? Quae atque ipsa dignissimos? In doloribus vitae eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum earum dolores, neque mollitia doloribus amet? Autem numquam dolore itaque labore ipsam alias magnam eum, veritatis ratione? Ut, nulla aliquid.&lt;/p&gt;
+          &lt;div class=&quot;d-flex mt-3&quot;&gt;
+              &lt;button type=&quot;button&quot; class=&quot;button button-success&quot;&gt;Poster Button&lt;/button&gt;
+              &lt;button type=&quot;button&quot; class=&quot;button button-success ml-2&quot;&gt;Poster Button 2&lt;/button&gt;                
+          &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/poster-2.png" style="display: block;">
+
+   Para modificar la opacidad del <em>poster</em>, solo tienes que agregarle la clase <em>poster-(valor)</em>. El valor va del 0 al 10, siendo 0 el menor valor y 10 el mayor.
+   En la siguiente imagen podrás notar lo mencionado:
+
+   <img src="images/poster-3.png" style="display: block;">
+  </details>
+
+<hr>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+
+   Las barras de progreso (<strong><em>progress bar</em></strong>) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
+
+   Tyle ya tiene clases para realizar una barra de progreso facilmente.
+   Las <em>progress-bar</em> con Tyle se crean mediante un <em>div</em> con la clase <strong><em>progress-bar</em></strong>, y dentro de este <em>div</em>, creas otro <em>div</em> con la clase <strong><em>progress-bar-percent</em></strong>. Este último <em>div</em> es el que genera el porcentaje de la <em>progress-bar</em>, y para indicarle la cantidad del progreso, se hace mediante la propiedad <em>width</em>. Por ejemplo, si al <em>div</em> con la clase <em>progress-bar-percent</em> le agregás un ancho de 76%, la barra de progreso indicará que va por el 76%. El texto que va d¡en la barra de progreso, lo tienes que poner dentro del div con la clase <em>progress-bar-percent</em>.
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+
+   HTML
+   <code>html
     &lt;div class=&quot;progress-bar&quot;&gt;
         &lt;div class=&quot;progress-bar-percent&quot;&gt;76%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 76% --&gt;
     &lt;/div&gt;</code><br>
-  Resultado:
-  <img src="images/progress-bar-1.png" style="display: block">
+   Resultado:
+   <img src="images/progress-bar-1.png" style="display: block">
 
-  Para cambiar el color de esta barra que indica el porcentaje, se le tiene que agregar (al <em>div</em> con la clase <em>progress-bar-percent</em>) la siguiente clase (ya mencionada anteriormente en la paleta de colores):
+   Para cambiar el color de esta barra que indica el porcentaje, se le tiene que agregar (al <em>div</em> con la clase <em>progress-bar-percent</em>) la siguiente clase (ya mencionada anteriormente en la paleta de colores):
 
-  <em>bg-(color)</em>
+   <em>bg-(color)</em>
 
-  Los colores son los de la <em>paleta de colores</em>.
-  Ejemplo:
+   Los colores son los de la <em>paleta de colores</em>.
+   Ejemplo:
 
-  HTML
-  <code>html
+   HTML
+   <code>html
     &lt;div class=&quot;progress-bar&quot;&gt;
         &lt;div class=&quot;progress-bar-percent bg-danger&quot;&gt;76%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 76% --&gt;
     &lt;/div&gt;
@@ -928,125 +1002,125 @@
     &lt;div class=&quot;progress-bar&quot;&gt;
         &lt;div class=&quot;progress-bar-percent bg-dark&quot;&gt;50%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 50% --&gt;
     &lt;/div&gt;</code><br>
-  Resultado:
-  <img src="images/progress-bar-2.png" style="display: block">
+   Resultado:
+   <img src="images/progress-bar-2.png" style="display: block">
 
-  Además de poder cambiar el color de fondo de la barra del porcentaje, tienes la opción de cambiar el color de fondo del <em>progress-bar</em>, de la misma manera; poniendo la clase <em>bg-(color)</em> al <em>div</em> con la clase <em>progress-bar</em>.
-
-  HTML
-  <code>html
-  &lt;div class=&quot;progress-bar bg-light&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-danger&quot;&gt;76%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 76% --&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;progress-bar bg-info&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-primary&quot;&gt;38%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 38% --&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;progress-bar bg-dark&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-light color-dark&quot;&gt;50%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 50% --&gt;
-  &lt;/div&gt;</code><br>
-  Resultado:
-  <img src="images/progress-bar-3.png" style="display: block">
-
-  Además de poder cambiar los colores, con Tyle, se puede cambiar los tamaños de la <em>progress-bar</em>. Hay 3 tipos diferentes de tamaño para la <em>progress-bar</em>, y uno de ellos es el que viene por defecto. Para cambiar el tamaño, se le debe indicar al <em>div</em> con la clase <em>progress-bar</em> la clase <strong><em>progress-bar-sm</em></strong> (menor tamaño) o la clase <strong><em>progress-bar-lg</em></strong> (mayor tamaño).
-  Ejemplo: 
-
-  HTML
-  <code>html
-  &lt;div class=&quot;progress-bar progress-bar-lg&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-success&quot;&gt;76%&lt;/div&gt; 
-  &lt;/div&gt;
-
-  &lt;div class=&quot;progress-bar&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-info&quot;&gt;38%&lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;progress-bar progress-bar-sm bg-dark&quot;&gt;
-      &lt;div class=&quot;progress-bar-percent bg-warning color-dark&quot;&gt;50%&lt;/div&gt;
-  &lt;/div&gt;</code><br>
-  Resultado:
-  <img src="images/progress-bar-4.png" style="display: block">
-
-  Por último para las <em>progress-bar</em>, esta la opción de poner más de una barra de porcentaje en una <em>progress-bar</em> de una manera mu facil. Solo tenés que poner dentro del <em>div</em> con la clase <em>progress-bar</em> otra barra de porcentaje. Si las dos o más barras de porcentaje superan el 100% de la <em>progress-bar</em>, estas barras se achicaran para no ocupar más del 100%.
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+   Además de poder cambiar el color de fondo de la barra del porcentaje, tienes la opción de cambiar el color de fondo del <em>progress-bar</em>, de la misma manera; poniendo la clase <em>bg-(color)</em> al <em>div</em> con la clase <em>progress-bar</em>.
 
    HTML
-  <code>html
-  &lt;div class=&quot;progress-bar&quot;&gt;
+   <code>html
+   &lt;div class=&quot;progress-bar bg-light&quot;&gt;
+      &lt;div class=&quot;progress-bar-percent bg-danger&quot;&gt;76%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 76% --&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;progress-bar bg-info&quot;&gt;
+      &lt;div class=&quot;progress-bar-percent bg-primary&quot;&gt;38%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 38% --&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;progress-bar bg-dark&quot;&gt;
+      &lt;div class=&quot;progress-bar-percent bg-light color-dark&quot;&gt;50%&lt;/div&gt; &lt;!-- Se le indicó mediante css un width de 50% --&gt;
+   &lt;/div&gt;</code><br>
+   Resultado:
+   <img src="images/progress-bar-3.png" style="display: block">
+
+   Además de poder cambiar los colores, con Tyle, se puede cambiar los tamaños de la <em>progress-bar</em>. Hay 3 tipos diferentes de tamaño para la <em>progress-bar</em>, y uno de ellos es el que viene por defecto. Para cambiar el tamaño, se le debe indicar al <em>div</em> con la clase <em>progress-bar</em> la clase <strong><em>progress-bar-sm</em></strong> (menor tamaño) o la clase <strong><em>progress-bar-lg</em></strong> (mayor tamaño).
+   Ejemplo: 
+
+   HTML
+   <code>html
+   &lt;div class=&quot;progress-bar progress-bar-lg&quot;&gt;
+       &lt;div class=&quot;progress-bar-percent bg-success&quot;&gt;76%&lt;/div&gt; 
+   &lt;/div&gt;
+
+   &lt;div class=&quot;progress-bar&quot;&gt;
+       &lt;div class=&quot;progress-bar-percent bg-info&quot;&gt;38%&lt;/div&gt;
+   &lt;/div&gt;
+
+   &lt;div class=&quot;progress-bar progress-bar-sm bg-dark&quot;&gt;
+       &lt;div class=&quot;progress-bar-percent bg-warning color-dark&quot;&gt;50%&lt;/div&gt;
+   &lt;/div&gt;</code><br>
+   Resultado:
+   <img src="images/progress-bar-4.png" style="display: block">
+
+   Por último para las <em>progress-bar</em>, esta la opción de poner más de una barra de porcentaje en una <em>progress-bar</em> de una manera mu facil.   Solo tenés que poner dentro del <em>div</em> con la clase <em>progress-bar</em> otra barra de porcentaje. Si las dos o más barras de porcentaje superan el 100% de la <em>progress-bar</em>, estas barras se achicaran para no ocupar más del 100%.
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+
+   HTML
+   <code>html
+   &lt;div class=&quot;progress-bar&quot;&gt;
       &lt;div class=&quot;progress-bar-percent bg-success&quot;&gt;26%&lt;/div&gt; 
       &lt;div class=&quot;progress-bar-percent bg-danger&quot;&gt;56%&lt;/div&gt; 
       &lt;div class=&quot;progress-bar-percent bg-primary&quot;&gt;15%&lt;/div&gt;             
-  &lt;/div&gt;
+   &lt;/div&gt;
 
-  &lt;div class=&quot;progress-bar&quot;&gt; &lt;!-- Las barras de porcentaje superan el 100% --&gt;
+   &lt;div class=&quot;progress-bar&quot;&gt; &lt;!-- Las barras de porcentaje superan el 100% --&gt;
       &lt;div class=&quot;progress-bar-percent bg-info&quot;&gt;48%&lt;/div&gt; 
       &lt;div class=&quot;progress-bar-percent bg-warning&quot;&gt;12%&lt;/div&gt;
       &lt;div class=&quot;progress-bar-percent bg-secondary&quot;&gt;50%&lt;/div&gt;            
-  &lt;/div&gt;</code><br>
-  Resultado:
-  <img src="images/progress-bar-5.png" style="display: block">
-</details>
+   &lt;/div&gt;</code><br>
+   Resultado:
+   <img src="images/progress-bar-5.png" style="display: block">
+  </details>
 
 <hr>
-<details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
 
-  Una alternativa a las <em>progress-bar</em> son los <em>progress-circle</em> cuya función es la misma (indicar el progreso que se ha realizado).
+   Una alternativa a las <em>progress-bar</em> son los <em>progress-circle</em> cuya función es la misma (indicar el progreso que se ha realizado).
 
-  Hacer un <em>progress-circle</em> con Tyle es muy sencillo. Para hacerlo tienes que crear un <em>div</em> con la clase <strong><em>progress-circle</em></strong>, este será el div que contenga los diferentes elementos que se utilizan para crear el <em>progress-circle</em>. Dentro de este <em>div</em> van 3 elementos:
+   Hacer un <em>progress-circle</em> con Tyle es muy sencillo. Para hacerlo tienes que crear un <em>div</em> con la clase <strong><em>progress-circle</em></strong>, este será el div que contenga los diferentes elementos que se utilizan para crear el <em>progress-circle</em>. Dentro de este <em>div</em> van 3 elementos:
 
-  <strong><em>progress-circle-percent:</em></strong> Este es el que indica el porcentaje de forma gráfica. Para indicar el porcentaje tienes que agregar a este elemento el atributo <strong><em>data-value</em></strong>. El valor que le pongas a este atributo será el porcentaje. Este elemento va con la etiqueta <strong><em>&lt;div&gt;</em></strong> .
+   <strong><em>progress-circle-percent:</em></strong> Este es el que indica el porcentaje de forma gráfica. Para indicar el porcentaje tienes que agregar a este elemento el atributo <strong><em>data-value</em></strong>. El valor que le pongas a este atributo será el porcentaje. Este elemento va con la etiqueta <strong><em>&lt;div&gt;</em></strong> .
 
-  <strong><em>progress-circle-percent-text:</em></strong> Este es el que indica el porcentaje con números. Dentro de este tu mismo le indicas el porcentaje (no cambia nada del gráfico solor son números). Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
+   <strong><em>progress-circle-percent-text:</em></strong> Este es el que indica el porcentaje con números. Dentro de este tu mismo le indicas el porcentaje (no cambia nada del gráfico solor son números). Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
 
-  <strong><em>progress-circle-text:</em></strong> Este indica el tema del gráfico. Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
+   <strong><em>progress-circle-text:</em></strong> Este indica el tema del gráfico. Va con la etiqueta <strong><em>&lt;p&gt;</em></strong> .
 
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente
 
-  HTML
-  <code>html
-  &lt;div class=&quot;progress-circle&quot;&gt;
-    &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;78&quot;&gt;&lt;/div&gt;
-    &lt;p class=&quot;progress-circle-text&quot;&gt;ProgressCircle&lt;/p&gt;
-    &lt;p class=&quot;progress-circle-percent-text&quot;&gt;78&lt;/p&gt;
-  &lt;/div&gt;</code>
+   HTML
+   <code>html
+   &lt;div class=&quot;progress-circle&quot;&gt;
+     &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;78&quot;&gt;&lt;/div&gt;
+     &lt;p class=&quot;progress-circle-text&quot;&gt;ProgressCircle&lt;/p&gt;
+     &lt;p class=&quot;progress-circle-percent-text&quot;&gt;78&lt;/p&gt;
+   &lt;/div&gt;</code>
 
-  Resultado:
-  <img src="images/progress-circle-1.png" style="display: block;">
+   Resultado:
+   <img src="images/progress-circle-1.png" style="display: block;">
 
-  El <em>progress-circle</em>, de la anterior imagen, es el quen trae por defecto Tyle. Como podrás haber adivinado, podés cambiar el color de los <em>progress-circle</em>. Para hacerlo, tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
+   El <em>progress-circle</em>, de la anterior imagen, es el quen trae por defecto Tyle. Como podrás haber adivinado, podés cambiar el color de los <em>progress-circle</em>. Para hacerlo, tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
 
-  <strong><em>progress-bg-(color)</em></strong>
+   <strong><em>progress-bg-(color)</em></strong>
 
-  Los diferentes colores son los mencionados en la paleta de colores.
+   Los diferentes colores son los mencionados en la paleta de colores.
 
-  A continuación verás un ejemplo de lo mencionado:
-  HTML
-  <code>html
+   A continuación verás un ejemplo de lo mencionado:
+   HTML
+   <code>html
     &lt;div class=&quot;progress-circle progress-bg-danger&quot;&gt;
       &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;63&quot;&gt;&lt;/div&gt;
       &lt;p class=&quot;progress-circle-text&quot;&gt;Danger&lt;/p&gt;
       &lt;p class=&quot;progress-circle-percent-text&quot;&gt;63&lt;/p&gt;
     &lt;/div&gt;</code>
 
-  Resultado:
-  <img src="images/progress-circle-2.png" style="display: block;">
+   Resultado:
+   <img src="images/progress-circle-2.png" style="display: block;">
 
-  Como podrás haber notado, también se cambia el color del texto, pero si deseas cambiarlo puedes hacerlo agregando las clases (ya mencionadas anteiormente en la <em>paleta de colores</em>) <em>color-(color)</em>.
+   Como podrás haber notado, también se cambia el color del texto, pero si deseas cambiarlo puedes hacerlo agregando las clases (ya mencionadas anteiormente en la <em>paleta de colores</em>) <em>color-(color)</em>.
 
-  A continuación verás una imagen con los diferentes tipos de colores para los <em>progress-circle:</em>
-  <img src="images/progress-circle-3.png" style="display: block;">
+   A continuación verás una imagen con los diferentes tipos de colores para los <em>progress-circle:</em>
+   <img src="images/progress-circle-3.png" style="display: block;">
 
-  Por último, para los <em>progress-circle</em> hay 5 tipos de tamaños diferentes: <em>xl</em>(más grande) <em>lg</em> (2do más grande), el que viene por defecto, <em>sm</em> (2do más chcio) y <em>xs</em> (más chico)
-  Para indicar el tamaño tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
+   Por último, para los <em>progress-circle</em> hay 5 tipos de tamaños diferentes: <em>xl</em>(más grande) <em>lg</em> (2do más grande), el que viene por defecto,<em>sm</em> (2do más chcio) y <em>xs</em> (más chico).
+   Para indicar el tamaño tienes que agregar al <em>div</em> con la clase <em>progress-circle</em> la siguiente clase:
 
-  <strong><em>progress-circle-(medida)</em></strong>
+   <strong><em>progress-circle-(medida)</em></strong>
 
-  En el siguietne ejemplo podrás notar los 5 tipos diferentes de tamaños:
+   En el siguietne ejemplo podrás notar los 5 tipos diferentes de tamaños:
 
-  HTML
-  <code>html
+   HTML
+   <code>html
     &lt;div class=&quot;container&quot;&gt;
       &lt;div class=&quot;progress-circle progress-bg-success progress-circle-xl&quot;&gt;
           &lt;div class=&quot;progress-circle-percent&quot; data-value=&quot;97&quot;&gt;&lt;/div&gt;
@@ -1079,9 +1153,9 @@
       &lt;/div&gt;
     &lt;/div&gt;</code>
 
-  Resultado:
-  <img src="images/progress-circle-4.png" style="display: block;">
-</details>
+   Resultado:
+   <img src="images/progress-circle-4.png" style="display: block;">
+  </details>
 
 <hr>
 

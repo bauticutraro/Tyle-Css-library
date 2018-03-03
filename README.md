@@ -778,6 +778,41 @@
 
   ---
 
+  <details style="padding-left: 20px;">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para la Opacidad:</strong></summary>  
+   
+   La propiedad *opacity* establece la opacidad o transparencia para un elemento. El valor por defecto es 1 (máximo valor) y el mínimo valor es 0 (transparencia total).
+
+   Con Tyle, para indicar la opacidad de un elemento se hace mediante la siguiente clase: 
+ 
+   ***opacity-(valor)***
+
+   Los diferentes valores van del 0 al 10, donde 0 sería transparente y 10 el valor por defecto.
+   
+   En la siguiente imagen podrás observar mejor la utilidad de esta propiedad:
+
+   <img src="images/opacity.png" style="display: block;">
+  </details>
+
+  ---
+
+  <details style="padding-left: 20px;">
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el Z-index:</strong></summary>  
+   La propiedad *z-index* especifica el orden de un elemento en el eje *z*. Con esta propiedad podés elegir que elemento va arriba i cual abajo dependiendo de su valor. Esta propiedad acepta cualquier número, y por defecto es 0.
+   Tyle cuenta con 11 valores diferentes para esta propiedad, y se indica de la siguiente manera:
+
+   ***z-index-(valor)***
+
+   El valor va de 0 a 1000, siempre y cuando sea múltiplo de 100, es decir 0, 100, 200, 300, 400, etc..
+
+   En la siguientes imágenes notarás mejor la utilidad de esta propiedad:
+
+   <img src="images/z-index.png" style="display: block;">
+   <img src="images/z-index-2.png" style="display: block;">   
+  </details>
+
+  ---
+
  ### Componentes:
   
   <details style="padding-left: 20px;"> 
@@ -808,7 +843,7 @@
 
   ---
 
- <details style="padding-left: 20px;"> 
+  <details style="padding-left: 20px;"> 
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones</strong></summary>
 
    Los botones se crean mediante la etiqueta ***&lt;button&gt;*** (de apertura) y ***&lt;/button&gt;*** (de cierre). Debtro de estas etiquetas puedes poner cualquier texto. Hay dieferentes tipos de botones, y el tipo de botón se elige mediante el atributo *type*. Este atributo por defecto es *button*.
@@ -851,46 +886,46 @@
    En la siguiente imagen podrás observar todos los diferentes tipos de botones que puedes hacer:
 
    <img src="images/button-2.png" style="display: block;">
- </details>
+  </details>
   
   ---
 
- <details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
 
    El ***scrollbar*** es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
    Tyle ofrece clases para modificar el *scrollbar*.
    Para modificar el *scrollbar* con Tyle, tienes que poner la clase ***scrollbar*** al componente que deseas cambiarle el que ya viene por  defecto. Al agregar esta clase a tu componente, se genera el siguiente *scrollbar*, que es el por defecto que trae Tyle:
  
-  <img src="images/scrollbar-1.png" style="display: block;">
+   <img src="images/scrollbar-1.png" style="display: block;">
 
-  Sin embargo, los colores que trae por defecto la clase *scrollbar* se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase *scrollbar*) de la siguiente manera: 
+   Sin embargo, los colores que trae por defecto la clase *scrollbar* se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase *scrollbar*) de la siguiente manera: 
 
-  ***scrollabr-(color)***
+   ***scrollabr-(color)***
 
-  Los diferentes colores son los menconados en la *paleta de colores*.
+   Los diferentes colores son los menconados en la *paleta de colores*.
 
-  En la siguiente imagen podrá ver ejemplos de algunos de los diferentes colores del *scrollbar:*
+   En la siguiente imagen podrá ver ejemplos de algunos de los diferentes colores del *scrollbar:*
   
-  <img src="images/scrollbar-2.png" style="display: block;">
+   <img src="images/scrollbar-2.png" style="display: block;">
 
-  Además de poder cambiar el color de la barra, puedes cambiar el fondo del *scrollbar* indicando una clase de la siguiente manera:
+   Además de poder cambiar el color de la barra, puedes cambiar el fondo del *scrollbar* indicando una clase de la siguiente manera:
+ 
+   ***scrollabr-bg-(color)**
 
-  ***scrollabr-bg-(color)**
+   A continuación podrá ver en la imagen ejemplos del color de fondo:
 
-  A continuación podrá ver en la imagen ejemplos del color de fondo:
+   <img src="images/scrollbar-3.png" style="display: block;">
 
-  <img src="images/scrollbar-3.png" style="display: block;">
+   Además de todo lo mencionado, Tyle cuenta con clases como para dar otro "efecto" al *scrollbar*. Este "efecto" se indica con la clase ***scrollbar-3d***, y le puedes aplicar esta clase a cualquiera que tenga la clase *scrollbar*, aunque también tenga clases de diferentes colores de la barra y de fondo.
+   En la siguiente imagen verás ejemplos de esta clase:
 
-  Además de todo lo mencionado, Tyle cuenta con clases como para dar otro "efecto" al *scrollbar*. Este "efecto" se indica con la clase ***scrollbar-3d***, y le puedes aplicar esta clase a cualquiera que tenga la clase *scrollbar*, aunque también tenga clases de diferentes colores de la barra y de fondo.
-  En la siguiente imagen verás ejemplos de esta clase:
+   <img src="images/scrollbar-4.png" style="display: block;">
 
-  <img src="images/scrollbar-4.png" style="display: block;">
+   Ahora, verán un ejemplo de el *scrollbar* hecho en html:
 
-  Ahora, verán un ejemplo de el *scrollbar* hecho en html:
-
-  HTML
-  ```html
+   HTML
+   ```html
       <div class="container">
 
         <div class="box scrollbar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo exercitationem, consequatur et doloremque accusantium suscipit eligendi praesentium repudiandae labore, fuga sunt. Quidem temporibus deleniti, repudiandae omnis nobis eligendi mollitia dolorum.</div>
@@ -905,43 +940,90 @@
 
         <!-- La clase box (no es de Tyle) indica un alto, un ancho y un color de fondo -->
     </div>
-  ```
+   ```
 
-  Resultado:
-
-  <img src="images/scrollbar-5.png" style="display: block;">
-</details>
+   Resultado:
+ 
+   <img src="images/scrollbar-5.png" style="display: block;">
+  </details>
 
   ---
 
-<details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster</strong></summary>
 
-  Las barras de progreso (***progress bar***) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
+   El componenete ***poster*** sirve para cubrir el fondo de un *div*, pero al tener una opacidad, si hay una imagen de fondo, esta se verá debajo del poster, pero se verá. Es importante destacar que todos los hijos que esten dentro del elemento con la clase *poster*, se verán encima del *poster*, es decir que no se verán afectados. El *poster* puede ser de cualquier color de la *paleta de colores*.
+   Para inidicar que un elemento tenga un *poster*, se le debe poner la clase *poster* y  la clase ***poster-(color)***. Sin esta última clase no tendrá efecto el *poster*, ya que por defecto es transparente. 
 
-  Tyle ya tiene clases para realizar una barra de progreso facilmente.
-  Las *progress-bar* con Tyle se crean mediante un *div* con la clase ***progress-bar***, y dentro de este *div*, creas otro *div* con la clase ***progress-bar-percent***. Este último *div* es el que genera el porcentaje de la *progress-bar*, y para indicarle la cantidad del progreso, se hace mediante la propiedad *width*. Por ejemplo, si al *div* con la clase *progress-bar-percent* le agregás un ancho de 76%, la barra de progreso indicará que va por el 76%. El texto que va d¡en la barra de progreso, lo tienes que poner dentro del div con la clase *progress-bar-percent*.
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+   En el siguiente ejemplo notarás lo mencionado anteriormente:
 
-  HTML
-  ```html
+   HTML
+   ```html
+    <div class="container">
+      <div class="box poster poster-primary"> <!--  La clase box (no es de Tyle) da un alto, un ancho, un centrado a sus elementos hijos, y da una imagen de fondo -->
+          <p>Poster Primary</p>
+      </div>
+    </div>
+   ```
+   Reesultado:
+   <img src="images/poster-1.png" style="display: block;">
+
+   A continuación, en el siguiente ejemplo, podrán ver mejor que los componentes hijos del *poster* van por encima de él. En este ejemplo se utilizarán algunas clases utilitarias de Tyle, y un componenete de Tyle:
+
+   HTML
+   ``` html
+   <div class="container">
+      <div class="box poster poster-info">
+          <h1>Poster Title</h1>
+          <h2 class="mb-2">Poster Subtitle</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque tempora repellat fuga? Quae atque ipsa dignissimos? In doloribus vitae eligendi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ipsum earum dolores, neque mollitia doloribus amet? Autem numquam dolore itaque labore ipsam alias magnam eum, veritatis ratione? Ut, nulla aliquid.</p>
+          <div class="d-flex mt-3">
+              <button type="button" class="button button-success">Poster Button</button>
+              <button type="button" class="button button-success ml-2">Poster Button 2</button>                
+          </div>
+      </div>
+   </div>
+   ```
+
+   Resultado:
+   <img src="images/poster-2.png" style="display: block;">
+
+   Para modificar la opacidad del *poster*, solo tienes que agregarle la clase *poster-(valor)*. El valor va del 0 al 10, siendo 0 el menor valor y 10 el mayor.
+   En la siguiente imagen podrás notar lo mencionado:
+
+   <img src="images/poster-3.png" style="display: block;">
+  </details>
+
+  ---
+
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+
+   Las barras de progreso (***progress bar***) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
+
+   Tyle ya tiene clases para realizar una barra de progreso facilmente.
+   Las *progress-bar* con Tyle se crean mediante un *div* con la clase ***progress-bar***, y dentro de este *div*, creas otro *div* con la clase ***progress-bar-percent***. Este último *div* es el que genera el porcentaje de la *progress-bar*, y para indicarle la cantidad del progreso, se hace mediante la propiedad *width*. Por ejemplo, si al *div* con la clase *progress-bar-percent* le agregás un ancho de 76%, la barra de progreso indicará que va por el 76%. El texto que va d¡en la barra de progreso, lo tienes que poner dentro del div con la clase *progress-bar-percent*.
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+
+   HTML
+   ```html
     <div class="progress-bar">
         <div class="progress-bar-percent">76%</div> <!-- Se le indicó mediante css un width de 76% -->
     </div>
-  ```  
+   ```  
 
-  Resultado:
-  <img src="images/progress-bar-1.png" style="display: block">
+   Resultado:
+   <img src="images/progress-bar-1.png" style="display: block">
 
-  Para cambiar el color de esta barra que indica el porcentaje, se le tiene que agregar (al *div* con la clase *progress-bar-percent*) la siguiente clase (ya mencionada anteriormente en la paleta de colores):
+   Para cambiar el color de esta barra que indica el porcentaje, se le tiene que agregar (al *div* con la clase *progress-bar-percent*) la siguiente clase (ya mencionada anteriormente en la paleta de colores):
 
-  *bg-(color)*
+   *bg-(color)*
 
-  Los colores son los de la *paleta de colores*.
-  Ejemplo:
+   Los colores son los de la *paleta de colores*.
+   Ejemplo:
 
-  HTML
-  ```html
+   HTML
+   ```html
     <div class="progress-bar">
         <div class="progress-bar-percent bg-danger">76%</div> <!-- Se le indicó mediante css un width de 76% -->
     </div>
@@ -953,136 +1035,136 @@
     <div class="progress-bar">
         <div class="progress-bar-percent bg-dark">50%</div> <!-- Se le indicó mediante css un width de 50% -->
     </div>
-  ```  
+   ```  
 
-  Resultado:
-  <img src="images/progress-bar-2.png" style="display: block">
+   Resultado:
+   <img src="images/progress-bar-2.png" style="display: block">
 
-  Además de poder cambiar el color de fondo de la barra del porcentaje, tienes la opción de cambiar el color de fondo del *progress-bar*, de la misma manera; poniendo la clase *bg-(color)* al *div* con la clase *progress-bar*.
+   Además de poder cambiar el color de fondo de la barra del porcentaje, tienes la opción de cambiar el color de fondo del *progress-bar*, de la misma manera; poniendo la clase *bg-(color)* al *div* con la clase *progress-bar*.
    
-  HTML
-  ```html
-  <div class="progress-bar bg-light">
+   HTML
+   ```html
+   <div class="progress-bar bg-light">
       <div class="progress-bar-percent bg-danger">76%</div> <!-- Se le indicó mediante css un width de 76% -->
-  </div>
+   </div>
 
-  <div class="progress-bar bg-info">
+   <div class="progress-bar bg-info">
       <div class="progress-bar-percent bg-primary">38%</div> <!-- Se le indicó mediante css un width de 38% -->
-  </div>
+   </div>
 
-  <div class="progress-bar bg-dark">
+   <div class="progress-bar bg-dark">
       <div class="progress-bar-percent bg-light color-dark">50%</div> <!-- Se le indicó mediante css un width de 50% -->
-  </div>
-  ```  
+   </div>
+   ```  
 
-  Resultado:
-  <img src="images/progress-bar-3.png" style="display: block">
+   Resultado:
+   <img src="images/progress-bar-3.png" style="display: block">
 
-  Además de poder cambiar los colores, con Tyle, se puede cambiar los tamaños de la *progress-bar*. Hay 3 tipos diferentes de tamaño para la *progress-bar*, y uno de ellos es el que viene por defecto. Para cambiar el tamaño, se le debe indicar al *div* con la clase *progress-bar* la clase ***progress-bar-sm*** (menor tamaño) o la clase ***progress-bar-lg*** (mayor tamaño).
-  Ejemplo: 
-
-  HTML
-  ```html
-  <div class="progress-bar progress-bar-lg">
-      <div class="progress-bar-percent bg-success">76%</div> 
-  </div>
-
-  <div class="progress-bar">
-      <div class="progress-bar-percent bg-info">38%</div>
-  </div>
-  
-  <div class="progress-bar progress-bar-sm bg-dark">
-      <div class="progress-bar-percent bg-warning color-dark">50%</div>
-  </div>
-  ```  
-
-  Resultado:
-  <img src="images/progress-bar-4.png" style="display: block">
-
-  Por último para las *progress-bar*, esta la opción de poner más de una barra de porcentaje en una *progress-bar* de una manera mu facil. Solo tenés que poner dentro del *div* con la clase *progress-bar* otra barra de porcentaje. Si las dos o más barras de porcentaje superan el 100% de la *progress-bar*, estas barras se achicaran para no ocupar más del 100%.
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+   Además de poder cambiar los colores, con Tyle, se puede cambiar los tamaños de la *progress-bar*. Hay 3 tipos diferentes de tamaño para la *progress-bar*, y uno de ellos es el que viene por defecto. Para cambiar el tamaño, se le debe indicar al *div* con la clase *progress-bar* la clase ***progress-bar-sm*** (menor tamaño) o la clase ***progress-bar-lg*** (mayor tamaño).
+   Ejemplo: 
 
    HTML
-  ```html
-  <div class="progress-bar">
+   ```html
+   <div class="progress-bar progress-bar-lg">
+       <div class="progress-bar-percent bg-success">76%</div> 
+   </div>
+ 
+   <div class="progress-bar">
+       <div class="progress-bar-percent bg-info">38%</div>
+   </div>
+   
+   <div class="progress-bar progress-bar-sm bg-dark">
+       <div class="progress-bar-percent bg-warning color-dark">50%</div>
+   </div>
+   ```  
+
+   Resultado:
+   <img src="images/progress-bar-4.png" style="display: block">
+
+   Por último para las *progress-bar*, esta la opción de poner más de una barra de porcentaje en una *progress-bar* de una manera mu facil.   Solo tenés que poner dentro del *div* con la clase *progress-bar* otra barra de porcentaje. Si las dos o más barras de porcentaje superan el 100% de la *progress-bar*, estas barras se achicaran para no ocupar más del 100%.
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente:
+
+   HTML
+   ```html
+   <div class="progress-bar">
       <div class="progress-bar-percent bg-success">26%</div> 
       <div class="progress-bar-percent bg-danger">56%</div> 
       <div class="progress-bar-percent bg-primary">15%</div>             
-  </div>
+   </div>
 
-  <div class="progress-bar"> <!-- Las barras de porcentaje superan el 100% -->
+   <div class="progress-bar"> <!-- Las barras de porcentaje superan el 100% -->
       <div class="progress-bar-percent bg-info">48%</div> 
       <div class="progress-bar-percent bg-warning">12%</div>
       <div class="progress-bar-percent bg-secondary">50%</div>            
-  </div>
-  ```  
+   </div>
+   ```  
 
-  Resultado:
-  <img src="images/progress-bar-5.png" style="display: block">
-</details>
+   Resultado:
+   <img src="images/progress-bar-5.png" style="display: block">
+  </details>
 
   ---
 
-<details style="padding-left: 20px;"> 
-  <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
 
-  Una alternativa a las *progress-bar* son los *progress-circle* cuya función es la misma (indicar el progreso que se ha realizado).
+   Una alternativa a las *progress-bar* son los *progress-circle* cuya función es la misma (indicar el progreso que se ha realizado).
 
-  Hacer un *progress-circle* con Tyle es muy sencillo. Para hacerlo tienes que crear un *div* con la clase ***progress-circle***, este será el div que contenga los diferentes elementos que se utilizan para crear el *progress-circle*. Dentro de este *div* van 3 elementos:
+   Hacer un *progress-circle* con Tyle es muy sencillo. Para hacerlo tienes que crear un *div* con la clase ***progress-circle***, este será el div que contenga los diferentes elementos que se utilizan para crear el *progress-circle*. Dentro de este *div* van 3 elementos:
 
-  ***progress-circle-percent:*** Este es el que indica el porcentaje de forma gráfica. Para indicar el porcentaje tienes que agregar a este elemento el atributo ***data-value***. El valor que le pongas a este atributo será el porcentaje. Este elemento va con la etiqueta ***&lt;div&gt;*** .
+   ***progress-circle-percent:*** Este es el que indica el porcentaje de forma gráfica. Para indicar el porcentaje tienes que agregar a este elemento el atributo ***data-value***. El valor que le pongas a este atributo será el porcentaje. Este elemento va con la etiqueta ***&lt;div&gt;*** .
 
-  ***progress-circle-percent-text:*** Este es el que indica el porcentaje con números. Dentro de este tu mismo le indicas el porcentaje (no cambia nada del gráfico solor son números). Va con la etiqueta ***&lt;p&gt;*** .
+   ***progress-circle-percent-text:*** Este es el que indica el porcentaje con números. Dentro de este tu mismo le indicas el porcentaje (no cambia nada del gráfico solor son números). Va con la etiqueta ***&lt;p&gt;*** .
 
-  ***progress-circle-text:*** Este indica el tema del gráfico. Va con la etiqueta ***&lt;p&gt;*** .
+   ***progress-circle-text:*** Este indica el tema del gráfico. Va con la etiqueta ***&lt;p&gt;*** .
 
-  En el siguiente ejemplo notarás mejor lo mencionado anteriormente
+   En el siguiente ejemplo notarás mejor lo mencionado anteriormente
 
-  HTML
-  ```html
-  <div class="progress-circle">
-    <div class="progress-circle-percent" data-value="78"></div>
-    <p class="progress-circle-text">ProgressCircle</p>
-    <p class="progress-circle-percent-text">78</p>
-  </div>
-  ```
+   HTML
+   ```html
+   <div class="progress-circle">
+     <div class="progress-circle-percent" data-value="78"></div>
+     <p class="progress-circle-text">ProgressCircle</p>
+     <p class="progress-circle-percent-text">78</p>
+   </div>
+   ```
     
-  Resultado:
-  <img src="images/progress-circle-1.png" style="display: block;">
+   Resultado:
+   <img src="images/progress-circle-1.png" style="display: block;">
 
-  El *progress-circle*, de la anterior imagen, es el quen trae por defecto Tyle. Como podrás haber adivinado, podés cambiar el color de los *progress-circle*. Para hacerlo, tienes que agregar al *div* con la clase *progress-circle* la siguiente clase:
+   El *progress-circle*, de la anterior imagen, es el quen trae por defecto Tyle. Como podrás haber adivinado, podés cambiar el color de los *progress-circle*. Para hacerlo, tienes que agregar al *div* con la clase *progress-circle* la siguiente clase:
 
-  ***progress-bg-(color)***
+   ***progress-bg-(color)***
 
-  Los diferentes colores son los mencionados en la paleta de colores.
+   Los diferentes colores son los mencionados en la paleta de colores.
 
-  A continuación verás un ejemplo de lo mencionado:
-  HTML
-  ```html
+   A continuación verás un ejemplo de lo mencionado:
+   HTML
+   ```html
     <div class="progress-circle progress-bg-danger">
       <div class="progress-circle-percent" data-value="63"></div>
       <p class="progress-circle-text">Danger</p>
       <p class="progress-circle-percent-text">63</p>
     </div>
-  ```
+   ```
 
-  Resultado:
-  <img src="images/progress-circle-2.png" style="display: block;">
+   Resultado:
+   <img src="images/progress-circle-2.png" style="display: block;">
 
-  Como podrás haber notado, también se cambia el color del texto, pero si deseas cambiarlo puedes hacerlo agregando las clases (ya mencionadas anteiormente en la *paleta de colores*) *color-(color)*.
+   Como podrás haber notado, también se cambia el color del texto, pero si deseas cambiarlo puedes hacerlo agregando las clases (ya mencionadas anteiormente en la *paleta de colores*) *color-(color)*.
 
-  A continuación verás una imagen con los diferentes tipos de colores para los *progress-circle:*
-  <img src="images/progress-circle-3.png" style="display: block;">
+   A continuación verás una imagen con los diferentes tipos de colores para los *progress-circle:*
+   <img src="images/progress-circle-3.png" style="display: block;">
 
-  Por último, para los *progress-circle* hay 5 tipos de tamaños diferentes: *xl*(más grande) *lg* (2do más grande), el que viene por defecto, *sm* (2do más chcio) y *xs* (más chico)
-  Para indicar el tamaño tienes que agregar al *div* con la clase *progress-circle* la siguiente clase:
+   Por último, para los *progress-circle* hay 5 tipos de tamaños diferentes: *xl*(más grande) *lg* (2do más grande), el que viene por defecto,*sm* (2do más chcio) y *xs* (más chico).
+   Para indicar el tamaño tienes que agregar al *div* con la clase *progress-circle* la siguiente clase:
 
-  ***progress-circle-(medida)***
+   ***progress-circle-(medida)***
 
-  En el siguietne ejemplo podrás notar los 5 tipos diferentes de tamaños:
+   En el siguietne ejemplo podrás notar los 5 tipos diferentes de tamaños:
   
-  HTML
-  ```html
+   HTML
+   ```html
     <div class="container">
       <div class="progress-circle progress-bg-success progress-circle-xl">
           <div class="progress-circle-percent" data-value="97"></div>
@@ -1114,14 +1196,14 @@
           <p class="progress-circle-percent-text color-light">32</p>
       </div>
     </div>
-  ```
+   ```
 
-  Resultado:
-  <img src="images/progress-circle-4.png" style="display: block;">
-</details>
+   Resultado:
+   <img src="images/progress-circle-4.png" style="display: block;">
+  </details>
 
- ---
-
+  ---
+ 
 
 
 

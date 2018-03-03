@@ -1,0 +1,7 @@
+/* ============================= Opacity ============================= */
+@for $i from 0 through 10 {
+    $value: $i / 10;
+    .opacity-#{$i} {
+        opacity: $value;
+    }
+}

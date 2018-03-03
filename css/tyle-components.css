@@ -130,7 +130,6 @@ body {
 .button {
   display: inline-block;
   padding: .375rem .75rem;
-  margin: .25rem;
   text-align: center;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -980,6 +979,50 @@ body {
 
 .poster-black::before {
   background-color: #000000;
+}
+
+.poster-0::before {
+  opacity: 0;
+}
+
+.poster-1::before {
+  opacity: 0.1;
+}
+
+.poster-2::before {
+  opacity: 0.2;
+}
+
+.poster-3::before {
+  opacity: 0.3;
+}
+
+.poster-4::before {
+  opacity: 0.4;
+}
+
+.poster-5::before {
+  opacity: 0.5;
+}
+
+.poster-6::before {
+  opacity: 0.6;
+}
+
+.poster-7::before {
+  opacity: 0.7;
+}
+
+.poster-8::before {
+  opacity: 0.8;
+}
+
+.poster-9::before {
+  opacity: 0.9;
+}
+
+.poster-10::before {
+  opacity: 1;
 }
 
 .card {
