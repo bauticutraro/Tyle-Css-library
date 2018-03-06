@@ -65,7 +65,7 @@
 </tr>
 </tbody>
 </table>
-<p> Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si querés utilizar todo lo que es Tyle, o solo su sistema de grid o  sus componentes o sus clases utilitarias.</p>
+<p> Como podrás ver en el anterior cuadro, tienes la libertad de poder elegir si quieres utilizar todo lo que es Tyle, o solo su sistema de grid o sus componentes o sus clases utilitarias.</p>
 <h3 id="estructura-b-sica-para-comenzar-a-utilizar-tyle-">Estructura básica para comenzar a utilizar Tyle:</h3>
 <pre><code class="lang-html">  &lt;!DOCTYPE html&gt;
   &lt;html lang=&quot;en&quot;&gt;
@@ -85,7 +85,7 @@
   &lt;/body&gt;
   &lt;/html&gt;
 </code></pre>
-<p>  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a  utilizarlo y poder desarrollar todo  tu código con Tyle.</p>
+<p>  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a  utilizarlo y poder desarrollar todo tu código con Tyle.</p>
 <p>  Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior, este archivo es de <em>fontastic</em> (se  utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es  necesario linkearlo si utilizas algún componente, si no, no es necesario).</p>
 <h2 id="documentaci-n-">Documentación:</h2>
  <details>
@@ -779,7 +779,8 @@
 
 <hr>
   <details style="padding-left: 20px;">
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el Z-index:</strong></summary><br>   La propiedad <em>z-index</em> especifica el orden de un elemento en el eje <em>z</em>. Con esta propiedad podés elegir que elemento va arriba i cual abajo dependiendo de su valor. Esta propiedad acepta cualquier número, y por defecto es 0.
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el Z-index:</strong></summary><br>
+   La propiedad <em>z-index</em> especifica el orden de un elemento en el eje <em>z</em>. Con esta propiedad podés elegir que elemento va arriba i cual abajo dependiendo de su valor. Esta propiedad acepta cualquier número, y por defecto es 0.
    Tyle cuenta con 11 valores diferentes para esta propiedad, y se indica de la siguiente manera:
 
    <strong><em>z-index-(valor)</em></strong>
@@ -1158,6 +1159,278 @@
   </details>
 
 <hr>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Cards:</strong></summary>
+
+   El componente <em>card</em> es una forma de mostrar contenido de diferentes tipos de objetos. También son muy adecuadas para presentar objetos similares cuyo tamaño o acciones soportadas pueden variar considerablemente, como fotos con subtítulos de longitud variable.
+
+   Para crear una <em>card</em> con Tyle tienes que crear un <em>div</em> con la clase <strong><em>card</em></strong>. Por si solo, este div con la clase <em>card</em> no generará nada mas que el borde, es decir que necesita que halla contenido dentro de esta <em>card</em>. Para comenzar a poner contenido dentra del componente <em>card</em>, tienes que agregar la clase <strong><em>card-container</em></strong>, y dentro de este <em>div</em> puedes poner lo que desees. Para este componente, puedes poner un título, que debe llevar la clase <strong><em>card-title</em></strong>, y a suvez, para crear un subtítulo, debes agregarle la clase <strong><em>card-subtitle</em></strong>. Para agregar texto, tienes que ponerle al texto la clase <strong><em>card-text</em></strong>.
+
+   En el siguiente ejemplo podrás observar lo mencionado anteriomente:
+   HTML 
+   <code>html
+    &lt;div class=&quot;card&quot;&gt;
+        &lt;div class=&quot;card-container&quot;&gt;
+            &lt;h2 class=&quot;card-title&quot;&gt;
+                Card Title
+            &lt;/h2&gt;
+
+            &lt;h3 class=&quot;card-subtitle&quot;&gt;
+                Card Subtitle
+            &lt;/h3&gt;
+
+            &lt;p class=&quot;card-text&quot;&gt;
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/card-1.png" style="display: block;">
+
+   Como pordrás haber observado, el component <em>card</em> ocupa un 100% de su espacio disponible, pero eso se puede solucionar facilmente poniendole in ancho, y esto se podría hacer, por ejemplo, con el <em>sistema de grid</em> de Tyle:
+
+   HTML
+   <code>html
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-3&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-container&quot;&gt;
+                    &lt;h2 class=&quot;card-title&quot;&gt;
+                        Card Title
+                    &lt;/h2&gt;
+
+                    &lt;h3 class=&quot;card-subtitle&quot;&gt;
+                        Card Subtitle
+                    &lt;/h3&gt;
+
+                    &lt;p class=&quot;card-text&quot;&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/card-2.png" style="display: block;">
+
+   Este componente, tambíen puede contener elementos con un header o un footer de la <em>card</em>. El header dentro de la <em>card</em> se indica con la clase <strong><em>card-header</em></strong>, y el footer con la clase <strong><em>card-footer</em></strong>. Estos elementos, se deben colorcar fuera del <em>div</em> con la clase <em>card-container</em>.
+
+   En el siguiente ejemplo podrás notar mejor lo mencionado anteriormente:
+
+   HTML
+   <code>html
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-3&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    Card Header
+                &lt;/div&gt;
+                &lt;div class=&quot;card-container&quot;&gt;
+                    &lt;h2 class=&quot;card-title&quot;&gt;
+                        Card Title
+                    &lt;/h2&gt;
+
+                    &lt;h3 class=&quot;card-subtitle&quot;&gt;
+                        Card Subtitle
+                    &lt;/h3&gt;
+
+                    &lt;p class=&quot;card-text&quot;&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    Card Footer
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/card-3.png" style="display: block;">
+
+   Para agregar imagenes a la parte de arriba de la <em>card</em>, tienes que crear un <em>div</em> (fuera del <em>card-container</em>) con la clase <em>card-top</em>, y aqui dentro de este <em>div</em> puedes agregar tu imagen de cabecera. A esta imagen que pongas dentro del <strong><em>card-top</em></strong>, tienes que ponerle la clase <strong><em>card-img</em></strong>. Pero dentro de esto <em>div</em>, puedes poner mas que solo imagenes, puedes poner tambien por ejemplo el título o el subtítulo de la <em>card</em>.
+
+   En el siguiente ejemplo podrás observar lo mencionado anteriormente:
+
+   HTML
+   <code>html
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;div class=&quot;card&quot;&gt;
+                &lt;div class=&quot;card-top&quot;&gt;
+                    &lt;img src=&quot;images/card-img.jpg&quot; class=&quot;card-img&quot; alt=&quot;&quot; /&gt;
+                    &lt;h2 class=&quot;card-title&quot;&gt; Card Title &lt;/h2&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-container&quot;&gt;
+                    &lt;p class=&quot;card-text t-align-justify&quot;&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    &lt;button class=&quot;button button-danger button-sm&quot;&gt;Card Footer&lt;/button&gt;
+                    &lt;button class=&quot;button button-danger button-sm&quot;&gt;Card Footer&lt;/button&gt;                                
+                &lt;/div&gt;
+            &lt;/div&gt;                
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/card-4.png" style="display: block;" /><br>
+   Además de lo mencionado anteriormente, como podrás saber, puedes cambiarle el color de fondo de las <em>cards</em> con las diferentes clases de <em>bg-(color)</em> aplicandoselas al <em>div</em> con la clase <em>card</em>
+
+   Ejemplo:
+
+   HTML
+   <code>html
+    &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;col-4&quot;&gt;
+            &lt;div class=&quot;card bg-danger&quot;&gt;
+                &lt;div class=&quot;card-header&quot;&gt;
+                    &lt;h2 class=&quot;card-title color-white&quot;&gt;Card Title Header&lt;/h2&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-container&quot;&gt;
+                    &lt;p class=&quot;card-text t-align-justify color-white&quot;&gt;
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    &lt;/p&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;card-footer&quot;&gt;
+                    &lt;p class=&quot;card-text color-white&quot;&gt;Card Footer&lt;/p&gt;                             
+                &lt;/div&gt;
+
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</code>
+
+   Resultado:
+   <img src="images/card-5.png" style="display: block;" /> 
+  </details>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       </body>
     </html>

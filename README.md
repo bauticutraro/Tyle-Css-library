@@ -37,7 +37,7 @@
  | **tyle-utilities.css**<br>**tyle-utilities.min.css**    |    No Incluido   | No Incluido |          Incluido          |
  | **tyle-components.css**<br>**tyle-components.min.css**  |    No Incluido   |   Incluido  |         No Incluido        |
  
- Como podrás ver en el anterior cuadro, tenes la libertad de poder elegir si querés utilizar todo lo que es Tyle, o solo su sistema de grid o  sus componentes o sus clases utilitarias.
+ Como podrás ver en el anterior cuadro, tienes la libertad de poder elegir si quieres utilizar todo lo que es Tyle, o solo su sistema de grid o sus componentes o sus clases utilitarias.
  
  ### Estructura básica para comenzar a utilizar Tyle:
  
@@ -60,7 +60,7 @@
   </body>
   </html>
   ```
-  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a  utilizarlo y poder desarrollar todo  tu código con Tyle.
+  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a  utilizarlo y poder desarrollar todo tu código con Tyle.
   
   Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior, este archivo es de *fontastic* (se  utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es  necesario linkearlo si utilizas algún componente, si no, no es necesario).
  
@@ -798,6 +798,7 @@
 
   <details style="padding-left: 20px;">
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Clases para el Z-index:</strong></summary>  
+
    La propiedad *z-index* especifica el orden de un elemento en el eje *z*. Con esta propiedad podés elegir que elemento va arriba i cual abajo dependiendo de su valor. Esta propiedad acepta cualquier número, y por defecto es 0.
    Tyle cuenta con 11 valores diferentes para esta propiedad, y se indica de la siguiente manera:
 
@@ -1204,8 +1205,163 @@
 
   ---
  
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Cards:</strong></summary>
 
+   El componente *card* es una forma de mostrar contenido de diferentes tipos de objetos. También son muy adecuadas para presentar objetos similares cuyo tamaño o acciones soportadas pueden variar considerablemente, como fotos con subtítulos de longitud variable.
 
+   Para crear una *card* con Tyle tienes que crear un *div* con la clase ***card***. Por si solo, este div con la clase *card* no generará nada mas que el borde, es decir que necesita que halla contenido dentro de esta *card*. Para comenzar a poner contenido dentra del componente *card*, tienes que agregar la clase ***card-container***, y dentro de este *div* puedes poner lo que desees. Para este componente, puedes poner un título, que debe llevar la clase ***card-title***, y a suvez, para crear un subtítulo, debes agregarle la clase ***card-subtitle***. Para agregar texto, tienes que ponerle al texto la clase ***card-text***.
+
+   En el siguiente ejemplo podrás observar lo mencionado anteriomente:
+   HTML 
+   ```html
+    <div class="card">
+        <div class="card-container">
+            <h2 class="card-title">
+                Card Title
+            </h2>
+
+            <h3 class="card-subtitle">
+                Card Subtitle
+            </h3>
+
+            <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+            </p>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/card-1.png" style="display: block;">
+
+   Como pordrás haber observado, el component *card* ocupa un 100% de su espacio disponible, pero eso se puede solucionar facilmente poniendole in ancho, y esto se podría hacer, por ejemplo, con el *sistema de grid* de Tyle:
+
+   HTML
+   ```html
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-container">
+                    <h2 class="card-title">
+                        Card Title
+                    </h2>
+
+                    <h3 class="card-subtitle">
+                        Card Subtitle
+                    </h3>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/card-2.png" style="display: block;">
+
+   Este componente, tambíen puede contener elementos con un header o un footer de la *card*. El header dentro de la *card* se indica con la clase ***card-header***, y el footer con la clase ***card-footer***. Estos elementos, se deben colorcar fuera del *div* con la clase *card-container*.
+
+   En el siguiente ejemplo podrás notar mejor lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <div class="row">
+        <div class="col-3">
+            <div class="card">
+                <div class="card-header">
+                    Card Header
+                </div>
+                <div class="card-container">
+                    <h2 class="card-title">
+                        Card Title
+                    </h2>
+
+                    <h3 class="card-subtitle">
+                        Card Subtitle
+                    </h3>
+
+                    <p class="card-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    </p>
+                </div>
+                <div class="card-footer">
+                    Card Footer
+                </div>
+            </div>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/card-3.png" style="display: block;">
+
+   Para agregar imagenes a la parte de arriba de la *card*, tienes que crear un *div* (fuera del *card-container*) con la clase *card-top*, y aqui dentro de este *div* puedes agregar tu imagen de cabecera. A esta imagen que pongas dentro del ***card-top***, tienes que ponerle la clase ***card-img***. Pero dentro de esto *div*, puedes poner mas que solo imagenes, puedes poner tambien por ejemplo el título o el subtítulo de la *card*.
+
+   En el siguiente ejemplo podrás observar lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <div class="row">
+        <div class="col-4">
+            <div class="card">
+                <div class="card-top">
+                    <img src="images/card-img.jpg" class="card-img" alt="" />
+                    <h2 class="card-title"> Card Title </h2>
+                </div>
+
+                <div class="card-container">
+                    <p class="card-text t-align-justify">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button button-danger button-sm">Card Footer</button>
+                    <button class="button button-danger button-sm">Card Footer</button>                                
+                </div>
+            </div>                
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/card-4.png" style="display: block;" />  
+
+   Además de lo mencionado anteriormente, como podrás saber, puedes cambiarle el color de fondo de las *cards* con las diferentes clases de *bg-(color)* aplicandoselas al *div* con la clase *card*
+
+   Ejemplo:
+
+   HTML
+   ```html
+    <div class="row">
+        <div class="col-4">
+            <div class="card bg-danger">
+                <div class="card-header">
+                    <h2 class="card-title color-white">Card Title Header</h2>
+                </div>
+
+                <div class="card-container">
+                    <p class="card-text t-align-justify color-white">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ea dolore hic porro obcaecati odit quidem fugiat optio ad expedita accusantium cupiditate non delectus aperiam ex, sint rerum pariatur ab.
+                    </p>
+                </div>
+
+                <div class="card-footer">
+                    <p class="card-text color-white">Card Footer</p>                             
+                </div>
+
+            </div>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/card-5.png" style="display: block;" /> 
+  </details>
 
 
 

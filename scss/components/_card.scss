@@ -2,8 +2,10 @@
     width: 100%;
     height: auto;
     border: 1px solid #c8c8c8;
-    border-radius: 10px;
+    border-radius: 4px;
     margin-bottom: 3rem;
+    overflow: hidden;
+    
 
     &-container {
         padding: 1.25rem;
@@ -11,38 +13,43 @@
 
     &-title {
         font-weight: bold;
-        font-size: 2rem;
-        margin-bottom: .2rem;
+        font-size: 1.7rem;
     }
 
     &-subtitle {
-        font-size: 1.5rem;      
-        font-weight: bold; 
-        margin-bottom: .2rem;                 
+        font-size: 1.2rem;      
+        font-weight: bold;                  
     }
 
     &-text {
-        margin-top: 1rem;
+        margin-top: .3rem;
+        font-size: 1rem;
     }
 
-    &-img-top {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;   
-        width: 100%;
+    &-top {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;   
+        min-width: 100%;
         height: auto;     
-    }
+        position: relative;
 
+        .card-img { width: 100%;  }
+
+        .card-title,
+        .card-subtitle {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 24px;
+            color: white;
+            font-weight: 300;
+        }
+    }
+    
     &-footer,
-    &-header {
-        padding: .75rem 1.25rem;
-        background-color: rgba(0,0,0,.03);
-    }
+    &-header { padding: .75rem 1.25rem; }
 
-    &-header {
-        border-bottom: 1px solid rgba(0,0,0,.125);        
-    }
+    &-header { border-bottom: 1px solid rgba(0,0,0,.125); }
 
-    &-footer {
-        border-top: 1px solid rgba(0,0,0,.125);
-    }
+    &-footer { border-top: 1px solid rgba(0,0,0,.125); }
 }
