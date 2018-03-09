@@ -1362,7 +1362,152 @@
    Resultado:
    <img src="images/card-5.png" style="display: block;" /> 
   </details>
+  
+  ---
+  
+  <details style="padding-left: 20px;" open> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Modals:</strong></summary>
 
+   Un *modal* es un cuadro de diálogo o una ventana emergente que permanece oculta hasta que haces click en el elemnto que muestra el *modal*.
+
+   Con Tyle tienes la posibilidad de realizar ventanas modales de una manera mut sencilla.
+   Para comenzar a crear tu *modal*, primero tienes que crear el componente en el cual, cuando hagas click, se habra el modal. Este componente, puede ser por ejemplo un botón, tiene que tener el atributo ***data-open-modal="valor"*** , este valor que va en el atributo *data-open-modal* puede ser cualquiera, el que se te ocurra.
+
+   Una vez que tengas este componente, tienes que empezar con la ventana, modal. Para esto, creas un *div* con la clase ***modal***, este *div* tiene que tener el atributo ***id*** , y el valor del *id* tiene que ser el mismo valor que el del *data-open-modal* que tenía el otro componente. Una vez hecho esto, el *modal* ya funcionara, solo faltará agregarle contenido.
+
+   Para agregarle contenido al *modal*, dentro del *div* con la clase *modal*, tienes que crear otro *div* con la clase ***modal-container***,y dentro de este *div* pones todo el contenido de tu modal.
+   
+   Un componente que debe ir si o si dentro del *modal* es aquel en el que cuando apretás en él se cierra el *modal*. Este componente puede ser por ejemplo una cruz, y dicho componente, tiene que tener el atributo ***data-close-modal="valor"*** . Este valor tiene que ser el mismo valor del *id* que tiene el *modal*. Si quieres que este componente sea una cruz, debes agregarle la clase ***modal-cross***, y dentro de esta agregas lo siguiente: &times; . Esto último es un código que generará la cruz.
+
+   Para agregar contenido a tu modal, dentro del *modal-container*, puedes agregar 3 *divs* con clases diferentes, estas diferentes calses son: ***modal-header*** , ***modal-body*** y ***modal-footer***, y es conveniente ponerlos en ese orden en tu *html* así queda bien.
+
+   En el siguiente ejemplo podrás notar mejor lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <button class="button button-danger" data-open-modal="example">Open Modal</button>
+    <div class="modal" id="example">
+        <div class="modal-container ">
+            <div class="modal-cross" data-close-modal="example">&times;</div>
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+            </div>
+
+            <div class="modal-body">
+                <h2 class="mb-3">Modal Body</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident officia enim porro neque aliquam mollitia
+                   laborum suscipit odio, dolores nesciunt itaque pariatur beatae minima officiis consectetur hic molestias essitatibus!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae perferendis blanditiis rem facere nobis ratione 
+                   soluta, aspernatur consequuntur enim consectetur, explicabo, ipsam provident numquam totam nam illum qui ut!</p>
+            </div>
+
+            <div class="modal-footer">
+                <h2>Modal Footer</h2>
+            </div>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/modal-img-1.png" style="display: block;">   
+   <img src="images/modal-img-1.gif" style="display: block;">
+
+   El *modal* que se acabó de mostrar en las anteriores imagenes es el que se genera por defecto, es decir, que lo puedes personalizar como quieras. Con Tyle puedes cambiar el color de fondo, el tamaño, la posición en la que se encuntra en la pantalla y la animación que hace cuando se abre. Pero además de esto, puedes escribir tu propio código css para modificarlo a tu gusto.
+
+   Para modificar el color de fondo al *div* del *modal-container*, solo tienes que agregarle la clase *bg-(color)* (ya mencionada anteriormente).
+   En la siguiente imagen podrás notar esto:
+
+   <img src="images/modal-img-2.png" style="display: block;">   
+      
+   Existen 5 tamaños diferentes para los *modals*: *xs* (el más chico), *sm* (el segundo más chcio), el que viene por defecto, *md* (el segundo más grande) y *lg* (el más grande). Para modificar el tamaño del *modal-container*, tienes que agregarle la clase *modal-(valor)* ,los diferentes valores son los mencionados anteriormente.  
+   En las siguiente imagens podrás ver los diferentes tamaños:  
+
+   - *xs*
+   <img src="images/modal-img-3.png" style="display: block;">   
+   - *sm*   
+   <img src="images/modal-img-4.png" style="display: block;">   
+   - *default value*   
+   <img src="images/modal-img-5.png" style="display: block;">   
+   - *md*   
+   <img src="images/modal-img-6.png" style="display: block;">  
+   - *lg*    
+   <img src="images/modal-img-7.png" style="display: block;">   
+
+   Como ya se mencionó, puedes posicionar el *modal* en diferentes lugares. Puedes posicionarlo en 3 lugares diferentes: arriba, en el medio(ya esta por defecto) y abajo. Para pocicionar el *modal* arriba, tienes que agregarle al *div* con la clase *modal* la clase *modal-start*, y para pocicionarlo abajo, tienes que agregarle la clase *modal-end*.
+   En las siguientes imagenes podrás notar su posicionamiento:
+
+   - *start*
+    <img src="images/modal-img-8.png" style="display: block;">   
+   - *end*   
+    <img src="images/modal-img-9.png" style="display: block;">  
+
+
+   Como ya se mencionó, puedes ponerles diferentes animaciones a los *modals*. Tyle cuenta con 6 tipos diferenes de animaciones para estos, y para usarlas, tienes que agregarle al *div* con la clase *modal* la clase ***animation-(valor)***. Los valores se mencionarán a continuación y los podrán observar mediante imagenes *gif:*
+
+   - ***fade:*** Esta es la animación que viene por defecto, lo que hace es pasar de un estado transparente (*opacity: 0*) a uno solido (opacity: 1).
+
+   <img src="images/modal-default.gif" style="display: block;">  
+
+
+   - ***top:*** El *modal* viene por arriba y, al cerrarse se va por arriba. Se indica con la clase ***animation-top*** .  
+
+   <img src="images/modal-top.gif" style="display: block;"> 
+
+
+   - ***right:*** El *modal* viene por la derecha y, al cerrarse se va por la derecha. Se indica con la clase ***animation-right*** .  
+
+   <img src="images/modal-right.gif" style="display: block;"> 
+
+
+   - ***bottom:*** El *modal* viene por debajo y, al cerrarse se va por debajo. Se indica con la clase ***animation-bottom*** . 
+
+   <img src="images/modal-bottom.gif" style="display: block;"> 
+
+
+   - ***left:*** El *modal* viene por la izquierda y, al cerrarse se va por la izquierda. Se indica con la clase ***animation-left*** .     
+
+   <img src="images/modal-left.gif" style="display: block;">
+
+
+   - ***zoom:*** El *modal* viene acercandose (aumentando su tamaño) y, al cerrarse se va alejandose (disminuyendo su tamaño). Se indica con la clase ***animation-zoom*** .     
+
+   <img src="images/modal-zoom.gif" style="display: block;">
+
+
+   Por último para los *modals*, puedes elegir la animación que quieras cuando se cierra el modal, agregando la clase *to-(valor)* , los valores son los mencionados anteriormente (fade, top, right, etc..)
+   En el siguitente ejemplo podrás observar lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <button class="button button-danger" data-open-modal="example-2">Open Modal</button>
+    <div class="modal animation-left to-right" id="example-2">
+        <div class="modal-container ">
+            <div class="modal-cross" data-close-modal="example-2">&times;</div>
+            <div class="modal-header">
+                <h2>Modal Header</h2>
+            </div>
+
+            <div class="modal-body">
+                <h2 class="mb-3">Modal Body</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis provident officia enim porro neque aliquam mollitia
+                   laborum suscipit odio, dolores nesciunt itaque pariatur beatae minima officiis consectetur hic molestias essitatibus!
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae perferendis blanditiis rem facere nobis ratione 
+                   soluta, aspernatur consequuntur enim consectetur, explicabo, ipsam provident numquam totam nam illum qui ut!</p>
+            </div>
+
+            <div class="modal-footer">
+                <h2>Modal Footer</h2>
+            </div>
+        </div>
+    </div>
+   ```
+
+   Resultado:
+   <img src="images/modal-left-to-right.gif" style="display: block;">   
+
+    
+
+  </details>
 
 
 

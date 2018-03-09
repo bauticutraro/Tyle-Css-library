@@ -3,8 +3,8 @@ let modals = document.querySelectorAll('.modal');
 
 document.addEventListener('click', e => {
     // data-open
-    if (e.target.getAttribute('data-open')) {
-        let targetValue = e.target.getAttribute('data-open');
+    if (e.target.getAttribute('data-open-modal')) {
+        let targetValue = e.target.getAttribute('data-open-modal');
         let element = Array.from(modals).find(el => el.id === targetValue);
         if (element) {
             element.classList.add('show');
@@ -13,8 +13,8 @@ document.addEventListener('click', e => {
     }
 
     // data-close
-    if (e.target.getAttribute('data-close')) {
-        let targetValue = e.target.getAttribute('data-close');        
+    if (e.target.getAttribute('data-close-modal')) {
+        let targetValue = e.target.getAttribute('data-close-modal');        
         let element = Array.from(modals).find(el => el.id === targetValue);
         if (element) {
             element.classList.add('animation');
@@ -62,11 +62,12 @@ toggle('nav-list-container', 'nav', 'show-nav', document.body, 'scroll-none');
 toggle('nav-input', 'search', 'show-input', closeInput, 'translate-0');
 
 
+
 // cricle progress
 function progress(percent){
     let deg = percent / 100 * 180;
     return deg + "deg";
-  }
+}
 
 Array.from(document.querySelectorAll(".progress-circle-percent"), (el) => {
     let progressCircle = el.getAttribute('data-value');

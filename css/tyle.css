@@ -1605,24 +1605,27 @@ body {
   -ms-flex-pack: center;
   justify-content: center;
   display: none;
+  padding: 2rem;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-container {
   position: relative;
-  background-color: #f2f2f2;
-  padding: 1rem;
+  background-color: #fafafa;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  min-width: 30%;
-  max-width: 90%;
-  max-height: 90vh;
+  border-radius: 2px;
+  min-width: 30vw;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 60%;
   height: auto;
   -webkit-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-  -webkit-animation: animation .2s linear forwards;
-  animation: animation .2s linear forwards;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.3);
+  -webkit-animation: modal-animation .2s linear forwards;
+  animation: modal-animation .2s linear forwards;
 }
 
 .modal-container.modal-xs {
@@ -1674,14 +1677,38 @@ body {
   width: 90%;
 }
 
-.modal.show {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.modal-body, .modal-header, .modal-footer {
+  padding: 1rem;
 }
 
-.modal.animation .modal-container {
-  animation: animation-reverse .2s linear forwards reverse;
+.modal-header, .modal-footer {
+  background-color: rgba(0, 0, 0, 0.04);
+}
+
+.bg-primary .modal-header,
+.bg-secondary .modal-header,
+.bg-info .modal-header,
+.bg-success .modal-header,
+.bg-warning .modal-header,
+.bg-danger .modal-header,
+.bg-dark .modal-header,
+.bg-black .modal-header, .bg-primary .modal-footer,
+.bg-secondary .modal-footer,
+.bg-info .modal-footer,
+.bg-success .modal-footer,
+.bg-warning .modal-footer,
+.bg-danger .modal-footer,
+.bg-dark .modal-footer,
+.bg-black .modal-footer {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.modal-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .modal-cross {
@@ -1692,45 +1719,11 @@ body {
   top: 5px;
   right: 10px;
   font-size: 1.6rem;
-  color: #bfbfbf;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-cross:hover {
-  color: #8c8c8c;
-}
-
-.modal-cross-2 {
-  right: 5px;
-  padding-top: 2px;
-  height: 30px;
-  width: 30px;
-  border-radius: 100%;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-shadow: -1px 1px 3px #000;
-  box-shadow: -1px 1px 3px #000;
-  border: 2px solid;
-  border-color: white;
-  color: white;
-  background-color: #000;
-  -webkit-transition: .3s ease;
-  -o-transition: .3s ease;
-  transition: .3s ease;
-  opacity: .8;
-}
-
-.modal-cross-2:hover {
-  -webkit-box-shadow: -1px 1px 10px #000;
-  box-shadow: -1px 1px 10px #000;
-  opacity: 1;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .modal-start {
@@ -1739,27 +1732,135 @@ body {
   align-items: flex-start;
 }
 
-.modal-start .modal-container {
-  margin-top: 2rem;
-}
-
 .modal-end {
   -webkit-box-align: end;
   -ms-flex-align: end;
   align-items: flex-end;
 }
 
-.modal-end .modal-container {
-  margin-bottom: 2rem;
-  -webkit-animation: animation-end .2s linear forwards;
-  animation: animation-end .2s linear forwards;
+.modal.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.modal-end.animation .modal-container {
-  animation: animation-reverse-end .2s linear forwards reverse;
+.modal .modal-container {
+  -webkit-animation: modal-animation .2s linear forwards;
+  animation: modal-animation .2s linear forwards;
 }
 
-@-webkit-keyframes animation {
+.modal.animation .modal-container {
+  animation: modal-animation-reverse .2s linear forwards reverse;
+}
+
+.modal.animation-top .modal-container {
+  -webkit-animation: modal-animation-top .2s linear forwards;
+  animation: modal-animation-top .2s linear forwards;
+}
+
+.modal.animation.animation-top .modal-container {
+  animation: modal-animation-reverse-top .2s linear forwards reverse;
+}
+
+.modal.animation-bottom .modal-container {
+  -webkit-animation: modal-animation-bottom .2s linear forwards;
+  animation: modal-animation-bottom .2s linear forwards;
+}
+
+.modal.animation.animation-bottom .modal-container {
+  animation: modal-animation-reverse-bottom .2s linear forwards reverse;
+}
+
+.modal.animation-right .modal-container {
+  -webkit-animation: modal-animation-right .2s linear forwards;
+  animation: modal-animation-right .2s linear forwards;
+}
+
+.modal.animation.animation-right .modal-container {
+  animation: modal-animation-reverse-right .2s linear forwards reverse;
+}
+
+.modal.animation-left .modal-container {
+  -webkit-animation: modal-animation-left .2s linear forwards;
+  animation: modal-animation-left .2s linear forwards;
+}
+
+.modal.animation.animation-left .modal-container {
+  animation: modal-animation-reverse-left .2s linear forwards reverse;
+}
+
+.modal.animation-zoom .modal-container {
+  -webkit-animation: modal-animation-zoom .2s linear forwards;
+  animation: modal-animation-zoom .2s linear forwards;
+}
+
+.modal.animation.animation-zoom .modal-container {
+  animation: modal-animation-reverse-zoom .2s linear forwards reverse;
+}
+
+.modal.animation.to-fade .modal-container {
+  animation: modal-animation-reverse .2s linear forwards reverse;
+}
+
+.modal.animation.to-top .modal-container {
+  animation: modal-animation-reverse-top .2s linear forwards reverse;
+}
+
+.modal.animation.to-bottom .modal-container {
+  animation: modal-animation-reverse-bottom .2s linear forwards reverse;
+}
+
+.modal.animation.to-right .modal-container {
+  animation: modal-animation-reverse-right .2s linear forwards reverse;
+}
+
+.modal.animation.to-left .modal-container {
+  animation: modal-animation-reverse-right .2s linear forwards reverse;
+}
+
+.modal.animation.to-zoom .modal-container {
+  animation: modal-animation-reverse-zoom .2s linear forwards reverse;
+}
+
+@-webkit-keyframes modal-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes modal-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes modal-animation-reverse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-reverse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-top {
   from {
     opacity: 0;
     -webkit-transform: translateY(-100%);
@@ -1772,7 +1873,7 @@ body {
   }
 }
 
-@keyframes animation {
+@keyframes modal-animation-top {
   from {
     opacity: 0;
     -webkit-transform: translateY(-100%);
@@ -1785,7 +1886,7 @@ body {
   }
 }
 
-@-webkit-keyframes animation-reverse {
+@-webkit-keyframes modal-animation-reverse-top {
   from {
     opacity: 0;
     -webkit-transform: translateY(-100%);
@@ -1798,7 +1899,7 @@ body {
   }
 }
 
-@keyframes animation-reverse {
+@keyframes modal-animation-reverse-top {
   from {
     opacity: 0;
     -webkit-transform: translateY(-100%);
@@ -1811,7 +1912,7 @@ body {
   }
 }
 
-@-webkit-keyframes animation-end {
+@-webkit-keyframes modal-animation-bottom {
   from {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -1824,7 +1925,7 @@ body {
   }
 }
 
-@keyframes animation-end {
+@keyframes modal-animation-bottom {
   from {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -1837,7 +1938,7 @@ body {
   }
 }
 
-@-webkit-keyframes animation-reverse-end {
+@-webkit-keyframes modal-animation-reverse-bottom {
   from {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -1850,7 +1951,7 @@ body {
   }
 }
 
-@keyframes animation-reverse-end {
+@keyframes modal-animation-reverse-bottom {
   from {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -1859,6 +1960,162 @@ body {
   to {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-reverse-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-reverse-right {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-reverse-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-reverse-left {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-zoom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-zoom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes modal-animation-reverse-zoom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: sclae(1);
+    transform: sclae(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modal-animation-reverse-zoom {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+  to {
+    -webkit-transform: sclae(1);
+    transform: sclae(1);
     opacity: 1;
   }
 }
