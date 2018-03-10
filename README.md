@@ -47,7 +47,6 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Comenzando a utilizar Tyle</title>  
       <link rel="stylesheet" href="tyle/css/tyle.min.css">
   </head>
@@ -55,7 +54,7 @@
       <!-- 
           Contenido de tu página
       -->
-      <script src="tyle/js/tyle.min.js"></script>
+      <script src="tyle/js/tyle.js"></script>
   </body>
   </html>
   ```
