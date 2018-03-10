@@ -48,8 +48,7 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Comenzando a utilizar Tyle</title>
-      <link href="https://file.myfontastic.com/VKjMJTbzfBSFneVYf4x7VT/icons.css" rel="stylesheet">    
+      <title>Comenzando a utilizar Tyle</title>  
       <link rel="stylesheet" href="tyle/css/tyle.min.css">
   </head>
   <body>
@@ -60,9 +59,7 @@
   </body>
   </html>
   ```
-  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a  utilizarlo y poder desarrollar todo tu código con Tyle.
-  
-  Además, otra cosa que podrás observar en el anterior código es que, se está linkeando un archivo exterior, este archivo es de *fontastic* (se  utiliza para poder incluir íconos en la página), que trae algunos íconos para utilizarlos en los diferentes componentes de Tyle (solo es  necesario linkearlo si utilizas algún componente, si no, no es necesario).
+  Cómo podrás observar, solo tienes que vincular los archivos de Tyle de Css y JavaScript para comenzar a utilizarlo y poder desarrollar todo tu código con Tyle.
  
 ## Documentación:
 
