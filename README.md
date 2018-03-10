@@ -817,7 +817,7 @@
  ### Componentes:
   
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container:</strong></summary>
     
    Las diferentes clases para el ***container***, como su nombre lo indica, se utilizan para contener a los diferentes elementos.
    Tyle cuenta con 4 tipos diferentes de container:
@@ -845,7 +845,7 @@
   ---
 
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones:</strong></summary>
 
    Los botones se crean mediante la etiqueta ***&lt;button&gt;*** (de apertura) y ***&lt;/button&gt;*** (de cierre). Debtro de estas etiquetas puedes poner cualquier texto. Hay dieferentes tipos de botones, y el tipo de botón se elige mediante el atributo *type*. Este atributo por defecto es *button*.
    Tyle cuenta con diferentes clases para los botones.
@@ -892,7 +892,7 @@
   ---
 
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar:</strong></summary>
 
    El ***scrollbar*** es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
    Tyle ofrece clases para modificar el *scrollbar*.
@@ -951,7 +951,7 @@
   ---
 
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster:</strong></summary>
 
    El componenete ***poster*** sirve para cubrir el fondo de un *div*, pero al tener una opacidad, si hay una imagen de fondo, esta se verá debajo del poster, pero se verá. Es importante destacar que todos los hijos que esten dentro del elemento con la clase *poster*, se verán encima del *poster*, es decir que no se verán afectados. El *poster* puede ser de cualquier color de la *paleta de colores*.
    Para inidicar que un elemento tenga un *poster*, se le debe poner la clase *poster* y  la clase ***poster-(color)***. Sin esta última clase no tendrá efecto el *poster*, ya que por defecto es transparente. 
@@ -998,7 +998,7 @@
   ---
 
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar:</strong></summary>
 
    Las barras de progreso (***progress bar***) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
 
@@ -1107,7 +1107,7 @@
   ---
 
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle:</strong></summary>
 
    Una alternativa a las *progress-bar* son los *progress-circle* cuya función es la misma (indicar el progreso que se ha realizado).
 
@@ -1365,7 +1365,7 @@
   
   ---
   
-  <details style="padding-left: 20px;" open> 
+  <details style="padding-left: 20px;"> 
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Modals:</strong></summary>
 
    Un *modal* es un cuadro de diálogo o una ventana emergente que permanece oculta hasta que haces click en el elemnto que muestra el *modal*.
@@ -1504,14 +1504,244 @@
 
    Resultado:
    <img src="images/modal-left-to-right.gif" style="display: block;">   
-
-    
-
   </details>
+   
+  ---
+  
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Navs:</strong></summary>
+
+   Las *navbars*, o barras de navegación, son un elemento muy importante en las páginas web, ya que, como su nombre lo indica, te permiten navegar por la página o sitio web.
+
+   Con Tyle, se pueden crear *navbars* de una manera sencilla.
+
+   Para comenzar a crear tu *nav*, tienes que crear la etiqueta ***&lt;nav&gt;*** . A esta etiqueta *nav*, tienes que ponerle la clase ***nav***, y una vez hecho esto puedes comenzar a poner el contenido de la *nav*. 
+   Los componentes que tienen que estar en una *navbar* son el logo y los diferentes links para permitir la navegación.
+
+   Para crear el logo en la *nav*, tienes que crear (dentro de la etiqueta *nav*) un *div* con la clase ***nav-logo-container***, y dentro de este *div* puedes poner el logo. El logo puede ser texto o una imagen, pero tiene que tener la clase ***nav-logo*** .
+
+   Una vez que ya tienes el logo, puedes seguir con los diferentes links. Para comenzar a poner los links, dentro de la etiqueta *nav* tienes que crear un *div* con la clase ***nav-list-container*** . Dentro de este *div* creas un *ul* con la clase ***nav-list***, y dentro de este *ul* ponés sus respectivos *li*, estos *li* tienen que tener la clase ***nav-item***, y dentro de ellos ponés los enlaces (con la etiqueta *a*). Estos enlaces tienen que tener la clase ***nav-link*** .
+
+   En el siguiente ejemplo podrás notar lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <nav class="nav">
+        <div class="nav-logo-container">
+            <h1 class="nav-logo">Logo</h1>
+        </div>
+
+        <div class="nav-list-container">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>             
+            </ul>
+        </div> 
+    </nav> 
+   ```
+
+   Resultado:
+   <img src="images/nav-1.png" style="display: block;">
+
+   Como podrás observar, no hay nada que se desmaquete, pero al achicar la ventana, al no haber espacio, se desmaqueta y no entran los textos.
+   Para este problema del responsive Tyle tiene una solución. Para hacer el *nav* responsive, a la etiqueta *nav* con la clase *nav* tienes que agregarle la clase ***nav-responsive-(medida)*** . Las diferentes medidas que se aceptan son *sm*, *md* y *lg*. El valor de estas medidas son las mencionadas anteriormente anteriormente. 
+   
+   Pero con agregar esta clase sola no basta, también hace falta agregar el ícono de las 3 barras, indicando que al apretar en él se desplegará el menú.
+
+   Para esto, dentro de la etiqueta *nav*, crearás un *div* con la clase ***nav-bars-container***, y dentro de este *div*, crearás otro más con la clase ***nav-bars***, y dentro de este *div* pones el ícono de las 3 barras, o bien, para hacerlo con Tyle, en vez del ícono pones 3 *span* con la clase ***nav-bars-span*** . 
+   
+   Ya una vez hecho esto, tendrás el ícono, pero al apretar en él no pasa nada, no se abre el *nav*. Para lograr que funcione, tienes que agregarle el atributo ***id="valor"*** al *div* con la clase *nav-list-container*, el valor del *id* puede ser cualquiera, el que se te ocurra.
+   
+   Además de esto, tienes que ponerle al *div* con la clase *nav-bars* (también debes ponerselos a los *span* que están dentro de este *div* para evitar errores) el atributo ***data-open-nav="valor"*** , dicho valor tiene que ser el mismo que el valor del *id* del *div* con la clase *nav-list-container*. 
+
+   Con esto, ya lograrás que funcione, pero falta una pequeña cosa: que se cierre. Para lograr que se cierre, dentro del *div* con la clase *nav-list-container* tienes que crear un *div* con la clase ***nav-close*** , y dentro de él ponés una cruz con el código ***&amp;times;*** . Con esto ya tendrás la cruz, pero para lograr que se cierre el *nav*, tienes que agregarle al *nav-close* el atributo ***data-close-nav="valor"*** , y como podrás haber adivinado, el valor tiene que ser el mismo que el valor del *id*.
+
+   En el siguiente ejemplo podrás notar mejor lo mencionado anteriormente:
+
+   HTML
+   ```html
+    <nav class="nav nav-responsive-md">
+        <div class="nav-logo-container">
+            <h1 class="nav-logo">Logo</h1>
+        </div>
+
+        <div class="nav-bars-container">
+            <div class="nav-bars" data-open-nav="nav">
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+            </div>
+        </div> 
+
+        <div class="nav-list-container" id="nav">
+            <div class="nav-close" data-close-nav="nav">&times;</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>               
+            </ul>
+        </div> 
+    </nav> 
+   ```
+
+   Resultado:
+   <img src="images/nav-2.gif" style="display: block;">
+
+   Como podrás observar, el *nav* ya trae un color por defecto (este color es el *dark*), pero tu se lo puedes cambiar con las diferentes clases para los colores que trae Tyle, o en tu propio css puedes hacerlo. Sin embargo, hay un problema al querer cambiar ciertas propiedades, este porbleba es la especificidad. Para no tener este problema, si no te deja cambiar ciertas propiedades, tienes que hacerlo en tus estilos css de la siguiente manera:
+
+   CSS
+   ```css
+    @media screen and (max-widht: (medida-responsive) ) {
+        .nav-responsive-(nombre-de-medida-responsive) .componente-que-deseas-cambiar {
+            /* Propiedades que deseas cambiar */
+        }
+    }
+   ``` 
+
+   Una cosa que puedes cambiar a tu gusto el ancho del *nav-lsit-container*, lo puedes hacer cambiando la propiedad *width*.
+   En la siguiente imagen lo podrás notar:
+   <img src="images/nav-3.png" style="display: block;">   
+
+   También, puedes elegir desde donde viene el *nav*, poniendole la clase ***nav-effect-(lado)*** al *div* con la clase *nav-list-container* ,los lados pueden ser *left* (por defecto),*right*, *top* y *bottom*.
+
+   En la siguiente imagen lo podrás notar:
+   <img src="images/nav-4.png" style="display: block;">  
+
+   Otro componente que puedes agregar al *nav* con Tyle, es una barra de busqueda. Para hacerlo tienes que crear dentro de la etiqueta *nav* un *div* con la clase ***nav-search-container*** y, dentro de este *div* crearás otro más con la clase ***nav-search*** . Dentro de este último, irán 3 elementos: 
+   Un *input*, que tendrá que tener la clase ***nab-input*** . Este input tendrá que tener un *id* con cualquier valor.
+
+   Otro elemento será un *div* con la clase ***nav-search-button*** (será el botón para buscar), y dentro de este irá el ícono o bien puede ser una palabra como por ejemplo *"buscar"* . Este ícono o palabra tendrá la clase ***button-search*** . Este elemento tiene que tener el atributo ***data-open-search*** , cuyo valor tiene que ser el mismo que el del *id*.
+
+   El último elemento será una cruz, para cerrar el input en la medida responsive. Para hacerlo, puedes crear un *div* con la clase ***close-input*** , este *div* tendrá que tener el atributo ***data-close-search*** cuyo valor tiene que ser el mismo que el del *id*. Para generar la cruz, pones dentro del *div* el código ***&amp;times;*** 
+   
+   En el siguiente ejemplo podrás observar lo mencionado anteriormente:
+   
+   HTML
+   ```html
+    <nav class="nav nav-responsive-md">
+        <div class="nav-logo-container">
+            <h1 class="nav-logo">Logo</h1>
+        </div>
+
+        <div class="nav-bars-container">
+            <div class="nav-bars" data-open-nav="nav">
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+            </div>
+        </div> 
+
+        <div class="nav-list-container w-75 nav-effect-right" id="nav">
+            <div class="nav-close" data-close-nav="nav">&times;</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>               
+            </ul>
+        </div> 
+
+        <div class="nav-search-container mr-3">
+            <div class="nav-search">
+                <div class="nav-search-button"><p class="button-search" data-open-search="nav-input">Search</p></div>
+                <input type="text" class="nav-input" id="nav-input" placeholder="Buscar...">
+                <div class="close-input" data-close-search="nav-input">&times;</div>
+            </div>
+        </div> 
+    </nav> 
+   ```
+
+   Resultado:
+   <img src="images/nav-5.png" style="display: block;">
+
+   <img src="images/nav-5.gif" style="display: block;">
 
 
+   Además, cuando el *nav* esta en su modo responsive, los diferentes componentes (el logo, las barras, y la barra de busqueda) están en una posición por defecto, que puedes cambiarlas de una manera muy sencilla. Los *divs* a los que les puede agregar la clase para que cambien de posición son el *nav-logo-container*, el *nav-bars-container* y el *nav-search-container*. La clase que le tienes que agregar para cambiarlos de posición es ***nav-component-position-(posición)*** , la posición puede ser *left*, *center*, o *right*. 
+   A continuación verán un ejemplo de esto:
 
+   HTML
+   ```html
+    <nav class="nav nav-responsive-md">
+        <div class="nav-logo-container">
+            <h1 class="nav-logo">Logo</h1>
+        </div>
 
+        <div class="nav-bars-container nav-component-position-left">
+            <div class="nav-bars" data-open-nav="nav">
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+            </div>
+        </div> 
+
+        <div class="nav-list-container w-75 nav-effect-right" id="nav">
+            <div class="nav-close" data-close-nav="nav">&times;</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>               
+            </ul>
+        </div> 
+
+        <div class="nav-search-container mr-3 nav-component-position-right">
+            <div class="nav-search">
+                <div class="nav-search-button"><p class="button-search" data-open-search="nav-input">Search</p></div>
+                <input type="text" class="nav-input" id="nav-input" placeholder="Buscar...">
+                <div class="close-input" data-close-search="nav-input">&times;</div>
+            </div>
+        </div> 
+    </nav> 
+   ```
+
+   Resultado:
+   <img src="images/nav-6.png" style="display: block;">
+
+   Por último, para posicionar un elemento (los elementos son *nav-logo*, *nav-bars* y *nav-search*) en la medida responsive más a la derecha o a la izquierda, tienes que ponerle al elemento la clase ***nav-item-position-(posición)*** . Las posiciones pueden ser *left*, *center* (por defecto) y *right*.
+   En la siguiente ejemplo podrás observar esto:
+
+   HTML
+   ```html
+    <nav class="nav nav-responsive-md">
+        <div class="nav-logo-container">
+            <h1 class="nav-logo">Logo</h1>
+        </div>
+
+        <div class="nav-bars-container nav-component-position-left">
+            <div class="nav-bars" data-open-nav="nav">
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+                <span class="nav-bars-span" data-open-nav="nav"></span>
+            </div>
+        </div> 
+
+        <div class="nav-list-container w-75 nav-effect-right" id="nav">
+            <div class="nav-close" data-close-nav="nav">&times;</div>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Productos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>               
+            </ul>
+        </div> 
+
+        <div class="nav-search-container mr-3 nav-component-position-right">
+            <div class="nav-search">
+                <div class="nav-search-button"><p class="button-search" data-open-search="nav-input">Search</p></div>
+                <input type="text" class="nav-input" id="nav-input" placeholder="Buscar...">
+                <div class="close-input" data-close-search="nav-input">&times;</div>
+            </div>
+        </div> 
+    </nav> 
+   ```
+
+   Resultado:
+   <img src="images/nav-7.png" style="display: block;">
+  </details>
 
 
 

@@ -59,7 +59,7 @@ function toggle(className, attribute, toggleClass, secondElement, secondToggleCl
 toggle('nav-list-container', 'nav', 'show-nav', document.body, 'scroll-none');
 
 // Nav search bar
-toggle('nav-input', 'search', 'show-input', closeInput, 'translate-0');
+toggle('nav-input', 'search', 'show-input', closeInput, 'show-close-input');
 
 
 

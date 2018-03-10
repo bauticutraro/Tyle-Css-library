@@ -88,6 +88,7 @@
         top: 5px;
         right: 10px;
         font-size: 1.6rem; 
+        user-select: none;
         color: rgba(#000, .3);
         &:hover { color: rgba(#000, .5); }
     }
@@ -245,8 +246,9 @@
 }
 
 body.scroll-none {
-    padding-right: 17px;
+    // padding-right: 17px;
     overflow-y: hidden;
+    
 }
 
 body.scrollbar.scroll-none { padding-right: .5rem; }

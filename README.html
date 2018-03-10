@@ -795,7 +795,7 @@
 <hr>
 <h3 id="componentes-">Componentes:</h3>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Container:</strong></summary>
 
    Las diferentes clases para el <strong><em>container</em></strong>, como su nombre lo indica, se utilizan para contener a los diferentes elementos.
    Tyle cuenta con 4 tipos diferentes de container:
@@ -821,7 +821,7 @@
 
 <hr>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Botones:</strong></summary>
 
    Los botones se crean mediante la etiqueta <strong><em>&lt;button&gt;</em></strong> (de apertura) y <strong><em>&lt;/button&gt;</em></strong> (de cierre). Debtro de estas etiquetas puedes poner cualquier texto. Hay dieferentes tipos de botones, y el tipo de botón se elige mediante el atributo <em>type</em>. Este atributo por defecto es <em>button</em>.
    Tyle cuenta con diferentes clases para los botones.
@@ -866,7 +866,7 @@
 
 <hr>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Scrollbar:</strong></summary>
 
    El <strong><em>scrollbar</em></strong> es un componente muy importante a la hora del diseño, pues dejar la que traen los navegadores por defecto podría quedar mal o podría no gustarte o que quieras cambiarla.
    Tyle ofrece clases para modificar el <em>scrollbar</em>.
@@ -923,7 +923,7 @@
 
 <hr>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Poster:</strong></summary>
 
    El componenete <strong><em>poster</em></strong> sirve para cubrir el fondo de un <em>div</em>, pero al tener una opacidad, si hay una imagen de fondo, esta se verá debajo del poster, pero se verá. Es importante destacar que todos los hijos que esten dentro del elemento con la clase <em>poster</em>, se verán encima del <em>poster</em>, es decir que no se verán afectados. El <em>poster</em> puede ser de cualquier color de la <em>paleta de colores</em>.
    Para inidicar que un elemento tenga un <em>poster</em>, se le debe poner la clase <em>poster</em> y  la clase <strong><em>poster-(color)</em></strong>. Sin esta última clase no tendrá efecto el <em>poster</em>, ya que por defecto es transparente. 
@@ -967,7 +967,7 @@
 
 <hr>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-bar:</strong></summary>
 
    Las barras de progreso (<strong><em>progress bar</em></strong>) sirven para indicar la cantidad de progreso que se ha realizado hasta el momento dado.
 
@@ -1065,7 +1065,7 @@
 
 <hr>
   <details style="padding-left: 20px;"> 
-   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle</strong></summary>
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Progress-circle:</strong></summary>
 
    Una alternativa a las <em>progress-bar</em> son los <em>progress-circle</em> cuya función es la misma (indicar el progreso que se ha realizado).
 
@@ -1312,7 +1312,7 @@
   </details>
 
 <hr>
-  <details style="padding-left: 20px;" open> 
+  <details style="padding-left: 20px;"> 
    <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Modals:</strong></summary>
 
    Un <em>modal</em> es un cuadro de diálogo o una ventana emergente que permanece oculta hasta que haces click en el elemnto que muestra el <em>modal</em>.
@@ -1427,14 +1427,235 @@
     &lt;/div&gt;</code>
 
    Resultado:
-   <img src="images/modal-left-to-right.gif" style="display: block;"><br>
+   <img src="images/modal-left-to-right.gif" style="display: block;"><br>  </details>
+
+<hr>
+  <details style="padding-left: 20px;"> 
+   <summary style="cursor: pointer; display: inline-block; outline: 0;"><strong>Navs:</strong></summary>
+
+   Las <em>navbars</em>, o barras de navegación, son un elemento muy importante en las páginas web, ya que, como su nombre lo indica, te permiten navegar por la página o sitio web.
+
+   Con Tyle, se pueden crear <em>navbars</em> de una manera sencilla.
+
+   Para comenzar a crear tu <em>nav</em>, tienes que crear la etiqueta <strong><em>&lt;nav&gt;</em></strong> . A esta etiqueta <em>nav</em>, tienes que ponerle la clase <strong><em>nav</em></strong>, y una vez hecho esto puedes comenzar a poner el contenido de la <em>nav</em>. 
+   Los componentes que tienen que estar en una <em>navbar</em> son el logo y los diferentes links para permitir la navegación.
+
+   Para crear el logo en la <em>nav</em>, tienes que crear (dentro de la etiqueta <em>nav</em>) un <em>div</em> con la clase <strong><em>nav-logo-container</em></strong>, y dentro de este <em>div</em> puedes poner el logo. El logo puede ser texto o una imagen, pero tiene que tener la clase <strong><em>nav-logo</em></strong> .
+
+   Una vez que ya tienes el logo, puedes seguir con los diferentes links. Para comenzar a poner los links, dentro de la etiqueta <em>nav</em> tienes que crear un <em>div</em> con la clase <strong><em>nav-list-container</em></strong> . Dentro de este <em>div</em> creas un <em>ul</em> con la clase <strong><em>nav-list</em></strong>, y dentro de este <em>ul</em> ponés sus respectivos <em>li</em>, estos <em>li</em> tienen que tener la clase <strong><em>nav-item</em></strong>, y dentro de ellos ponés los enlaces (con la etiqueta <em>a</em>). Estos enlaces tienen que tener la clase <strong><em>nav-link</em></strong> .
+
+   En el siguiente ejemplo podrás notar lo mencionado anteriormente:
+
+   HTML
+   <code>html
+    &lt;nav class=&quot;nav&quot;&gt;
+        &lt;div class=&quot;nav-logo-container&quot;&gt;
+            &lt;h1 class=&quot;nav-logo&quot;&gt;Logo&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;nav-list-container&quot;&gt;
+            &lt;ul class=&quot;nav-list&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;             
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+    &lt;/nav&gt;</code>
+
+   Resultado:
+   <img src="images/nav-1.png" style="display: block;">
+
+   Como podrás observar, no hay nada que se desmaquete, pero al achicar la ventana, al no haber espacio, se desmaqueta y no entran los textos.
+   Para este problema del responsive Tyle tiene una solución. Para hacer el <em>nav</em> responsive, a la etiqueta <em>nav</em> con la clase <em>nav</em> tienes que agregarle la clase <strong><em>nav-responsive-(medida)</em></strong> . Las diferentes medidas que se aceptan son <em>sm</em>, <em>md</em> y <em>lg</em>. El valor de estas medidas son las mencionadas anteriormente anteriormente. 
+
+   Pero con agregar esta clase sola no basta, también hace falta agregar el ícono de las 3 barras, indicando que al apretar en él se desplegará el menú.
+
+   Para esto, dentro de la etiqueta <em>nav</em>, crearás un <em>div</em> con la clase <strong><em>nav-bars-container</em></strong>, y dentro de este <em>div</em>, crearás otro más con la clase <strong><em>nav-bars</em></strong>, y dentro de este <em>div</em> pones el ícono de las 3 barras, o bien, para hacerlo con Tyle, en vez del ícono pones 3 <em>span</em> con la clase <strong><em>nav-bars-span</em></strong> . 
+
+   Ya una vez hecho esto, tendrás el ícono, pero al apretar en él no pasa nada, no se abre el <em>nav</em>. Para lograr que funcione, tienes que agregarle el atributo <strong><em>id=&quot;valor&quot;</em></strong> al <em>div</em> con la clase <em>nav-list-container</em>, el valor del <em>id</em> puede ser cualquiera, el que se te ocurra.
+
+   Además de esto, tienes que ponerle al <em>div</em> con la clase <em>nav-bars</em> (también debes ponerselos a los <em>span</em> que están dentro de este <em>div</em> para evitar errores) el atributo <strong><em>data-open-nav=&quot;valor&quot;</em></strong> , dicho valor tiene que ser el mismo que el valor del <em>id</em> del <em>div</em> con la clase <em>nav-list-container</em>. 
+
+   Con esto, ya lograrás que funcione, pero falta una pequeña cosa: que se cierre. Para lograr que se cierre, dentro del <em>div</em> con la clase <em>nav-list-container</em> tienes que crear un <em>div</em> con la clase <strong><em>nav-close</em></strong> , y dentro de él ponés una cruz con el código <strong><em>&amp;times;</em></strong> . Con esto ya tendrás la cruz, pero para lograr que se cierre el <em>nav</em>, tienes que agregarle al <em>nav-close</em> el atributo <strong><em>data-close-nav=&quot;valor&quot;</em></strong> , y como podrás haber adivinado, el valor tiene que ser el mismo que el valor del <em>id</em>.
+
+   En el siguiente ejemplo podrás notar mejor lo mencionado anteriormente:
+
+   HTML
+   <code>html
+    &lt;nav class=&quot;nav nav-responsive-md&quot;&gt;
+        &lt;div class=&quot;nav-logo-container&quot;&gt;
+            &lt;h1 class=&quot;nav-logo&quot;&gt;Logo&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;nav-bars-container&quot;&gt;
+            &lt;div class=&quot;nav-bars&quot; data-open-nav=&quot;nav&quot;&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-list-container&quot; id=&quot;nav&quot;&gt;
+            &lt;div class=&quot;nav-close&quot; data-close-nav=&quot;nav&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;ul class=&quot;nav-list&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;               
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+    &lt;/nav&gt;</code>
+
+   Resultado:
+   <img src="images/nav-2.gif" style="display: block;">
+
+   Como podrás observar, el <em>nav</em> ya trae un color por defecto (este color es el <em>dark</em>), pero tu se lo puedes cambiar con las diferentes clases para los colores que trae Tyle, o en tu propio css puedes hacerlo. Sin embargo, hay un problema al querer cambiar ciertas propiedades, este porbleba es la especificidad. Para no tener este problema, si no te deja cambiar ciertas propiedades, tienes que hacerlo en tus estilos css de la siguiente manera:
+
+   CSS
+   <code>css
+    @media screen and (max-widht: (medida-responsive) ) {
+        .nav-responsive-(nombre-de-medida-responsive) .componente-que-deseas-cambiar {
+            /* Propiedades que deseas cambiar */
+        }
+    }</code> 
+
+   Una cosa que puedes cambiar a tu gusto el ancho del <em>nav-lsit-container</em>, lo puedes hacer cambiando la propiedad <em>width</em>.
+   En la siguiente imagen lo podrás notar:
+   <img src="images/nav-3.png" style="display: block;"><br>
+   También, puedes elegir desde donde viene el <em>nav</em>, poniendole la clase <strong><em>nav-effect-(lado)</em></strong> al <em>div</em> con la clase <em>nav-list-container</em> ,los lados pueden ser <em>left</em> (por defecto),<em>right</em>, <em>top</em> y <em>bottom</em>.
+
+   En la siguiente imagen lo podrás notar:
+   <img src="images/nav-4.png" style="display: block;"><br>
+   Otro componente que puedes agregar al <em>nav</em> con Tyle, es una barra de busqueda. Para hacerlo tienes que crear dentro de la etiqueta <em>nav</em> un <em>div</em> con la clase <strong><em>nav-search-container</em></strong> y, dentro de este <em>div</em> crearás otro más con la clase <strong><em>nav-search</em></strong> . Dentro de este último, irán 3 elementos: 
+   Un <em>input</em>, que tendrá que tener la clase <strong><em>nab-input</em></strong> . Este input tendrá que tener un <em>id</em> con cualquier valor.
+
+   Otro elemento será un <em>div</em> con la clase <strong><em>nav-search-button</em></strong> (será el botón para buscar), y dentro de este irá el ícono o bien puede ser una palabra como por ejemplo <em>&quot;buscar&quot;</em> . Este ícono o palabra tendrá la clase <strong><em>button-search</em></strong> . Este elemento tiene que tener el atributo <strong><em>data-open-search</em></strong> , cuyo valor tiene que ser el mismo que el del <em>id</em>.
+
+   El último elemento será una cruz, para cerrar el input en la medida responsive. Para hacerlo, puedes crear un <em>div</em> con la clase <strong><em>close-input</em></strong> , este <em>div</em> tendrá que tener el atributo <strong><em>data-close-search</em></strong> cuyo valor tiene que ser el mismo que el del <em>id</em>. Para generar la cruz, pones dentro del <em>div</em> el código <strong><em>&amp;times;</em></strong> 
+
+   En el siguiente ejemplo podrás observar lo mencionado anteriormente:
+
+   HTML
+   <code>html
+    &lt;nav class=&quot;nav nav-responsive-md&quot;&gt;
+        &lt;div class=&quot;nav-logo-container&quot;&gt;
+            &lt;h1 class=&quot;nav-logo&quot;&gt;Logo&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;nav-bars-container&quot;&gt;
+            &lt;div class=&quot;nav-bars&quot; data-open-nav=&quot;nav&quot;&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-list-container w-75 nav-effect-right&quot; id=&quot;nav&quot;&gt;
+            &lt;div class=&quot;nav-close&quot; data-close-nav=&quot;nav&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;ul class=&quot;nav-list&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;               
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-search-container mr-3&quot;&gt;
+            &lt;div class=&quot;nav-search&quot;&gt;
+                &lt;div class=&quot;nav-search-button&quot;&gt;&lt;p class=&quot;button-search&quot; data-open-search=&quot;nav-input&quot;&gt;Search&lt;/p&gt;&lt;/div&gt;
+                &lt;input type=&quot;text&quot; class=&quot;nav-input&quot; id=&quot;nav-input&quot; placeholder=&quot;Buscar...&quot;&gt;
+                &lt;div class=&quot;close-input&quot; data-close-search=&quot;nav-input&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/nav&gt;</code>
+
+   Resultado:
+   <img src="images/nav-5.png" style="display: block;">
+
+   <img src="images/nav-5.gif" style="display: block;">
 
 
+   Además, cuando el <em>nav</em> esta en su modo responsive, los diferentes componentes (el logo, las barras, y la barra de busqueda) están en una posición por defecto, que puedes cambiarlas de una manera muy sencilla. Los <em>divs</em> a los que les puede agregar la clase para que cambien de posición son el <em>nav-logo-container</em>, el <em>nav-bars-container</em> y el <em>nav-search-container</em>. La clase que le tienes que agregar para cambiarlos de posición es <strong><em>nav-component-position-(posición)</em></strong> , la posición puede ser <em>left</em>, <em>center</em>, o <em>right</em>. 
+   A continuación verán un ejemplo de esto:
+
+   HTML
+   <code>html
+    &lt;nav class=&quot;nav nav-responsive-md&quot;&gt;
+        &lt;div class=&quot;nav-logo-container&quot;&gt;
+            &lt;h1 class=&quot;nav-logo&quot;&gt;Logo&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;nav-bars-container nav-component-position-left&quot;&gt;
+            &lt;div class=&quot;nav-bars&quot; data-open-nav=&quot;nav&quot;&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-list-container w-75 nav-effect-right&quot; id=&quot;nav&quot;&gt;
+            &lt;div class=&quot;nav-close&quot; data-close-nav=&quot;nav&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;ul class=&quot;nav-list&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;               
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-search-container mr-3 nav-component-position-right&quot;&gt;
+            &lt;div class=&quot;nav-search&quot;&gt;
+                &lt;div class=&quot;nav-search-button&quot;&gt;&lt;p class=&quot;button-search&quot; data-open-search=&quot;nav-input&quot;&gt;Search&lt;/p&gt;&lt;/div&gt;
+                &lt;input type=&quot;text&quot; class=&quot;nav-input&quot; id=&quot;nav-input&quot; placeholder=&quot;Buscar...&quot;&gt;
+                &lt;div class=&quot;close-input&quot; data-close-search=&quot;nav-input&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/nav&gt;</code>
+
+   Resultado:
+   <img src="images/nav-6.png" style="display: block;">
+
+   Por último, para posicionar un elemento (los elementos son <em>nav-logo</em>, <em>nav-bars</em> y <em>nav-search</em>) en la medida responsive más a la derecha o a la izquierda, tienes que ponerle al elemento la clase <strong><em>nav-item-position-(posición)</em></strong> . Las posiciones pueden ser <em>left</em>, <em>center</em> (por defecto) y <em>right</em>.
+   En la siguiente ejemplo podrás observar esto:
+
+   HTML
+   <code>html
+    &lt;nav class=&quot;nav nav-responsive-md&quot;&gt;
+        &lt;div class=&quot;nav-logo-container&quot;&gt;
+            &lt;h1 class=&quot;nav-logo&quot;&gt;Logo&lt;/h1&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;nav-bars-container nav-component-position-left&quot;&gt;
+            &lt;div class=&quot;nav-bars&quot; data-open-nav=&quot;nav&quot;&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+                &lt;span class=&quot;nav-bars-span&quot; data-open-nav=&quot;nav&quot;&gt;&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-list-container w-75 nav-effect-right&quot; id=&quot;nav&quot;&gt;
+            &lt;div class=&quot;nav-close&quot; data-close-nav=&quot;nav&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;ul class=&quot;nav-list&quot;&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li class=&quot;nav-item&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;nav-link&quot;&gt;Contacto&lt;/a&gt;&lt;/li&gt;               
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+
+        &lt;div class=&quot;nav-search-container mr-3 nav-component-position-right&quot;&gt;
+            &lt;div class=&quot;nav-search&quot;&gt;
+                &lt;div class=&quot;nav-search-button&quot;&gt;&lt;p class=&quot;button-search&quot; data-open-search=&quot;nav-input&quot;&gt;Search&lt;/p&gt;&lt;/div&gt;
+                &lt;input type=&quot;text&quot; class=&quot;nav-input&quot; id=&quot;nav-input&quot; placeholder=&quot;Buscar...&quot;&gt;
+                &lt;div class=&quot;close-input&quot; data-close-search=&quot;nav-input&quot;&gt;&amp;times;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt; 
+    &lt;/nav&gt;</code>
+
+   Resultado:
+   <img src="images/nav-7.png" style="display: block;">
   </details>
-
-
-
-
 
 
 
