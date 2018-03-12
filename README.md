@@ -898,7 +898,7 @@
 
    Sin embargo, los colores que trae por defecto la clase *scrollbar* se pueden cambiar. Para cambiar el color de la barra, tienes que indicar una clase (además de la clase *scrollbar*) de la siguiente manera: 
 
-   ***scrollabr-(color)***
+   ***scrollabar-(color)***
 
    Los diferentes colores son los menconados en la *paleta de colores*.
 
@@ -908,7 +908,7 @@
 
    Además de poder cambiar el color de la barra, puedes cambiar el fondo del *scrollbar* indicando una clase de la siguiente manera:
  
-   ***scrollabr-bg-(color)**
+   ***scrollabar-bg-(color)**
 
    A continuación podrá ver en la imagen ejemplos del color de fondo:
 
